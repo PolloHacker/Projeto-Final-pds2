@@ -1,9 +1,13 @@
 #include <board.hpp>
 
 
-int Board::getCols() { return this->_cols; }
+int Board::getCols() { 
+    return this->_cols; 
+}
 
-int Board::getRows() { return this->_rows; }
+int Board::getRows() { 
+    return this->_rows; 
+}
 
 void Board::setCols(int c) { 
     if (c <= 0) {
