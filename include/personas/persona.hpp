@@ -2,7 +2,7 @@
 #define PERSONA_HPP
 
 #include <string>
-#include <stats.hpp>
+#include "stats.hpp"
 
 class Persona {
     private:
@@ -16,11 +16,13 @@ class Persona {
 
         Persona(std::string name): _stats(), _name(name), _id(this->num_personas++) {}
 
-        int getId();
-        std::string getName();
-        Stats getStats();
+        int getId() const;
+        std::string getName() const;
+        std::string getNickname() const;
+        Stats getStats() const;
 
         void setName(std::string name);
+        void setNickname(std::string nickname);
 
 };
 
