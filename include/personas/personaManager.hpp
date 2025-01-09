@@ -6,10 +6,7 @@
 #include <string>
 
 
-/**
- * @brief 
- * 
- */
+
 class PersonaManager {
     private:
         std::vector<Persona> personas;
@@ -21,19 +18,19 @@ class PersonaManager {
 
         void removePersona(std:: string nickname);
 
-        void addPersona(std::string name, std::string nickname);
+        void addPersona(const std::string name, const std::string nickname, Stats stats);
 
         void listPersonas();
 
+        void loadPersonas(const std::string filename);
+
         void updatePersonas();
         
-        void verifyPersona();
+        bool verifyPersona(const std::string nickname);
 
         void printTable();
        
         ~PersonaManager();
-        ~PersonaManager();
-   
 };
 
 int PersonaManager::num_personas = 0;

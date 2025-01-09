@@ -7,21 +7,18 @@
 class Persona {
     private:
         int _id;
-        std::string _name;
+        std::string _nickname;
         Stats _stats;
 
         static int num_personas;
 
     public:
 
-        Persona(std::string name): _stats(), _name(name), _id(this->num_personas++) {}
+        Persona(std::string nickname): _stats(), _nickname(nickname), _id(this->num_personas++) {}
 
         int getId() const;
-        std::string getName() const;
         std::string getNickname() const;
-        Stats getStats() const;
-
-        void setName(std::string name);
+        Stats getStats() const;   
         void setNickname(std::string nickname);
 
 };

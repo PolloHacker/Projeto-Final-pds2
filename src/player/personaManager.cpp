@@ -2,10 +2,10 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <sstream>
 
 PersonaManager::PersonaManager() {
-    
-
+    personas = std::vector<Persona>();
 }
 
 void PersonaManager::loadPersonas(const std::string filename) {
@@ -42,13 +42,12 @@ void PersonaManager::listPersonas() {
 }
 
 bool PersonaManager::verifyPersona(const std::string nickname) {
-    if(std::find(personas.begin(), personas.end(), nickname) != personas.end()){
-        return true;    
+    if (std::find_if(personas.begin(), personas.end(), [nickname](const Persona &el)
+                     { return el.getNickname() == nickname; }) != personas.end()) {
+        return true;
+    } else {
+        return false;
     }
-    else{
-        return false;   
-    }
-
 }
 
 void PersonaManager:: printTable() {

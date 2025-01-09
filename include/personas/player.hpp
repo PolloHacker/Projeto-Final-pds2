@@ -4,6 +4,8 @@
 #include "persona.hpp"
 
 class Player: public Persona  {
+    private:
+        std::string name;
 
     public:
         Player();
