@@ -1,18 +1,32 @@
-#include <persona.hpp>
+#include <iostream>
+#include "player.hpp"
 
-int Persona::getId() {
-    return this->_id;
-}
 
-std::string Persona::getName() {
-    return this->_name;
-}
-
-Stats Persona::getStats() {
-    return this->_stats;
-}
-
-void Persona::setName(std::string name) {
-    if (name.length() <= 0) return;
+Player::Player(std::string nickname, std::string name) {
+    this->_nickname = nickname;
     this->_name = name;
+}
+
+int Player::getId() const { return this->_id; }
+
+Stats Player::getStats() const { return this->_stats; }
+
+std::string Player::getNickname() const { return this->_nickname; }
+
+std::string Player::getName() const { return this->_name; }
+
+void Player::setNickname(std::string nickname) {
+    this->_nickname = nickname;
+}
+
+void Player::setName(std::string name) {
+    this->_name = name;
+}
+
+std::ostream& operator<<(std::ostream& os, const Player& player) {
+    os << "Player ID: " << player.getId() << "\n"
+        << "Nickname: " << player.getNickname() << "\n"
+        << "Name: " << player.getName() << "\n"
+        << "Stats: " << player.getStats();
+    return os;
 }
