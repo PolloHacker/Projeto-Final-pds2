@@ -15,7 +15,7 @@ class Player {
 
     public:
 
-        Player(std::string nickname, std::string name): _stats(), _nickname(nickname), _name(name), _id(this->num_players++) {}
+        Player(std::string nickname, std::string name);
 
         int getId() const;
         std::string getNickname() const;
@@ -27,7 +27,5 @@ class Player {
         friend std::ostream& operator<<(std::ostream& os, const Player& player);
 
 };
-
-int Player::num_players = 0;
 
 #endif
