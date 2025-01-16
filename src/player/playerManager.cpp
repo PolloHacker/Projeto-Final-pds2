@@ -1,11 +1,15 @@
-#include "playerManager.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <algorithm>
+
+#include "playerManager.hpp"
+#include "string_utils.hpp"
 
 PlayerManager::PlayerManager() {
     this->players = std::vector<Player>();
+    this->num_players = 0;
 }
 
 void PlayerManager::loadPlayers(const std::string filename) {
@@ -36,7 +40,11 @@ void PlayerManager::loadPlayers(const std::string filename) {
             stats.losesLig4 = std::stoi(losesLig4);
             stats.losesReversi = std::stoi(losesReversi);
 
-            this->addPlayer(name, nickname, stats);
+            try {
+                this->addPlayer(name, nickname, stats);
+            } catch (PlayerAlreadyExistsException &e) {
+                std::cerr << "Error adding player: " << e.what() << std::endl;
+            }
         } else {
             std::cerr << "Error parsing line: " << line << std::endl;
         }
@@ -56,35 +64,51 @@ bool PlayerManager::readPlayerFromFile(std::istringstream &ss, std::string &id,
 }
 
 void PlayerManager::removePlayer(const std::string nickname) {
-    if (this->verifyPlayer(nickname)) {
+    try {
         this->players.erase(this->getPlayer(nickname));
+        this->num_players--;
+    } catch (PlayerNotInListException &e) {
+        throw InexistentPlayerException();
     }
 }
 
-void PlayerManager::addPlayer(const std::string name, const std::string nickname, Stats stats = Stats()) {
-    if (this->verifyPlayer(nickname)) {
-        std::cerr << "Error: nickname already exists" << std::endl;
-        return;
-    } else {
-        this->players.emplace_back(name, nickname, stats);
+void PlayerManager::addPlayer(const std::string name, const std::string nickname, Stats stats) {
+    if (StringUtils::IsInvalidNickname(nickname) || StringUtils::IsInvalidName(name)) {
+        throw InvalidInputException("Name/Nickname");
+    }
+    try {
+        this->getPlayer(nickname);
+        throw PlayerAlreadyExistsException();
+    } catch (PlayerNotInListException &e) {
+        this->players.emplace_back(this->num_players++, name, nickname, stats);
+    }
+}
+
+void PlayerManager::addPlayer(const std::string name, const std::string nickname) {
+    try {
+        this->addPlayer(name, nickname, Stats());
+    } catch (PlayerAlreadyExistsException &e) {
+        throw;    
     }
 }
 
 std::vector<Player>::iterator PlayerManager::getPlayer(const std::string nickname) {
-    auto found_player = std::find_if(this->players.begin(), this->players.end(), [nickname](const Player &el)
-                                      { return el.getNickname() == nickname; });
+    auto player =  std::find_if(this->players.begin(), this->players.end(), 
+        [nickname](const Player &el) {
+            return el.getNickname() == nickname; 
+        }
+    );
 
-    return found_player;
-}
-
-bool PlayerManager::verifyPlayer(const std::string nickname) {
-    return !((this->getPlayer(nickname) != this->players.end()) || nickname.find(" ") != std::string::npos);
+    if (player == this->players.end()) {
+        throw PlayerNotInListException();
+    }
+    return player;
 }
 
 void PlayerManager::printTable() {
-    std::cout << "Nickname\tName\tTotal Wins\tWins TTT\tWins Lig4\tWins Reversi\tTotal Loses\tLoses TTT\tLoses Lig4\tLoses Reversi" << std::endl;
+    std::cout << "Id\tNickname\tName\tTotal Wins\tWins TTT\tWins Lig4\tWins Reversi\tTotal Loses\tLoses TTT\tLoses Lig4\tLoses Reversi" << std::endl;
     for (auto &player : this->players) {
-        std::cout << player.getNickname() << "\t" << player.getName() << "\t" << player.getStats().TotalWins
+        std::cout << player.getId() << "\t" << player.getNickname() << "\t" << player.getName() << "\t" << player.getStats().TotalWins
                   << "\t" << player.getStats().winsTTT << "\t" << player.getStats().winsLig4 << "\t"
                   << player.getStats().winsReversi << "\t" << player.getStats().TotalLoses << "\t"
                   << player.getStats().losesTTT << "\t" << player.getStats().losesLig4 << "\t"
@@ -101,6 +125,14 @@ void PlayerManager::printPlayer(const std::string nickname) {
     }
 }
 
+int PlayerManager::getPlayerCount() {
+    return PlayerManager::num_players;
+}
+
+
+PlayerManager::~PlayerManager() {
+    this->players.clear();
+}
 
 
 

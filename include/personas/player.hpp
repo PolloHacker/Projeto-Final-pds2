@@ -11,11 +11,10 @@ class Player {
         std::string _name;
         Stats _stats;
 
-        static int num_players;
-
     public:
 
-        Player(std::string nickname, std::string name);
+        Player(int id, std::string name, std::string nickname, Stats stats);
+        Player(int id, std::string name, std::string nickname);
 
         int getId() const;
         std::string getNickname() const;

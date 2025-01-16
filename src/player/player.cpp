@@ -2,10 +2,9 @@
 #include "player.hpp"
 
 
-Player::Player(std::string nickname, std::string name): _stats(), _nickname(nickname), _name(name), _id(this->num_players++) {
-    this->_nickname = nickname;
-    this->_name = name;
-}
+Player::Player(int id, std::string name, std::string nickname, Stats stats): _stats(stats), _nickname(nickname), _name(name), _id(id) {}
+
+Player::Player(int id, std::string name, std::string nickname): _stats(), _nickname(nickname), _name(name), _id(id) {}
 
 int Player::getId() const { return this->_id; }
 
@@ -30,5 +29,3 @@ std::ostream& operator<<(std::ostream& os, const Player& player) {
         << "Stats: " << player.getStats();
     return os;
 }
-
-int Player::num_players = 0;

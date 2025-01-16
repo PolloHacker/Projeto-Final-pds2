@@ -2,7 +2,7 @@
 #include "stats.hpp"
 
 
-Stats::Stats(): TotalWins(0), winsTTT(0), winsLig4(0), winsReversi(0), TotalLoses(0), losesTTT(0), losesLig4(0), losesReversi(0)  {}
+Stats::Stats(): TotalWins(0), winsTTT(0), winsLig4(0), winsReversi(0), TotalLoses(0), losesTTT(0), losesLig4(0), losesReversi(0) {}
 
 std::ostream& operator<<(std::ostream& os, const Stats& stats) {
     os << "Stats:" << "\n"

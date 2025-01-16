@@ -2,15 +2,17 @@
 #define PLAYER_MANAGER_HPP
 
 #include <vector>
-#include "player.hpp"
 #include <string>
+
+#include "player.hpp"
+#include "exceptions.hpp"
 
 
 
 class PlayerManager {
     private:
         std::vector<Player> players;
-        static int num_players;
+        int num_players;
 
     public:
 
@@ -20,6 +22,8 @@ class PlayerManager {
 
         void addPlayer(const std::string name, const std::string nickname, Stats stats);
 
+        void addPlayer(const std::string name, const std::string nickname);
+
         void printPlayer(const std::string nickname);
 
         void loadPlayers(const std::string filename);
@@ -28,19 +32,14 @@ class PlayerManager {
                                 std::string &totalWins, std::string &winsTTT, std::string &winsLig4, std::string &winsReversi,
                                 std::string &totalLoses, std::string &losesTTT, std::string &losesLig4, std::string &losesReversi);
 
-        void updatePlayer();
-        
-        bool verifyPlayer(const std::string nickname);
-
         std::vector<Player>::iterator getPlayer(const std::string nickname);
 
         void printTable();
 
-       
+        int getPlayerCount();
+
         ~PlayerManager();
 };
-
-int PlayerManager::num_players = 0;
 
 #endif
 
