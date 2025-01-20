@@ -9,17 +9,15 @@ class TTT : public Game {
 
     public:
         
-        TTT(int rows, int cols);
+        TTT();
 
         void readMove();
 
         bool isGameFinished();
 
-        void validadeMove();
+        void validadeMove(int row, int col);
 
         void printBoard();
-
-        ~TTT();
 };
 
 #endif
