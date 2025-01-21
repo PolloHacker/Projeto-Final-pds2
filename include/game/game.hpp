@@ -16,7 +16,7 @@ class Game {
 
         virtual void readMove() = 0;
 
-        virtual bool isGameFinished() = 0;
+        virtual int isGameFinished() = 0;
 
         virtual void validadeMove() = 0;
 

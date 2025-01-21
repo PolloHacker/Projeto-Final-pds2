@@ -19,43 +19,73 @@ void TTT::readMove() {
     
 }
 
-bool TTT::isGameFinished() {
-    int i, j;
-
-    // Win
-    for (i = 0; i < 3; i++) {
-        // Linha
-        if (this->board.getElementAt(i, 0) != ' ' && this->board.getElementAt(i, 0) == this->board.getElementAt(i, 1) == this->board.getElementAt(i, 2)) {
-            return this->board.getElementAt(i, 0);
-        }
-        // Coluna
-        else if (this->board.getElementAt(0, i) != ' ' && this->board.getElementAt(0, i) == this->board.getElementAt(1, i) == this->board.getElementAt(2, i)) {
-            return this->board.getElementAt(i, 0);
+int TTT::checkLine(bool isRow) {
+    for (int i = 0; i < 3; i++) {
+        char firstElement = isRow ? this->board.getElementAt(i, 0) : this->board.getElementAt(0, i);
+        bool isNotEmpty = firstElement != ' ';
+        bool isLineEqual = isRow ? (firstElement == this->board.getElementAt(i, 1) && firstElement == this->board.getElementAt(i, 2))
+                                 : (firstElement == this->board.getElementAt(1, i) && firstElement == this->board.getElementAt(2, i));
+        if (isNotEmpty && isLineEqual) {
+            return firstElement;
         }
     }
+    return ' ';
+}
 
-    // Diagonais
-    if (this->board.getElementAt(0, 0) == this->board.getElementAt(1, 1) == this->board.getElementAt(2, 2)) {
+int TTT::checkRows() {
+    return checkLine(true);
+}
+
+int TTT::checkColumns() {
+    return checkLine(false);
+}
+
+int TTT::checkDiagonals() {
+    if (this->board.getElementAt(0, 0) == this->board.getElementAt(1, 1) && this->board.getElementAt(1, 1) == this->board.getElementAt(2, 2)) {
         return this->board.getElementAt(0, 0);
-    } else if (this->board.getElementAt(0, 2) == this->board.getElementAt(1, 1) == this->board.getElementAt(2, 0)) {
+    } else if (this->board.getElementAt(0, 2) == this->board.getElementAt(1, 1) && this->board.getElementAt(1, 1) == this->board.getElementAt(2, 0)) {
         return this->board.getElementAt(0, 2);
     }
+    return ' ';
+}
 
-    // Empate
+bool TTT::isDraw() {
+    int i, j;
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
             if (this->board.getElementAt(i, j) == ' ')
-                return 'A';
+                return false;
         }
     }
+    return false;
+}
+
+int TTT::isGameFinished() {
+    int i, j;
+
+    // Win
+    int rowCheck = this->checkRows();
+    if (rowCheck != ' ')
+        return rowCheck;
+
+    int colCheck = this->checkColumns();
+    if (colCheck != ' ')
+        return colCheck;
+
+    int diagCheck = this->checkDiagonals();
+    if (diagCheck != ' ')
+        return diagCheck;
+
+    if (this->isDraw()) 
+        return 'D';
+
     return 'E';
 }
 
 void TTT::validadeMove(int row, int col) {
-    // TODO implement move validation
     if (this->board.getElementAt(row, col) != ' ')
         throw InvalidInputException("Posicao ocupada");
-    if (row > 3 || col > 3 || row < 0 || col < 0)
+    if (!((0 < row < 3) && (0 < col < 3)))
         throw InvalidInputException("Fora dos limites");
 }
 

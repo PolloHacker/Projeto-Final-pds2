@@ -13,7 +13,17 @@ class TTT : public Game {
 
         void readMove();
 
-        bool isGameFinished();
+        int checkLine(bool isRow);
+
+        int checkRows();
+
+        int checkColumns();
+
+        int checkDiagonals();
+
+        bool isDraw();
+
+        int isGameFinished();
 
         void validadeMove(int row, int col);
 
