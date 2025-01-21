@@ -8,7 +8,7 @@
 class Game {
     protected:
         Board board;
-        std::map<int, int> move;
+        std::pair<int, int> move;
 
     public:
 
