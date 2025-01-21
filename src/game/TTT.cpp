@@ -12,11 +12,25 @@ void TTT::readMove() {
     std::cin >> row >> col;
     try {
         this->validadeMove(row, col);
-        this->move[row] = col;
+        this->move.first = row;
+        this->move.second = col;
     } catch (const InvalidInputException &e) {
         std::cout << e.what() << std::endl;
     }
     
+}
+
+void TTT::validadeMove(int row, int col) {
+    if (this->board.getElementAt(row, col) != ' ')
+        throw InvalidInputException("Posicao ocupada");
+    if (!((0 < row < 3) && (0 < col < 3)))
+        throw InvalidInputException("Fora dos limites");
+}
+
+void TTT::makeMove(char symbol) {
+    this->readMove();
+
+    this->board.setPosition(this->move.first, this->move.second, symbol);
 }
 
 int TTT::checkLine(bool isRow) {
@@ -49,17 +63,6 @@ int TTT::checkDiagonals() {
     return ' ';
 }
 
-bool TTT::isDraw() {
-    int i, j;
-    for (i = 0; i < 3; i++) {
-        for (j = 0; j < 3; j++) {
-            if (this->board.getElementAt(i, j) == ' ')
-                return false;
-        }
-    }
-    return false;
-}
-
 int TTT::isGameFinished() {
     int i, j;
 
@@ -76,17 +79,10 @@ int TTT::isGameFinished() {
     if (diagCheck != ' ')
         return diagCheck;
 
-    if (this->isDraw()) 
+    if (this->board.isBoardFull()) 
         return 'D';
 
     return 'E';
-}
-
-void TTT::validadeMove(int row, int col) {
-    if (this->board.getElementAt(row, col) != ' ')
-        throw InvalidInputException("Posicao ocupada");
-    if (!((0 < row < 3) && (0 < col < 3)))
-        throw InvalidInputException("Fora dos limites");
 }
 
 void TTT::printBoard() {

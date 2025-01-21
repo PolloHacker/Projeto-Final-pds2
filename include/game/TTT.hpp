@@ -13,6 +13,10 @@ class TTT : public Game {
 
         void readMove();
 
+        void validadeMove(int row, int col);
+
+        void makeMove(char symbol);
+
         int checkLine(bool isRow);
 
         int checkRows();
@@ -21,11 +25,7 @@ class TTT : public Game {
 
         int checkDiagonals();
 
-        bool isDraw();
-
         int isGameFinished();
-
-        void validadeMove(int row, int col);
 
         void printBoard();
 };
