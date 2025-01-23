@@ -9,16 +9,17 @@ class Game {
     protected:
         Board board;
         std::pair<int, int> move;
+        char current_player;
 
     public:
 
-        Game(int rows, int cols) : board(rows, cols) {}
+        Game(int rows, int cols);
 
         virtual void readMove() = 0;
 
         virtual int isGameFinished() = 0;
 
-        virtual void printBoard() = 0;
+        void printBoard();
 
         virtual ~Game() = default;
 };

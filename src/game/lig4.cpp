@@ -23,12 +23,12 @@ void Lig4::validateMove(int col) {
     
 }
 
-void Lig4::makeMove(char symbol) {
+void Lig4::makeMove() {
     this->readMove();
 
     for (int i = this->board.getRows() - 1; i >= 0; i--) {
         if (this->board.getElementAt(i, this->move.first) == ' ')
-            this->board.setPosition(i, this->move.first, symbol);
+            this->board.setPosition(i, this->move.first, this->current_player);
             break;
     }
 }
