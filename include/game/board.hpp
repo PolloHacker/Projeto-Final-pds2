@@ -22,6 +22,10 @@ class Board {
         void setCols(int c);
 
         void setRows(int r);
+
+        void setPosition(int r, int c, char symbol);
+
+        bool isBoardFull();
 };
 
 #endif

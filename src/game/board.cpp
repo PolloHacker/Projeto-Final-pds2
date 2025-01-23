@@ -34,3 +34,18 @@ void Board::setRows(int r) {
     }
     this->_rows = r;
 }
+
+void Board::setPosition(int r, int c, char symbol) {
+    this->_board[r][c] = symbol;
+}
+
+
+bool Board::isBoardFull() {
+    for (int i = 0; i < this->_cols; i++) {
+        for (int j = 0; j < this->_rows; j++) {
+            if (this->_board[i][j] == ' ')
+                return false;
+        }
+    }
+    return true;
+}
