@@ -13,7 +13,7 @@ class TTT : public Game {
 
         void readMove() override;
 
-        void validadeMove(int row, int col);
+        void validateMove(int row, int col);
 
         void makeMove(char symbol);
 

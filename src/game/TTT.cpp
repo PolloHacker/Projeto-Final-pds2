@@ -11,7 +11,7 @@ void TTT::readMove() {
     std::cout << "Digite a linha e a coluna da jogada: ";
     std::cin >> row >> col;
     try {
-        this->validadeMove(row, col);
+        this->validateMove(row, col);
         this->move.first = row;
         this->move.second = col;
     } catch (const InvalidInputException &e) {
@@ -20,7 +20,7 @@ void TTT::readMove() {
     
 }
 
-void TTT::validadeMove(int row, int col) {
+void TTT::validateMove(int row, int col) {
     if (this->board.getElementAt(row, col) != ' ')
         throw InvalidInputException("Posicao ocupada");
     if (!((0 < row < 3) && (0 < col < 3)))
