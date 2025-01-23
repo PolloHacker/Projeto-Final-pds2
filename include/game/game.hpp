@@ -2,25 +2,27 @@
 #define GAME_HPP
 
 #include <map>
-#include <board.hpp>
+#include "board.hpp"
 
 
 class Game {
-    private:
+    protected:
         Board board;
         std::map<int, int> move;
 
     public:
 
-        Game(int rows, int cols): board(rows, cols) {}
+        Game(int rows, int cols) : board(rows, cols) {}
 
-        void readMove();
+        virtual void readMove() = 0;
 
-        bool isGameFinished();
+        virtual int isGameFinished() = 0;
 
-        void validadeMove();
+        virtual void validadeMove() = 0;
 
-        void printBoard();
+        virtual void printBoard() = 0;
+
+        virtual ~Game() = default;
 };
 
 #endif

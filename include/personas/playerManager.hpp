@@ -7,8 +7,6 @@
 #include "player.hpp"
 #include "exceptions.hpp"
 
-
-
 class PlayerManager {
     private:
         std::vector<Player> players;
@@ -16,23 +14,41 @@ class PlayerManager {
 
     public:
 
+        struct PlayerData {
+            std::string id;
+            std::string name;
+            std::string nickname;
+            std::string totalWins;
+            std::string winsTTT;
+            std::string winsLig4;
+            std::string winsReversi;
+            std::string totalLoses;
+            std::string losesTTT;
+            std::string losesLig4;
+            std::string losesReversi;
+        };
+
         PlayerManager();
 
-        void removePlayer(std:: string nickname);
+        void removePlayer(const std::string &nickname);
 
-        void addPlayer(const std::string name, const std::string nickname, Stats stats);
+        void addPlayer(const std::string &name, const std::string &nickname, Stats stats);
 
-        void addPlayer(const std::string name, const std::string nickname);
+        void addPlayer(const std::string &name, const std::string &nickname);
 
-        void printPlayer(const std::string nickname);
+        void printPlayer(const std::string &nickname);
 
-        void loadPlayers(const std::string filename);
+        void loadPlayers(const std::string &filename);
 
-        bool readPlayerFromFile(std::istringstream &ss, std::string &id, std::string &name, std::string &nickname,
-                                std::string &totalWins, std::string &winsTTT, std::string &winsLig4, std::string &winsReversi,
-                                std::string &totalLoses, std::string &losesTTT, std::string &losesLig4, std::string &losesReversi);
+        bool readBasicFields(std::istringstream &ss, PlayerData &data);
 
-        std::vector<Player>::iterator getPlayer(const std::string nickname);
+        bool readStatsFields(std::istringstream &ss, PlayerData &data);
+
+        bool readField(std::istringstream &ss, std::string &field);
+
+        bool readPlayerFromFile(std::istringstream &ss, PlayerData &data);
+
+        std::vector<Player>::iterator getPlayer(const std::string &nickname);
 
         void printTable();
 
