@@ -10,15 +10,15 @@ class Lig4 : public Game {
     
         Lig4(int rows, int cols);
 
-        void readMove();
+        void readMove() override;
 
         void validateMove(int col);
 
         void makeMove(char symbol);
 
-        int isGameFinished();
+        int isGameFinished() override;
 
-        void printBoard();
+        void printBoard() override;
 };
 
 #endif

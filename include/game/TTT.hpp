@@ -11,7 +11,7 @@ class TTT : public Game {
         
         TTT();
 
-        void readMove();
+        void readMove() override;
 
         void validadeMove(int row, int col);
 
@@ -25,9 +25,9 @@ class TTT : public Game {
 
         int checkDiagonals();
 
-        int isGameFinished();
+        int isGameFinished() override;
 
-        void printBoard();
+        void printBoard() override;
 };
 
 #endif

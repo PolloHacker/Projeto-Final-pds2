@@ -18,8 +18,6 @@ class Game {
 
         virtual int isGameFinished() = 0;
 
-        virtual void validadeMove() = 0;
-
         virtual void printBoard() = 0;
 
         virtual ~Game() = default;
