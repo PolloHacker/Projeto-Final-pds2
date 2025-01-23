@@ -1,12 +1,20 @@
 #ifndef REVERSI_HPP
 #define REVERSI_HPP
 
+#include <vector>
 #include "game.hpp"
 
 class Reversi: public Game  {
 
     public:
 
+        struct Direction {
+            int dx;
+            int dy;
+
+            Direction(int x, int y);
+        };
+        
         Reversi();
 
         void readMove() override;
@@ -17,7 +25,10 @@ class Reversi: public Game  {
 
         int isGameFinished() override;
 
-        void printBoard() override;
+    private:
+        std::vector<std::pair<int, int>> toEat;
+
+        static const Direction _dirs[];
 };
 
 #endif
