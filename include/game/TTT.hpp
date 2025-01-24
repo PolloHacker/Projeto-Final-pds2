@@ -6,16 +6,8 @@
 #include "game.hpp"
 
 class TTT : public Game {
-
-    public:
-        
-        TTT();
-
-        void readMove() override;
-
+    private:
         void validateMove(int row, int col);
-
-        void makeMove(char symbol);
 
         int checkLine(bool isRow);
 
@@ -25,9 +17,25 @@ class TTT : public Game {
 
         int checkDiagonals();
 
-        int isGameFinished() override;
+    public:
+        
+        TTT();
 
-        void printBoard() override;
+        void readMove() override;
+
+        void makeMove();
+
+        int checkLine(bool isRow);
+
+        int checkRows();
+
+        int checkColumns();
+
+        int checkDiagonals();
+
+        char isGameFinished() override;
+
+        //void printBoard() override;
 };
 
 #endif

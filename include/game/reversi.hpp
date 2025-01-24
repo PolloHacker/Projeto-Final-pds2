@@ -31,7 +31,7 @@ class Reversi: public Game  {
 
         void makeMove();
 
-        int isGameFinished() override;
+        char isGameFinished() override;
 
     private:
         std::vector<std::pair<int, int>> toEat;

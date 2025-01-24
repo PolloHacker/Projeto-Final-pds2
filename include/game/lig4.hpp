@@ -5,22 +5,21 @@
 
 
 class Lig4 : public Game {
-    
+    private:
+
+        bool checkDirection(int row, int col, int rowDir, int colDir);
+
+        void readMove() override;
+
     public:
     
         Lig4(int rows, int cols);
-
-        void readMove() override;
 
         void validateMove(int col);
 
         void makeMove();
 
-        int isGameFinished() override;
-
-    private:
-
-        bool checkDirection(int row, int col, int rowDir, int colDir);
+        char isGameFinished() override;
 };
 
 #endif

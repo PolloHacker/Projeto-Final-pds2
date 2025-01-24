@@ -17,7 +17,9 @@ class Game {
 
         virtual void readMove() = 0;
 
-        virtual int isGameFinished() = 0;
+        virtual char isGameFinished() = 0;
+
+        void changePlayer();
 
         virtual void printBoard();
 

@@ -174,4 +174,5 @@ void Reversi::makeMove() {
         this->board.setPosition(victim.first, victim.second, this->current_player);
     }
     this->toEat.clear();
+    this->changePlayer();
 }

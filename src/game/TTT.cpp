@@ -39,10 +39,12 @@ void TTT::readMove() {
  *         or if the position is out of the board's bounds.
  */
 void TTT::validateMove(int row, int col) {
+    bool isRowValid = (0 <= row && row < 3);
+    bool isColValid = (0 <= col && col < 3);
+    if (!(isRowValid && isColValid))
+        throw InvalidInputException("Fora dos limites");
     if (this->board.getElementAt(row, col) != ' ')
         throw InvalidInputException("Posicao ocupada");
-    if (!((0 < row < 3) && (0 < col < 3)))
-        throw InvalidInputException("Fora dos limites");
 }
 
 /**
@@ -51,12 +53,12 @@ void TTT::validateMove(int row, int col) {
  * This function reads the player's move and sets the specified symbol
  * at the corresponding position on the game board.
  * 
- * @param symbol The symbol ('X' or 'O') to be placed on the board.
  */
-void TTT::makeMove(char symbol) {
+void TTT::makeMove() {
     this->readMove();
 
-    this->board.setPosition(this->move.first, this->move.second, symbol);
+    this->board.setPosition(this->move.first, this->move.second, this->current_player);
+    this->changePlayer();
 }
 
 /**
@@ -130,7 +132,7 @@ int TTT::checkDiagonals() {
  * 
  * - 'E' if the game is still ongoing.
  */
-int TTT::isGameFinished() {
+char TTT::isGameFinished() {
     int i, j;
 
     // Win

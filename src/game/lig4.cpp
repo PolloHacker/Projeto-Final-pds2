@@ -36,7 +36,7 @@ void Lig4::readMove() {
  * @throws InvalidInputException if the column is out of bounds or the position is occupied.
  */
 void Lig4::validateMove(int col) {
-    if (this->board.getCols() < col || col < 0)
+    if (!(0 <= col && col < this->board.getCols()))
         throw InvalidInputException("Fora dos limites");
     if (this->board.getElementAt(0, col) != ' ')
         throw InvalidInputException("Posicao ocupada");
@@ -58,6 +58,7 @@ void Lig4::makeMove() {
     for (int i = this->board.getRows() - 1; i >= 0; i--) {
         if (this->board.getElementAt(i, this->move.first) == ' ')
             this->board.setPosition(i, this->move.first, this->current_player);
+            this->changePlayer();
             break;
     }
 }
@@ -72,7 +73,7 @@ void Lig4::makeMove() {
  * 
  * @return ```int``` The element (player) that has won, ```'D'``` for draw, or ```'E'``` for ongoing game.
  */
-int Lig4::isGameFinished() {
+char Lig4::isGameFinished() {
     for (int i = 0; i < this->board.getRows(); i++) {
         for (int j = 0; j < this->board.getCols(); j++) {
             if (checkDirection(i, j, 0, 1) || checkDirection(i, j, 1, 0) || 

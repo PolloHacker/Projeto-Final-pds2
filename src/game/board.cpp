@@ -10,10 +10,7 @@
  * @param c The number of columns in the board.
  */
 Board::Board(int r, int c) : _rows(r), _cols(c) {
-    this->_board = std::make_unique<std::unique_ptr<int[]>[]>(r);
-    for (int i = 0; i < r; i++) {
-        this->_board[i] = std::make_unique<int[]>(c);
-    }
+    this->_board.resize(r, std::vector<int>(c, ' '));
 }
 
 /**
@@ -22,7 +19,7 @@ Board::Board(int r, int c) : _rows(r), _cols(c) {
  * @return ```int``` The number of columns.
  */
 int Board::getCols() { 
-    return this->_cols; 
+    return this->_board[0].size(); 
 }
 
 /**
@@ -31,7 +28,7 @@ int Board::getCols() {
  * @return ```int``` The number of rows.
  */
 int Board::getRows() { 
-    return this->_rows; 
+    return this->_board.size(); 
 }
 
 /**
@@ -41,34 +38,8 @@ int Board::getRows() {
  * @param c The column index of the element to retrieve.
  * @return ```int``` The element at the specified row and column.
  */
-int Board::getElementAt(int r, int c) { 
+char Board::getElementAt(int r, int c) { 
     return this->_board[r][c]; 
-}
-
-/**
- * @brief Sets the number of columns for the board.
- * 
- * @param c The number of columns to set. Must be greater than zero.
- */
-void Board::setCols(int c) { 
-    if (c <= 0) {
-        std::cout << "Erro: Tamanho inválido" << std::endl;
-        return;
-    }
-    this->_cols = c;
-}
-
-/**
- * @brief Sets the number of rows for the board.
- * 
- * @param r The number of rows to set. Must be greater than zero.
- */
-void Board::setRows(int r) { 
-    if (r <= 0) {
-        std::cout << "Erro: Tamanho inválido" << std::endl;
-        return;
-    }
-    this->_rows = r;
 }
 
 /**
