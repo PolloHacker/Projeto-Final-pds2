@@ -19,7 +19,7 @@ class Game {
 
         virtual int isGameFinished() = 0;
 
-        void printBoard();
+        virtual void printBoard();
 
         virtual ~Game() = default;
 };

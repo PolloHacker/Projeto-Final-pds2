@@ -17,6 +17,10 @@ class Lig4 : public Game {
         void makeMove();
 
         int isGameFinished() override;
+
+    private:
+
+        bool checkDirection(int row, int col, int rowDir, int colDir);
 };
 
 #endif
