@@ -36,31 +36,47 @@ void Reversi::readMove() {
 }
 
 void Reversi::validateMove(int row, int col) {
-    int i;
+    checkPosition(row, col);
+    checkBoundaries(row, col);
+    checkDirections(row, col);
+}
 
+void Reversi::checkPosition(int row, int col) {
     if (this->board.getElementAt(row, col) != ' ')
         throw InvalidInputException("Posicao ocupada");
-    else if (row < 0 || col < 0 || row >= this->board.getRows() || col >= this->board.getCols())
-        throw InvalidInputException("Fora dos limites");
+}
 
+void Reversi::checkBoundaries(int row, int col) {
+    if (!this->board.isWithinBounds(row, col))
+        throw InvalidInputException("Fora dos limites");
+}
+
+void Reversi::checkDirections(int row, int col) {
     char other = this->current_player == 'O' ? 'X' : 'O';
-    for (i = 0; i < 8; i++) {
-        int x = row + this->_dirs[i].dx;
-        int y = col + this->_dirs[i].dy;
-        bool hasFoundOther = false;
-        std::vector<std::pair<int, int>> toEatAux;
-        while (x >= 0 && y >= 0 && x < this->board.getRows() && y < this->board.getCols() && this->board.getElementAt(x, y) == other) {
-            hasFoundOther = true;
-            toEatAux.emplace_back(x, y);
-            x += this->_dirs[i].dx;
-            y += this->_dirs[i].dy;
-        }
-        if (hasFoundOther && x >= 0 && y >= 0 && x < this->board.getRows() && y < this->board.getCols()) {
-            if (this->board.getElementAt(x, y) != this->current_player)
-                throw InvalidInputException("Posicao invalida");
-            else if (this->board.getElementAt(x, y) == this->current_player) {
-                this->toEat.insert(this->toEat.begin(), toEatAux.begin(), toEatAux.end());
-            }
+    for (int i = 0; i < 8; i++) {
+        checkDirection(row, col, other, this->_dirs[i]);
+    }
+}
+
+void Reversi::checkDirection(int row, int col, char other, const Direction& dir) {
+    std::vector<std::pair<int, int>> toEatAux;
+
+    int x = row + dir.dx;
+    int y = col + dir.dy;
+
+    bool hasFoundOther = false;
+
+    while (this->board.isWithinBounds(x, y) && this->board.getElementAt(x, y) == other) {
+        hasFoundOther = true;
+        toEatAux.emplace_back(x, y);
+        x += dir.dx;
+        y += dir.dy;
+    }
+    if (hasFoundOther && this->board.isWithinBounds(x, y)) {
+        if (this->board.getElementAt(x, y) != this->current_player)
+            throw InvalidInputException("Posicao invalida");
+        else if (this->board.getElementAt(x, y) == this->current_player) {
+            this->toEat.insert(this->toEat.begin(), toEatAux.begin(), toEatAux.end());
         }
     }
 }

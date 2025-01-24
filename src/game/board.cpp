@@ -39,7 +39,6 @@ void Board::setPosition(int r, int c, char symbol) {
     this->_board[r][c] = symbol;
 }
 
-
 bool Board::isBoardFull() {
     for (int i = 0; i < this->_cols; i++) {
         for (int j = 0; j < this->_rows; j++) {
@@ -49,3 +48,7 @@ bool Board::isBoardFull() {
     }
     return true;
 }
+
+bool Board::isWithinBounds(int r, int c) {
+    return r >= 0 && c >= 0 && r < this->_rows && c < this->_cols;
+}   

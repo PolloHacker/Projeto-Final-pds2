@@ -26,6 +26,8 @@ class Board {
         void setPosition(int r, int c, char symbol);
 
         bool isBoardFull();
+
+        bool isWithinBounds(int r, int c);
 };
 
 #endif

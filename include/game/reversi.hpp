@@ -21,6 +21,14 @@ class Reversi: public Game  {
 
         void validateMove(int row, int col);
 
+        void checkPosition(int row, int col);
+
+        void checkBoundaries(int row, int col); 
+
+        void checkDirections(int row, int col); 
+
+        void checkDirection(int row, int col, char other, const Direction& dir);
+
         void makeMove();
 
         int isGameFinished() override;
