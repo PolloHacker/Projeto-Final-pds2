@@ -30,15 +30,17 @@ class PlayerManager {
 
         PlayerManager();
 
-        void removePlayer(const std::string &nickname);
+        void loadPlayers(const std::string &filename);
 
         void addPlayer(const std::string &name, const std::string &nickname, Stats stats);
 
         void addPlayer(const std::string &name, const std::string &nickname);
 
-        void printPlayer(const std::string &nickname);
+        void removePlayer(const std::string &nickname);
 
-        void loadPlayers(const std::string &filename);
+        void printPlayerByNickname(const std::string &nickname);
+
+        void printPlayerByName(const std::string &name);
 
         bool readBasicFields(std::istringstream &ss, PlayerData &data);
 
