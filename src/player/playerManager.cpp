@@ -126,8 +126,22 @@ void PlayerManager::printTable() {
     }
 }
 
-void PlayerManager::printPlayer(const std::string &nickname) {
+void PlayerManager::printPlayerByNickname(const std::string &nickname) {
     auto player = this->getPlayer(nickname);
+    if (player != this->players.end()) {
+        std::cout << *player;
+    } else {
+        std::cerr << "Error: player not found" << std::endl;
+    }
+}
+
+void PlayerManager::printPlayerByName(const std::string &name) {
+    auto player = std::find_if(this->players.begin(), this->players.end(), 
+        [name](const Player &el) {
+            return el.getName() == name; 
+        }
+    );
+
     if (player != this->players.end()) {
         std::cout << *player;
     } else {
