@@ -1,7 +1,16 @@
 #ifndef EXEC_UTILS_HPP
 #define EXEC_UTILS_HPP
+#define private public
 
-#include <filesystem>
+#include <exception>
+
+#ifdef _WIN32
+#include "dirent.h"
+#endif
+#ifndef _WIN32
+#include <dirent.h>
+#endif
+
 #include "playerManager.hpp"
 #include "TTT.hpp"
 #include "lig4.hpp"

@@ -1,7 +1,8 @@
-#include <iostream>
 #include "exec_utils.hpp"
 
-
+/**
+ * @brief Prints the banner with available commands for the system.
+ */
 void ExecUtils::PrintBanner() {
     std::cout << 
     "+---------------------------Trabalho---------------------------+\n" <<
@@ -15,14 +16,33 @@ void ExecUtils::PrintBanner() {
     "+--------------------------------------------------------------+" << std::endl;
 }
 
+/**
+ * @brief Lists all files in the specified directory.
+ * 
+ * @param path The path to the directory whose files are to be listed.
+ */
 void ExecUtils::listFilesInDirectory(const std::string& path) {
-    for (const auto& entry : std::filesystem::directory_iterator(path)) {
-        std::cout << entry.path().filename().string() << std::endl;
+    DIR* dir;
+    struct dirent* ent;
+    if ((dir = opendir(path.c_str())) != nullptr) {
+        while ((ent = readdir(dir)) != nullptr) {
+            if (ent->d_type == DT_REG) { // Only list regular files
+                std::cout << ent->d_name << std::endl;
+            }
+        }
+        closedir(dir);
+    } else {
+        throw ("Could not open directory");
     }
 }
 
+/**
+ * @brief Handles the loading of players from a specified file.
+ * 
+ * @param pm Reference to the PlayerManager instance where the players will be loaded.
+ */
 void ExecUtils::handleLoadPlayers(PlayerManager &pm) {
-    std::string path = "./path_to_directory"; // specify the path to the directory
+    std::string path = "./input"; // specify the path to the directory
     std::string filename;
 
     ExecUtils::listFilesInDirectory(path);
@@ -32,6 +52,11 @@ void ExecUtils::handleLoadPlayers(PlayerManager &pm) {
     pm.loadPlayers(path + "/" + filename);
 }
 
+/**
+ * @brief Handles the creation of a new player.
+ * 
+ * @param pm Reference to the PlayerManager instance where the new player will be added.
+ */
 void ExecUtils::handleCreatePlayer(PlayerManager &pm) {
     std::string nickname, name;
 
@@ -40,6 +65,11 @@ void ExecUtils::handleCreatePlayer(PlayerManager &pm) {
     pm.addPlayer(name, nickname);
 }
 
+/**
+ * @brief Handles the removal of a player from the PlayerManager.
+ * 
+ * @param pm Reference to the PlayerManager instance.
+ */
 void ExecUtils::handleRemovePlayer(PlayerManager &pm) {
     std::string nickname;
 
@@ -48,6 +78,17 @@ void ExecUtils::handleRemovePlayer(PlayerManager &pm) {
     pm.removePlayer(nickname);
 }
 
+/**
+ * @brief Handles the listing of players based on user input.
+ * 
+ * The user is prompted to enter:
+ * - 'A' for listing by nickname, followed by the player's nickname.
+ * - 'N' for listing by name, followed by the player's name.
+ * - 'C' for a complete list of players.
+ * 
+ * @param pm Reference to the PlayerManager object that manages player information.
+ * 
+ */
 void ExecUtils::handleListPlayers(PlayerManager &pm) {
     std::string type, player;
 
@@ -66,6 +107,13 @@ void ExecUtils::handleListPlayers(PlayerManager &pm) {
     }
 }
 
+/**
+ * @brief Handles the process of playing a game between two players.
+ *
+ * @param pm Reference to the PlayerManager object that manages the players.
+ *
+ * @throws InexistentPlayerException if one of the players does not exist in the PlayerManager.
+ */
 void ExecUtils::handlePlayGame(PlayerManager &pm) {
     char gameType;
     std::string player1, player2;
@@ -84,7 +132,6 @@ void ExecUtils::handlePlayGame(PlayerManager &pm) {
         std::unique_ptr<Game> game;
 
         if (gameType == 'R') {
-
             game = std::unique_ptr<Reversi>(new Reversi());
         } else if (gameType == 'L') {
 
