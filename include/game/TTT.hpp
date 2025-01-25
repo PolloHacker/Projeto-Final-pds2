@@ -23,15 +23,7 @@ class TTT : public Game {
 
         void readMove() override;
 
-        void makeMove();
-
-        int checkLine(bool isRow);
-
-        int checkRows();
-
-        int checkColumns();
-
-        int checkDiagonals();
+        void makeMove() override;
 
         char isGameFinished() override;
 

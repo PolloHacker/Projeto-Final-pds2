@@ -29,7 +29,7 @@ class Reversi: public Game  {
 
         void checkDirection(int row, int col, char other, const Direction& dir);
 
-        void makeMove();
+        void makeMove() override;
 
         char isGameFinished() override;
 

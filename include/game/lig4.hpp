@@ -17,7 +17,7 @@ class Lig4 : public Game {
 
         void validateMove(int col);
 
-        void makeMove();
+        void makeMove() override;
 
         char isGameFinished() override;
 };
