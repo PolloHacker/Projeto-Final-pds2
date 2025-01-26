@@ -7,7 +7,7 @@ void ExecUtils::PrintBanner() {
     std::cout << 
     "+---------------------------Trabalho---------------------------+\n" <<
     "+ Comandos:                                                    +\n" <<
-    "+ CA <nome_do_arquivo.csv> - Carrega execucoes anteriores      +\n" <<
+    "+ CA - Carrega execucoes anteriores                            +\n" <<
     "+ CJ <apelido> <nome> - Criar jogador                          +\n" <<
     "+ RJ <apelido> - Remover jogador                               +\n" <<
     "+ LJ (A|N|C) - Listar jogadores                                +\n" <<
@@ -17,39 +17,12 @@ void ExecUtils::PrintBanner() {
 }
 
 /**
- * @brief Lists all files in the specified directory.
- * 
- * @param path The path to the directory whose files are to be listed.
- */
-void ExecUtils::listFilesInDirectory(const std::string& path) {
-    DIR* dir;
-    struct dirent* ent;
-    if ((dir = opendir(path.c_str())) != nullptr) {
-        while ((ent = readdir(dir)) != nullptr) {
-            if (ent->d_type == DT_REG) { // Only list regular files
-                std::cout << ent->d_name << std::endl;
-            }
-        }
-        closedir(dir);
-    } else {
-        throw ("Could not open directory");
-    }
-}
-
-/**
- * @brief Handles the loading of players from a specified file.
+ * @brief Handles the loading of players from the save file.
  * 
  * @param pm Reference to the PlayerManager instance where the players will be loaded.
  */
 void ExecUtils::handleLoadPlayers(PlayerManager &pm) {
-    std::string path = "./input"; // specify the path to the directory
-    std::string filename;
-
-    ExecUtils::listFilesInDirectory(path);
-
-    std::cout << "Digite o nome do arquivo a ser carregado: ";
-    std::cin >> filename;
-    pm.loadPlayers(path + "/" + filename);
+    pm.loadPlayers("./input/save.csv");
 }
 
 /**

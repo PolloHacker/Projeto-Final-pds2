@@ -1,15 +1,7 @@
 #ifndef EXEC_UTILS_HPP
 #define EXEC_UTILS_HPP
-#define private public
 
 #include <exception>
-
-#ifdef _WIN32
-#include "dirent.h"
-#endif
-#ifndef _WIN32
-#include <dirent.h>
-#endif
 
 #include "playerManager.hpp"
 #include "TTT.hpp"
@@ -17,9 +9,6 @@
 #include "reversi.hpp"
 
 class ExecUtils {
-    private:
-    
-        static void listFilesInDirectory(const std::string& path);
     public:
 
         static void PrintBanner();

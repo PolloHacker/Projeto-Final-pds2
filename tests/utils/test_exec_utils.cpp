@@ -5,11 +5,6 @@
 #include "exec_utils.hpp"
 #include "playerManager.hpp"
 
-TEST_CASE("ExecUtils::listFilesInDirectory") {
-    
-    CHECK_THROWS_MESSAGE(ExecUtils::listFilesInDirectory("./input"), "in.csv\nteste.txt\n");
-}
-
 TEST_CASE("ExecUtils::handleLoadPlayers") {
     PlayerManager pm;
     std::istringstream iss("test_file.csv\n");

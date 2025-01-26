@@ -12,7 +12,7 @@ Reversi::Reversi(): Game(8, 8) {
     
 }
 
-Reversi::Direction::Direction(int x, int y): dx(x), dy(y) {}
+Direction::Direction(int x, int y): dx(x), dy(y) {}
 
 /**
  * @brief Array of possible directions for the Reversi game.
@@ -40,15 +40,15 @@ Reversi::Direction::Direction(int x, int y): dx(x), dy(y) {}
  * 
  * - (-1, 0): Left
  */
-static const Reversi::Direction _dirs[] = {
-    Reversi::Direction(-1, 1), 
-    Reversi::Direction(0, 1), 
-    Reversi::Direction(1, 1), 
-    Reversi::Direction(1, 0), 
-    Reversi::Direction(1, -1), 
-    Reversi::Direction(0, -1), 
-    Reversi::Direction(-1, -1), 
-    Reversi::Direction(-1, 0)
+const Direction Reversi::_dirs[] = {
+    Direction(-1, 1), 
+    Direction(0, 1), 
+    Direction(1, 1), 
+    Direction(1, 0), 
+    Direction(1, -1), 
+    Direction(0, -1), 
+    Direction(-1, -1), 
+    Direction(-1, 0)
 };
 
 /**
@@ -177,55 +177,79 @@ void Reversi::makeMove() {
     this->changePlayer();
 }
 
-char Reversi::isGameFinished(){
-   bool hasValidMove = false;
-
-   for (int i = 0; i < this->board.getRows(); i++) {
-       for (int j = 0; j < this->board.getCols(); j++) {
-           if (validMove(i, j)) {
-               hasValidMove = true;
-               break;
-           }
-        }
+/**
+ * @brief Determines the state of the game and returns the result.
+ *
+ * @return char 'E' if the game is still ongoing, 'X' if player X has more pieces,
+ * 'O' if player O has more pieces, or 'D' if the game is a draw.
+ */
+char Reversi::isGameFinished() {
+    if (hasValidMove()) {
+        return 'E';
     }
 
-    if (!hasValidMove) {
-        char other = (this->current_player == 'O') ? 'X' : 'O';
-        this->current_player = other;
-        for (int i = 0; i < this->board.getRows(); i++) {
-            for (int j = 0; j < this->board.getCols(); j++) {
-                if (validMove(i, j)) {
-                    hasValidMove = true;
-                    break;
-                }
-            }
-        }
-        this->current_player = (this->current_player == 'O') ? 'X' : 'O';
-    }
-
-    if (hasValidMove) {
-        return "E";
-    }
-
-
-    int pieces_X = 0;
-    int pieces_O = 0;
-    for (int i = 0; i < this->board.getRows(); i++) {
-        for (int j = 0; j < this->board.getCols(); j++) {
-            char piece = this->board.getElementAt(i, j);
-            if (piece == 'X') {
-                pieces_X++;
-            } else if (piece == 'O') {
-                pieces_O++;
-            }
-        }
-    }
+    int pieces_X = countPieces('X');
+    int pieces_O = countPieces('O');
 
     if (pieces_X > pieces_O) {
-        return 'X'; 
+        return 'X';
     } else if (pieces_O > pieces_X) {
-        return 'O'; 
+        return 'O';
     } else {
-        return 'D'; 
+        return 'D';
     }
-}    
+}
+
+/**
+ * @brief Checks if there is any valid move available for the current player.
+ *
+ * @return true if there is at least one valid move for either player, false otherwise.
+ */
+bool Reversi::hasValidMove() {
+    if (checkAllMoves()) {
+        return true;
+    }
+
+    this->changePlayer();
+    bool result = checkAllMoves();
+    this->changePlayer();
+
+    return result;
+}
+
+/**
+ * @brief Checks if there are any valid moves available on the Reversi board.
+ *
+ * @return true if there is at least one valid move available on the board, false otherwise.
+ */
+bool Reversi::checkAllMoves() {
+    for (int i = 0; i < this->board.getRows(); i++) {
+        for (int j = 0; j < this->board.getCols(); j++) {
+            try {
+                this->validateMove(i, j);
+                return true;
+            } catch (const InvalidInputException& e) {
+                continue;
+            }
+        }
+    }
+    return false;
+}
+
+/**
+ * @brief Counts the number of pieces of a specific type on the board.
+ * 
+ * @param pieceType The type of piece to count (e.g., 'X' or 'O').
+ * @return int The total number of pieces of the specified type on the board.
+ */
+int Reversi::countPieces(char pieceType) {
+    int count = 0;
+    for (int i = 0; i < this->board.getRows(); i++) {
+        for (int j = 0; j < this->board.getCols(); j++) {
+            if (this->board.getElementAt(i, j) == pieceType) {
+                count++;
+            }
+        }
+    }
+    return count;
+}
