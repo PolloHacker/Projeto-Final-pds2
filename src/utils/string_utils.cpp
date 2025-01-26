@@ -30,3 +30,40 @@ bool StringUtils::IsInvalidName(const std::string &name) {
     std::regex pattern("^[a-zA-Z ]+$");
     return !(std::regex_match(name, pattern));
 }
+
+/**
+ * @brief Checks if the given row and column are valid.
+ *
+ * A valid row and column are defined as strings that contain only digits.
+ *
+ * @param row The row to be validated.
+ * @param col The column to be validated.
+ * 
+ * @throws InvalidInputException if the row or column is not valid.
+ */
+std::pair<int, int> StringUtils::IsValidMoveInput(const std::string &row, const std::string &col) {
+    std::regex pattern("^[0-9]+$");
+    if (!std::regex_match(row, pattern) || !std::regex_match(col, pattern)) {
+        throw InvalidInputException("Digite apenas números");
+    }
+
+    return std::make_pair(std::stoi(row), std::stoi(col));
+}
+
+/**
+ * @brief Checks if the given column is valid.
+ *
+ * A valid column is defined as a string that contains only digits.
+ *
+ * @param col The column to be validated.
+ * 
+ * @throws InvalidInputException if the column is not valid.
+ */
+int StringUtils::IsValidMoveInput(const std::string &col) {
+    std::regex pattern("^[0-9]+$");
+    if (!std::regex_match(col, pattern)) {
+        throw InvalidInputException("Digite apenas números");
+    }
+
+    return std::stoi(col);
+}

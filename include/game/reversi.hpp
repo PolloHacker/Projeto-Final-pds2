@@ -1,8 +1,10 @@
 #ifndef REVERSI_HPP
 #define REVERSI_HPP
+#define private public
 
 #include <vector>
 #include "game.hpp"
+#include "string_utils.hpp"
 
 struct Direction {
     int dx;
@@ -18,18 +20,6 @@ class Reversi: public Game  {
 
         static const Direction _dirs[];
 
-        void checkDirection(int row, int col, char other, const Direction& dir);
-
-        bool hasValidMove();
-
-        bool checkAllMoves();
-
-        int countPieces(char player);
-
-    public:
-        
-        Reversi();
-
         void readMove() override;
 
         void validateMove(int row, int col);
@@ -41,6 +31,16 @@ class Reversi: public Game  {
         void checkDirections(int row, int col); 
 
         void checkDirection(int row, int col, char other, const Direction& dir);
+
+        bool hasValidMove();
+
+        bool checkAllMoves();
+
+        int countPieces(char player);
+
+    public:
+        
+        Reversi();
 
         void makeMove() override;
 

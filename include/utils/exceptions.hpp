@@ -28,5 +28,4 @@ class InvalidInputException : public std::invalid_argument {
         InvalidInputException(const std::string &msg);
 };
 
-
 #endif

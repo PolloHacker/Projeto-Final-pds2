@@ -57,15 +57,20 @@ const Direction Reversi::_dirs[] = {
  * @throws InvalidInputException if the move is invalid.
  */
 void Reversi::readMove() {
-    int row, col;
+    std::string a1, a2;
+    std::pair<int,int> move;
+
     std::cout << "Digite a linha e a coluna da jogada: ";
-    std::cin >> row >> col;
+    std::cin >> a1 >> a2;
     try {
-        this->validateMove(row, col);
-        this->move.first = row;
-        this->move.second = col;
+        move = StringUtils::IsValidMoveInput(a1, a2);
+        this->validateMove(move.first, move.second);
+
+        this->move.first = move.first;
+        this->move.second = move.second;
     } catch (const InvalidInputException &e) {
         std::cout << e.what() << std::endl;
+        this->readMove();
     }
 }
 
@@ -79,8 +84,8 @@ void Reversi::readMove() {
  * @param col The column index of the move.
  */
 void Reversi::validateMove(int row, int col) {
-    checkPosition(row, col);
     checkBoundaries(row, col);
+    checkPosition(row, col);
     checkDirections(row, col);
 }
 
