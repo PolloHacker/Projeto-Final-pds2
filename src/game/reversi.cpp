@@ -118,7 +118,7 @@ void Reversi::checkBoundaries(int row, int col) {
  * @param col The column index of the starting position on the board.
  */
 void Reversi::checkDirections(int row, int col) {
-    char other = this->current_player == 'O' ? 'X' : 'O';
+    char other = (this->current_player == 'O') ? 'X' : 'O';
     for (int i = 0; i < 8; i++) {
         checkDirection(row, col, other, this->_dirs[i]);
     }
@@ -176,3 +176,56 @@ void Reversi::makeMove() {
     this->toEat.clear();
     this->changePlayer();
 }
+
+char Reversi::isGameFinished(){
+   bool hasValidMove = false;
+
+   for (int i = 0; i < this->board.getRows(); i++) {
+       for (int j = 0; j < this->board.getCols(); j++) {
+           if (validMove(i, j)) {
+               hasValidMove = true;
+               break;
+           }
+        }
+    }
+
+    if (!hasValidMove) {
+        char other = (this->current_player == 'O') ? 'X' : 'O';
+        this->current_player = other;
+        for (int i = 0; i < this->board.getRows(); i++) {
+            for (int j = 0; j < this->board.getCols(); j++) {
+                if (validMove(i, j)) {
+                    hasValidMove = true;
+                    break;
+                }
+            }
+        }
+        this->current_player = (this->current_player == 'O') ? 'X' : 'O';
+    }
+
+    if (hasValidMove) {
+        return "E";
+    }
+
+
+    int pieces_X = 0;
+    int pieces_O = 0;
+    for (int i = 0; i < this->board.getRows(); i++) {
+        for (int j = 0; j < this->board.getCols(); j++) {
+            char piece = this->board.getElementAt(i, j);
+            if (piece == 'X') {
+                pieces_X++;
+            } else if (piece == 'O') {
+                pieces_O++;
+            }
+        }
+    }
+
+    if (pieces_X > pieces_O) {
+        return 'X'; 
+    } else if (pieces_O > pieces_X) {
+        return 'O'; 
+    } else {
+        return 'D'; 
+    }
+}    
