@@ -1,0 +1,9 @@
+<map id="PlayerManager::exportPlayerData" name="PlayerManager::exportPlayerData">
+<area shape="rect" id="Node000001" title="Exports player data to a CSV file." alt="" coords="264,56,481,83"/>
+<area shape="rect" id="Node000002" href="$da/dda/class_exec_utils.html#a078ac1299658dcd3f7fb49ba9f6b1db2" title="Handles the creation of a new player." alt="" coords="10,5,211,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,55,183,35,184,30,285,50"/>
+<area shape="rect" id="Node000003" href="$da/dda/class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="18,56,203,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,72,203,72,203,67,248,67"/>
+<area shape="rect" id="Node000004" href="$da/dda/class_exec_utils.html#a9978db0c6aadc32374a5ddcfe22d64b4" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,107,216,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="285,89,184,109,183,103,284,84"/>
+</map>

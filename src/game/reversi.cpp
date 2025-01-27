@@ -217,6 +217,20 @@ void Reversi::makeMove() {
 }
 
 
+/**
+ * @brief Checks if the game of Reversi is finished.
+ * 
+ * This function determines if the game has ended by checking for valid moves
+ * for the current player. If no valid moves are found, it switches to the 
+ * other player and checks again. If neither player has valid moves, the game 
+ * is considered finished. The function then counts the pieces for each player 
+ * on the board and returns the result.
+ * 
+ * @return 'E' if the game is not finished and there are valid moves.
+ *         'X' if player 'X' has more pieces and wins.
+ *         'O' if player 'O' has more pieces and wins.
+ *         'D' if the game is a draw (both players have the same number of pieces).
+ */
 char Reversi::isGameFinished(){
    bool hasValidMove = false;
 

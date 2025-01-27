@@ -1,0 +1,9 @@
+<map id="ExecUtils::handleRemovePlayer" name="ExecUtils::handleRemovePlayer">
+<area shape="rect" id="Node000001" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,31,216,57"/>
+<area shape="rect" id="Node000002" href="$d1/d42/class_player_manager.html#a8157229d7633b629d6a6afcccd6ec254" title="Exports player data to a CSV file." alt="" coords="264,5,481,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,31,248,28,248,33,216,36"/>
+<area shape="rect" id="Node000003" href="$d1/d42/class_player_manager.html#a81f3b699521a4ddec4cdf7b76fd8c97c" title="Removes a player from the player list by their nickname." alt="" coords="274,56,470,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="216,52,259,56,258,61,216,57"/>
+<area shape="rect" id="Node000004" href="$d1/d42/class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="529,56,700,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="471,67,514,67,514,72,471,72"/>
+</map>
