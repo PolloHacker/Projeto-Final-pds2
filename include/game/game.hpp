@@ -1,10 +1,9 @@
 #ifndef GAME_HPP
 #define GAME_HPP
-#define protected public
-
 
 #include <map>
 #include "board.hpp"
+#include "terminal_utils.hpp"
 
 
 class Game {

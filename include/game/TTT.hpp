@@ -5,6 +5,7 @@
 
 #include "game.hpp"
 #include "string_utils.hpp"
+#include "exceptions.hpp"
 
 class TTT : public Game {
     private:

@@ -1,6 +1,5 @@
 #ifndef BOARD_HPP
 #define BOARD_HPP
-#define private public
 
 #include <iostream>
 #include <vector>

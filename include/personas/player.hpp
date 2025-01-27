@@ -3,13 +3,16 @@
 
 #include <string>
 #include "stats.hpp"
+#include "exceptions.hpp"
 
 class Player {
     private:
         int _id;
-        std::string _nickname;
         std::string _name;
+        std::string _nickname;
         Stats _stats;
+
+        void updateGameStats(char game, bool isWin);
 
     public:
 
@@ -17,11 +20,18 @@ class Player {
         Player(int id, std::string name, std::string nickname);
 
         int getId() const;
+
         std::string getNickname() const;
+
         std::string getName() const;
-        Stats getStats() const;   
+
         void setNickname(std::string nickname);
+
         void setName(std::string name);
+
+        Stats getStats() const;
+
+        void updateStats(char result, char game);
 
         friend std::ostream& operator<<(std::ostream& os, const Player& player);
 

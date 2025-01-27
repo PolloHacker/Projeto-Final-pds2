@@ -18,6 +18,7 @@ void Game::changePlayer() {
  * @brief Prints the current state of the game board to the standard output.
  */
 void Game::printBoard() {
+    //flushTerminalInGame();
     std::cout << "  ";
     for (int j = 0; j < this->board.getCols(); j++) {
         std::cout << j << " ";
@@ -34,4 +35,6 @@ void Game::printBoard() {
         }
         std::cout << std::endl;
     }
+
+    std::cout << "+---------------------------+" << std::endl;
 }

@@ -12,12 +12,12 @@ TEST_CASE("Lig4 readMove and validateMove") {
     }
 
     SUBCASE("Invalid move - out of bounds") {
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(8), InvalidInputException, "Fora dos limites");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(8), InvalidInputException, "[X] - Fora dos limites");
     }
 
     SUBCASE("Invalid move - position occupied") {
         game.board.setPosition(0, 0, 'X');
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(0), InvalidInputException, "Posicao ocupada");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(0), InvalidInputException, "[X] - Posicao ocupada");
     }
 }
 

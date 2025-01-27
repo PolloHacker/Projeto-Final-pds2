@@ -1,4 +1,3 @@
-#include "exceptions.hpp"
 #include "TTT.hpp"
 
 /**
@@ -15,6 +14,7 @@ void TTT::readMove() {
     std::string a1, a2;
     std::pair<int,int> move;
 
+    std::cout << "Vez do jogador " << this->current_player << std::endl;
     std::cout << "Digite a linha e a coluna da jogada: ";
     std::cin >> a1 >> a2;
     try {
@@ -47,9 +47,9 @@ void TTT::validateMove(int row, int col) {
     bool isRowValid = (0 <= row && row < 3);
     bool isColValid = (0 <= col && col < 3);
     if (!(isRowValid && isColValid))
-        throw InvalidInputException("Fora dos limites");
+        throw InvalidInputException("[X] - Fora dos limites");
     if (this->board.getElementAt(row, col) != ' ')
-        throw InvalidInputException("Posicao ocupada");
+        throw InvalidInputException("[X] - Posicao ocupada");
 }
 
 /**
@@ -138,8 +138,6 @@ int TTT::checkDiagonals() {
  * - 'E' if the game is still ongoing.
  */
 char TTT::isGameFinished() {
-    int i, j;
-
     // Win
     int rowCheck = this->checkRows();
     if (rowCheck != ' ')

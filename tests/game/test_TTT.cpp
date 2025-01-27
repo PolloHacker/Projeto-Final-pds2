@@ -12,15 +12,15 @@ TEST_CASE("TTT::validateMove") {
     }
 
     SUBCASE("Move out of bounds") {
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(-1, 0), InvalidInputException, "Fora dos limites");
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(0, -1), InvalidInputException, "Fora dos limites");
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(3, 0), InvalidInputException, "Fora dos limites");
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(0, 3), InvalidInputException, "Fora dos limites");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(-1, 0), InvalidInputException, "[X] - Fora dos limites");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(0, -1), InvalidInputException, "[X] - Fora dos limites");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(3, 0), InvalidInputException, "[X] - Fora dos limites");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(0, 3), InvalidInputException, "[X] - Fora dos limites");
     }
 
     SUBCASE("Move to occupied position") {
         game.board.setPosition(0, 0, 'X');
-        CHECK_THROWS_AS_MESSAGE(game.validateMove(0, 0), InvalidInputException, "Posicao ocupada");
+        CHECK_THROWS_AS_MESSAGE(game.validateMove(0, 0), InvalidInputException, "[X] - Posicao ocupada");
     }
 }
 

@@ -1,5 +1,4 @@
 #include "reversi.hpp"
-#include "exceptions.hpp"
 
 /**
  * @brief Constructs a Reversi game with an 8x8 board and initializes the starting positions.
@@ -24,19 +23,19 @@ Direction::Direction(int x, int y): dx(x), dy(y) {}
  * 
  * Directions included:
  * 
- * - (-1, 1): Up-Left
+ * - (-1, 1): Down-Left
  * 
- * - (0, 1): Up
+ * - (0, 1): Down
  * 
- * - (1, 1): Up-Right
+ * - (1, 1): Down-Right
  * 
  * - (1, 0): Right
  * 
- * - (1, -1): Down-Right
+ * - (1, -1): Up-Right
  * 
- * - (0, -1): Down
+ * - (0, -1): Up
  * 
- * - (-1, -1): Down-Left
+ * - (-1, -1): Up-Left
  * 
  * - (-1, 0): Left
  */
@@ -52,44 +51,6 @@ const Direction Reversi::_dirs[] = {
 };
 
 /**
- * @brief Reads a move from the user and validates it.
- *
- * @throws InvalidInputException if the move is invalid.
- */
-void Reversi::readMove() {
-    std::string a1, a2;
-    std::pair<int,int> move;
-
-    std::cout << "Digite a linha e a coluna da jogada: ";
-    std::cin >> a1 >> a2;
-    try {
-        move = StringUtils::IsValidMoveInput(a1, a2);
-        this->validateMove(move.first, move.second);
-
-        this->move.first = move.first;
-        this->move.second = move.second;
-    } catch (const InvalidInputException &e) {
-        std::cout << e.what() << std::endl;
-        this->readMove();
-    }
-}
-
-/**
- * @brief Validates a move in the Reversi game.
- *
- * This function checks if a move is valid by verifying the position,
- * boundaries, and possible directions for flipping opponent's pieces.
- *
- * @param row The row index of the move.
- * @param col The column index of the move.
- */
-void Reversi::validateMove(int row, int col) {
-    checkBoundaries(row, col);
-    checkPosition(row, col);
-    checkDirections(row, col);
-}
-
-/**
  * @brief Checks if the specified position on the board is occupied.
  *
  * @param row The row index of the position to check.
@@ -98,7 +59,7 @@ void Reversi::validateMove(int row, int col) {
  */
 void Reversi::checkPosition(int row, int col) {
     if (this->board.getElementAt(row, col) != ' ')
-        throw InvalidInputException("Posicao ocupada");
+        throw InvalidInputException("[X] - Posicao ocupada");
 }
 
 /**
@@ -110,23 +71,7 @@ void Reversi::checkPosition(int row, int col) {
  */
 void Reversi::checkBoundaries(int row, int col) {
     if (!this->board.isWithinBounds(row, col))
-        throw InvalidInputException("Fora dos limites");
-}
-
-/**
- * @brief Checks all possible directions from a given position on the board.
- *
- * This function iterates through all 8 possible directions (up, down, left, right, and the four diagonals)
- * from the specified row and column on the board.
- *
- * @param row The row index of the starting position on the board.
- * @param col The column index of the starting position on the board.
- */
-void Reversi::checkDirections(int row, int col) {
-    char other = (this->current_player == 'O') ? 'X' : 'O';
-    for (int i = 0; i < 8; i++) {
-        checkDirection(row, col, other, this->_dirs[i]);
-    }
+        throw InvalidInputException("[X] - Fora dos limites");
 }
 
 /**
@@ -140,11 +85,9 @@ void Reversi::checkDirections(int row, int col) {
  * @param col The starting column position on the board.
  * @param other The character representing the opponent's pieces.
  * @param dir The direction to check, represented by a `Direction` object containing `dx` and `dy`.
- * @throws InvalidInputException if the direction leads to an invalid position or if the sequence is not bounded by the current player's piece.
+ * @returns true if the direction is valid and contains opponent's pieces to be captured, false otherwise.
  */
-void Reversi::checkDirection(int row, int col, char other, const Direction& dir) {
-    std::vector<std::pair<int, int>> toEatAux;
-
+bool Reversi::checkDirection(const int row, const int col, char other, const Direction& dir) {
     int x = row + dir.dx;
     int y = col + dir.dy;
 
@@ -152,109 +95,181 @@ void Reversi::checkDirection(int row, int col, char other, const Direction& dir)
 
     while (this->board.isWithinBounds(x, y) && this->board.getElementAt(x, y) == other) {
         hasFoundOther = true;
-        toEatAux.emplace_back(x, y);
         x += dir.dx;
         y += dir.dy;
     }
     if (hasFoundOther && this->board.isWithinBounds(x, y)) {
-        if (this->board.getElementAt(x, y) != this->current_player)
-            throw InvalidInputException("Posicao invalida");
-        else if (this->board.getElementAt(x, y) == this->current_player) {
-            this->toEat.insert(this->toEat.begin(), toEatAux.begin(), toEatAux.end());
-        }
-    }
-}
-
-/**
- * @brief Executes a move in the Reversi game.
- * 
- * This function reads the current move, updates the board by setting the positions
- * of the pieces to be captured (flipped) to the current player's piece, and then
- * clears the list of positions to be captured.
- */
-void Reversi::makeMove() {
-    this->readMove();
-
-    for (const auto& victim: this->toEat) {
-        this->board.setPosition(victim.first, victim.second, this->current_player);
-    }
-    this->toEat.clear();
-    this->changePlayer();
-}
-
-/**
- * @brief Determines the state of the game and returns the result.
- *
- * @return char 'E' if the game is still ongoing, 'X' if player X has more pieces,
- * 'O' if player O has more pieces, or 'D' if the game is a draw.
- */
-char Reversi::isGameFinished() {
-    if (hasValidMove()) {
-        return 'E';
-    }
-
-    int pieces_X = countPieces('X');
-    int pieces_O = countPieces('O');
-
-    if (pieces_X > pieces_O) {
-        return 'X';
-    } else if (pieces_O > pieces_X) {
-        return 'O';
-    } else {
-        return 'D';
-    }
-}
-
-/**
- * @brief Checks if there is any valid move available for the current player.
- *
- * @return true if there is at least one valid move for either player, false otherwise.
- */
-bool Reversi::hasValidMove() {
-    if (checkAllMoves()) {
-        return true;
-    }
-
-    this->changePlayer();
-    bool result = checkAllMoves();
-    this->changePlayer();
-
-    return result;
-}
-
-/**
- * @brief Checks if there are any valid moves available on the Reversi board.
- *
- * @return true if there is at least one valid move available on the board, false otherwise.
- */
-bool Reversi::checkAllMoves() {
-    for (int i = 0; i < this->board.getRows(); i++) {
-        for (int j = 0; j < this->board.getCols(); j++) {
-            try {
-                this->validateMove(i, j);
-                return true;
-            } catch (const InvalidInputException& e) {
-                continue;
-            }
+        if (this->board.getElementAt(x, y) == this->current_player) {
+            return true;
         }
     }
     return false;
 }
 
+// void Reversi::addPositionsToEat(const int row, const int col, const Direction& dir) {
+//     char other = (this->current_player == 'O') ? 'X' : 'O';
+//     int x = row + dir.dx;
+//     int y = col + dir.dy;
+
+//     while (this->board.isWithinBounds(x, y) && this->board.getElementAt(x, y) == other) {
+//         //std::cout << "Adicionando posicao para comer: " << row << " " << col << std::endl;
+//         this->toEat.emplace_back(x, y);
+//         x += dir.dx;
+//         y += dir.dy;
+//     }
+// }
+
 /**
- * @brief Counts the number of pieces of a specific type on the board.
- * 
- * @param pieceType The type of piece to count (e.g., 'X' or 'O').
- * @return int The total number of pieces of the specified type on the board.
+ * @brief Checks all possible directions from a given position on the board.
+ *
+ * This function iterates through all 8 possible directions (up, down, left, right, and the four diagonals)
+ * from the specified row and column on the board.
+ *
+ * @param row The row index of the starting position on the board.
+ * @param col The column index of the starting position on the board.
  */
-int Reversi::countPieces(char pieceType) {
-    int count = 0;
-    for (int i = 0; i < this->board.getRows(); i++) {
-        for (int j = 0; j < this->board.getCols(); j++) {
-            if (this->board.getElementAt(i, j) == pieceType) {
-                count++;
+void Reversi::checkDirections(const int row, const int col) {
+    char other = (this->current_player == 'O') ? 'X' : 'O';
+    bool isValid = false;
+
+    for (int i = 0; i < 8; i++) {
+        if (this->checkDirection(row, col, other, this->_dirs[i])) {
+            isValid = true;
+        }
+    }
+    if (!isValid) {
+        throw InvalidInputException("[X] - Jogada invalida");
+    }
+}
+
+/**
+ * @brief Validates a move in the Reversi game.
+ *
+ * This function checks if a move is valid by verifying the position,
+ * boundaries, and possible directions for flipping opponent's pieces.
+ *
+ * @param row The row index of the move.
+ * @param col The column index of the move.
+ */
+void Reversi::validateMove(const int row, const int col) {
+    checkBoundaries(row, col);
+    checkPosition(row, col);
+    checkDirections(row, col);
+}
+
+/**
+ * @brief Reads a move from the user and validates it.
+ *
+ * @throws InvalidInputException if the move is invalid.
+ */
+void Reversi::readMove() {
+    std::string a1, a2;
+    std::pair<int,int> move;
+
+    std::cout << "Vez do jogador " << this->current_player << std::endl;
+    std::cout << "Digite a linha e a coluna da jogada: ";
+    std::cin >> a1 >> a2;
+    try {
+        move = StringUtils::IsValidMoveInput(a1, a2);
+        this->validateMove(move.first, move.second);
+        this->move.first = move.first;
+        this->move.second = move.second;
+    } catch (const InvalidInputException &e) {
+        std::cout << e.what() << std::endl;
+        this->readMove();
+    }
+}
+
+
+/**
+ * @brief Executes a move in the Reversi game.
+ * 
+ * This function performs the following steps:
+ * 1. Determines the opponent's piece based on the current player.
+ * 2. Reads the move from the player.
+ * 3. Sets the player's piece on the board at the specified move position.
+ * 4. Checks all 8 possible directions from the move position to find and flip the opponent's pieces.
+ * 5. Flips the opponent's pieces to the current player's pieces if they are bounded by the current player's pieces.
+ * 6. Changes the current player to the opponent.
+ */
+void Reversi::makeMove() {
+    char other = (this->current_player == 'O') ? 'X' : 'O';
+
+    this->readMove();
+    this->board.setPosition(this->move.first, this->move.second, this->current_player);
+
+    for (int i = 0; i < 8; ++i) {
+        int x = this->move.first + this->_dirs[i].dx;
+        int y = this->move.second + this->_dirs[i].dy;
+        std::vector<std::pair<int, int>> toEat;
+        while (x >= 0 && x < this->board.getCols() && y >= 0 && y < this->board.getRows() && this->board.getElementAt(x, y) == other) {
+            toEat.emplace_back(x, y);
+            x += this->_dirs[i].dx;
+            y += this->_dirs[i].dy;
+        }
+        if (x >= 0 && x < this->board.getCols() && y >= 0 && y < this->board.getRows() && this->board.getElementAt(x, y) == this->current_player) {
+            for (const auto& p : toEat) {
+                this->board.setPosition(p.first, p.second, this->current_player);
             }
         }
     }
-    return count;
+    this->changePlayer();
+}
+
+
+char Reversi::isGameFinished(){
+   bool hasValidMove = false;
+
+   for (int i = 0; i < this->board.getRows(); i++) {
+       for (int j = 0; j < this->board.getCols(); j++) {
+            try {
+                this->validateMove(i, j);
+                hasValidMove = true;           
+            } catch (const InvalidInputException &e) {
+                continue;
+            }
+        }
+    }
+
+    if (!hasValidMove) {
+        char other = (this->current_player == 'O') ? 'X' : 'O';
+        this->current_player = other;
+        for (int i = 0; i < this->board.getRows(); i++) {
+            for (int j = 0; j < this->board.getCols(); j++) {
+                try {
+                    this->validateMove(i, j);
+                    hasValidMove = true;           
+                } catch (const InvalidInputException &e) {
+                    continue;
+                }
+            }
+        }
+        this->current_player = (this->current_player == 'O') ? 'X' : 'O';
+    }
+
+    if (hasValidMove) {
+        return 'E';
+    }
+
+
+    int pieces_X = 0;
+    int pieces_O = 0;
+    for (int i = 0; i < this->board.getRows(); i++) {
+        for (int j = 0; j < this->board.getCols(); j++) {
+            char piece = this->board.getElementAt(i, j);
+            if (piece == 'X') {
+                pieces_X++;
+            } else if (piece == 'O') {
+                pieces_O++;
+            }
+        }
+    }
+
+    if (pieces_X > pieces_O) {
+        return 'X'; 
+    } else if (pieces_O > pieces_X) {
+        return 'O'; 
+    } else {
+        return 'D'; 
+    }
 }

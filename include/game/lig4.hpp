@@ -3,6 +3,7 @@
 
 #include "game.hpp"
 #include "string_utils.hpp"
+#include "exceptions.hpp"
 
 class Lig4 : public Game {
     private:

@@ -44,7 +44,7 @@ bool StringUtils::IsInvalidName(const std::string &name) {
 std::pair<int, int> StringUtils::IsValidMoveInput(const std::string &row, const std::string &col) {
     std::regex pattern("^[0-9]+$");
     if (!std::regex_match(row, pattern) || !std::regex_match(col, pattern)) {
-        throw InvalidInputException("Digite apenas números");
+        throw InvalidInputException("[X] - Digite apenas números");
     }
 
     return std::make_pair(std::stoi(row), std::stoi(col));
@@ -62,7 +62,7 @@ std::pair<int, int> StringUtils::IsValidMoveInput(const std::string &row, const 
 int StringUtils::IsValidMoveInput(const std::string &col) {
     std::regex pattern("^[0-9]+$");
     if (!std::regex_match(col, pattern)) {
-        throw InvalidInputException("Digite apenas números");
+        throw InvalidInputException("[X] - Digite apenas números");
     }
 
     return std::stoi(col);

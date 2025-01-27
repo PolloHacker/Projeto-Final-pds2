@@ -1,10 +1,11 @@
 #ifndef REVERSI_HPP
 #define REVERSI_HPP
-#define private public
 
 #include <vector>
+
 #include "game.hpp"
 #include "string_utils.hpp"
+#include "exceptions.hpp"
 
 struct Direction {
     int dx;
@@ -16,27 +17,23 @@ struct Direction {
 class Reversi: public Game  {
     private:
         
-        std::vector<std::pair<int, int>> toEat;
+        // std::vector<std::pair<int, int>> toEat;
 
         static const Direction _dirs[];
 
         void readMove() override;
 
-        void validateMove(int row, int col);
+        void validateMove(const int row, const int col);
 
-        void checkPosition(int row, int col);
+        void checkPosition(const int row, const int col);
 
-        void checkBoundaries(int row, int col); 
+        void checkBoundaries(const int row, const int col); 
 
-        void checkDirections(int row, int col); 
+        void checkDirections(const int row, const int col); 
 
-        void checkDirection(int row, int col, char other, const Direction& dir);
+        bool checkDirection(const int row, const int col, char other, const Direction& dir);
 
-        bool hasValidMove();
-
-        bool checkAllMoves();
-
-        int countPieces(char player);
+        void addPositionsToEat(int row, int col, const Direction& dir);
 
     public:
         

@@ -1,4 +1,3 @@
-#include "exceptions.hpp"
 #include "lig4.hpp"
 
 /**
@@ -18,6 +17,7 @@ void Lig4::readMove() {
     std::string in;
     int col;
 
+    std::cout << "Vez do jogador " << this->current_player << std::endl;
     std::cout << "Digite a coluna da jogada: ";
     std::cin >> in;
     try {
@@ -42,9 +42,9 @@ void Lig4::readMove() {
  */
 void Lig4::validateMove(int col) {
     if (!(0 <= col && col < this->board.getCols()))
-        throw InvalidInputException("Fora dos limites");
+        throw InvalidInputException("[X] - Fora dos limites");
     if (this->board.getElementAt(0, col) != ' ')
-        throw InvalidInputException("Posicao ocupada");
+        throw InvalidInputException("[X] - Posicao ocupada");
     
 }
 
@@ -61,10 +61,11 @@ void Lig4::makeMove() {
     this->readMove();
 
     for (int i = this->board.getRows() - 1; i >= 0; i--) {
-        if (this->board.getElementAt(i, this->move.first) == ' ')
+        if (this->board.getElementAt(i, this->move.first) == ' ') {
             this->board.setPosition(i, this->move.first, this->current_player);
             this->changePlayer();
             break;
+        }
     }
 }
 
@@ -126,6 +127,7 @@ bool Lig4::checkDirection(int row, int col, int rowDir, int colDir) {
  * @brief Prints the current state of the game board to the standard output.
  */
 void Lig4::printBoard() {
+    flushTerminalInGame();
     for (int j = 0; j < this->board.getCols(); j++) {
         std::cout << j << " ";
     }
@@ -140,4 +142,7 @@ void Lig4::printBoard() {
         }
         std::cout << std::endl;
     }
+
+    std::cout << "+---------------------------+" << std::endl;
+    
 }
