@@ -15,14 +15,19 @@ Lig4::Lig4(int rows, int cols): Game(rows, cols) {}
  * @throws InvalidInputException if the input column is invalid.
  */
 void Lig4::readMove() {
+    std::string in;
     int col;
+
     std::cout << "Digite a coluna da jogada: ";
-    std::cin >> col;
+    std::cin >> in;
     try {
+        col = StringUtils::IsValidMoveInput(in);
+        std::cout << col << std::endl;
         this->validateMove(col);
         this->move.first = col;
     } catch (const InvalidInputException &e) {
         std::cout << e.what() << std::endl;
+        this->readMove();
     }
 }
 
@@ -114,4 +119,25 @@ bool Lig4::checkDirection(int row, int col, int rowDir, int colDir) {
         }
     }
     return true;
+}
+
+
+/**
+ * @brief Prints the current state of the game board to the standard output.
+ */
+void Lig4::printBoard() {
+    for (int j = 0; j < this->board.getCols(); j++) {
+        std::cout << j << " ";
+    }
+    std::cout << std::endl;
+
+    for (int i = 0; i < this->board.getRows(); i++) {
+        for (int j = 0; j < this->board.getCols(); j++) {
+            if (this->board.getElementAt(i, j) == ' ')
+                std::cout << ". ";
+            else
+                std::cout << this->board.getElementAt(i, j) << " ";
+        }
+        std::cout << std::endl;
+    }
 }

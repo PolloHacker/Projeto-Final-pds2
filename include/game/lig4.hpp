@@ -2,7 +2,7 @@
 #define LIG4_HPP
 
 #include "game.hpp"
-
+#include "string_utils.hpp"
 
 class Lig4 : public Game {
     private:
@@ -20,6 +20,8 @@ class Lig4 : public Game {
         void makeMove() override;
 
         char isGameFinished() override;
+
+        void printBoard() override;
 };
 
 #endif

@@ -18,9 +18,19 @@ void Game::changePlayer() {
  * @brief Prints the current state of the game board to the standard output.
  */
 void Game::printBoard() {
+    std::cout << "  ";
+    for (int j = 0; j < this->board.getCols(); j++) {
+        std::cout << j << " ";
+    }
+    std::cout << std::endl;
+
     for (int i = 0; i < this->board.getRows(); i++) {
+        std::cout << i << " ";
         for (int j = 0; j < this->board.getCols(); j++) {
-            std::cout << this->board.getElementAt(i, j) << " ";
+            if (this->board.getElementAt(i, j) == ' ')
+                std::cout << ". ";
+            else
+                std::cout << this->board.getElementAt(i, j) << " ";
         }
         std::cout << std::endl;
     }

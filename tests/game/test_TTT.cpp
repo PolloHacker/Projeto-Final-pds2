@@ -12,7 +12,6 @@ TEST_CASE("TTT::validateMove") {
     }
 
     SUBCASE("Move out of bounds") {
-        game.printBoard();
         CHECK_THROWS_AS_MESSAGE(game.validateMove(-1, 0), InvalidInputException, "Fora dos limites");
         CHECK_THROWS_AS_MESSAGE(game.validateMove(0, -1), InvalidInputException, "Fora dos limites");
         CHECK_THROWS_AS_MESSAGE(game.validateMove(3, 0), InvalidInputException, "Fora dos limites");
@@ -110,4 +109,11 @@ TEST_CASE("TTT::isGameFinished") {
         game.board.setPosition(2, 2, 'O');
         CHECK(game.isGameFinished() == 'D');
     }
+}
+
+TEST_CASE("TTT::printBoard") {
+    TTT game;
+
+    std::cout << std::endl;
+    game.printBoard();
 }

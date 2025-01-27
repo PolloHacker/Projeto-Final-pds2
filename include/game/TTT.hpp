@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "game.hpp"
+#include "string_utils.hpp"
 
 class TTT : public Game {
     private:

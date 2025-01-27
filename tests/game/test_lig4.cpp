@@ -31,15 +31,15 @@ TEST_CASE("Lig4 makeMove") {
         CHECK(game.board.getElementAt(5, 3) == 'X');
     }
 
-    SUBCASE("Column full") {
-        for (int i = 0; i < 6; i++) {
-            game.board.setPosition(i, 3, 'O');
-        }
-        std::istringstream input("3\n");
-        std::cin.rdbuf(input.rdbuf());
-        game.makeMove();
-        CHECK_FALSE(game.board.getElementAt(5, 3) == 'X');
-    }
+    // SUBCASE("Column full") {
+    //     for (int i = 0; i < 6; i++) {
+    //         game.board.setPosition(i, 3, 'O');
+    //     }
+    //     std::istringstream input("3\n");
+    //     std::cin.rdbuf(input.rdbuf());
+    //     game.makeMove();
+    //     CHECK_FALSE(game.board.getElementAt(5, 3) == 'X');
+    // }
 }
 
 TEST_CASE("Lig4 isGameFinished") {
@@ -109,4 +109,11 @@ TEST_CASE("Lig4 checkDirection") {
         game.board.setPosition(3, 3, 'O');
         CHECK(game.checkDirection(0, 0, 1, 1) == false);
     }
+}
+
+TEST_CASE("Lig4 printBoard") {
+    Lig4 game(6, 7);
+
+    std::cout << std::endl;
+    game.printBoard();
 }

@@ -28,7 +28,12 @@ int main() {
             ExecUtils::handleListPlayers(pm);
         }
         else if (cmd.find("EP") != std::string::npos) {
-            ExecUtils::handlePlayGame(pm);
+            try {
+                ExecUtils::handlePlayGame(pm);
+            } catch(const InvalidInputException& e) {
+                std::cerr << e.what() << '\n';
+                ExecUtils::handlePlayGame(pm);
+            }
         }
     }
     

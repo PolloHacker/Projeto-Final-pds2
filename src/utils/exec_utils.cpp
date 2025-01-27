@@ -110,11 +110,9 @@ void ExecUtils::handlePlayGame(PlayerManager &pm) {
 
             game = std::unique_ptr<Lig4>(new Lig4(6, 7));
         } else if (gameType == 'V') {
-
             game = std::unique_ptr<TTT>(new TTT());
         } else {
-            std::cout << "Tipo de jogo inválido." << std::endl;
-            return;
+            throw InvalidInputException("Tipo de jogo inválido.");
         }
 
         while (game->isGameFinished() == 'E') {
