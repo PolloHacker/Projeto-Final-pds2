@@ -1,16 +1,14 @@
 #ifndef EXEC_UTILS_HPP
 #define EXEC_UTILS_HPP
 
-#include <filesystem>
+#include <exception>
+
 #include "playerManager.hpp"
 #include "TTT.hpp"
 #include "lig4.hpp"
 #include "reversi.hpp"
 
 class ExecUtils {
-    private:
-    
-        static void listFilesInDirectory(const std::string& path);
     public:
 
         static void PrintBanner();

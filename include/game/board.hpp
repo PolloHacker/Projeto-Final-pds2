@@ -2,13 +2,14 @@
 #define BOARD_HPP
 
 #include <iostream>
+#include <vector>
 #include <memory>
 
 class Board {
     private:
         int _rows;
         int _cols;
-        std::unique_ptr<std::unique_ptr<int[]>[]> _board;
+        std::vector<std::vector<int>> _board;
 
     public:
 
@@ -17,15 +18,13 @@ class Board {
         int getCols();
         int getRows();
 
-        int getElementAt(int r, int c);
-
-        void setCols(int c);
-
-        void setRows(int r);
+        char getElementAt(int r, int c);
 
         void setPosition(int r, int c, char symbol);
 
         bool isBoardFull();
+
+        bool isWithinBounds(int r, int c);
 };
 
 #endif

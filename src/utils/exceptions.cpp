@@ -6,7 +6,7 @@
  *
  * @extends std::invalid_argument
  */
-InexistentPlayerException::InexistentPlayerException() : std::invalid_argument("Player doesn't exist") {}
+InexistentPlayerException::InexistentPlayerException() : std::invalid_argument("[X] - O jogador não existe") {}
 
 /**
  * @class PlayerNotInListException
@@ -14,7 +14,7 @@ InexistentPlayerException::InexistentPlayerException() : std::invalid_argument("
  *
  * @extends std::invalid_argument
  */
-PlayerNotInListException::PlayerNotInListException() : std::invalid_argument("Player not in list") {}
+PlayerNotInListException::PlayerNotInListException() : std::invalid_argument("[X] - O jogador não está na lista") {}
 
 /**
  * @class PlayerAlreadyExistsException
@@ -22,7 +22,7 @@ PlayerNotInListException::PlayerNotInListException() : std::invalid_argument("Pl
  * 
  * @extends std::invalid_argument
  */
-PlayerAlreadyExistsException::PlayerAlreadyExistsException() : std::invalid_argument("Player already exists") {}
+PlayerAlreadyExistsException::PlayerAlreadyExistsException() : std::invalid_argument("[X] - O jogador já está na lista") {}
 
 
 /**

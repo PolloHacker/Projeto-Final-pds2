@@ -19,6 +19,8 @@ class Stats {
 
         friend std::ostream& operator<<(std::ostream& os, const Stats& stats);
 
+        
+
         bool operator==(const Stats& other) const;
 
 };

@@ -4,18 +4,12 @@
 #include <iostream>
 
 #include "game.hpp"
+#include "string_utils.hpp"
+#include "exceptions.hpp"
 
 class TTT : public Game {
-
-    public:
-        
-        TTT();
-
-        void readMove();
-
-        void validadeMove(int row, int col);
-
-        void makeMove(char symbol);
+    private:
+        void validateMove(int row, int col);
 
         int checkLine(bool isRow);
 
@@ -25,9 +19,17 @@ class TTT : public Game {
 
         int checkDiagonals();
 
-        int isGameFinished();
+    public:
+        
+        TTT();
 
-        void printBoard();
+        void readMove() override;
+
+        void makeMove() override;
+
+        char isGameFinished() override;
+
+        //void printBoard() override;
 };
 
 #endif

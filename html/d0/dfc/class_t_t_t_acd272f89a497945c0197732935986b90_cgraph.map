@@ -1,0 +1,10 @@
+<map id="TTT::makeMove" name="TTT::makeMove">
+<area shape="rect" id="Node000001" title="Makes a move in the Tic&#45;Tac&#45;Toe game." alt="" coords="5,55,122,81"/>
+<area shape="rect" id="Node000002" href="$d0/dfc/class_t_t_t.html#a08e72358dd3832a6398f62c9af92eec6" title="Reads a move from the user and validates it." alt="" coords="179,29,288,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,57,164,50,164,56,122,62"/>
+<area shape="rect" id="Node000004" href="$d3/dfd/class_board.html#a565204fa504373e3d02b86d2539551fe" title="Sets the symbol at the specified position on the board." alt="" coords="170,80,298,107"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="122,74,154,79,154,84,122,79"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="204,30,199,21,203,11,215,5,234,3,254,5,265,12,263,16,253,10,234,8,216,10,207,15,205,20,209,28"/>
+<area shape="rect" id="Node000003" href="$d3/d93/class_string_utils.html#a2ed385038160e2f2717c48ecb17c4620" title="Checks if the given row and column are valid." alt="" coords="346,21,507,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="289,40,330,40,330,45,289,45"/>
+</map>

@@ -2,23 +2,27 @@
 #define LIG4_HPP
 
 #include "game.hpp"
-
+#include "string_utils.hpp"
+#include "exceptions.hpp"
 
 class Lig4 : public Game {
-    
+    private:
+
+        bool checkDirection(int row, int col, int rowDir, int colDir);
+
+        void readMove() override;
+
     public:
     
         Lig4(int rows, int cols);
 
-        void readMove();
-
         void validateMove(int col);
 
-        void makeMove(char symbol);
+        void makeMove() override;
 
-        int isGameFinished();
+        char isGameFinished() override;
 
-        void printBoard();
+        void printBoard() override;
 };
 
 #endif

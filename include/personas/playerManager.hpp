@@ -1,9 +1,17 @@
 #ifndef PLAYER_MANAGER_HPP
 #define PLAYER_MANAGER_HPP
 
+#include <iomanip>
 #include <vector>
 #include <string>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <algorithm>
 
+#include "terminal_utils.hpp"
+#include "string_utils.hpp"
 #include "player.hpp"
 #include "exceptions.hpp"
 
@@ -11,8 +19,6 @@ class PlayerManager {
     private:
         std::vector<Player> players;
         int num_players;
-
-    public:
 
         struct PlayerData {
             std::string id;
@@ -28,6 +34,20 @@ class PlayerManager {
             std::string losesReversi;
         };
 
+        bool readBasicFields(std::istringstream &ss, PlayerData &data);
+
+        bool readStatsFields(std::istringstream &ss, PlayerData &data);
+
+        bool readField(std::istringstream &ss, std::string &field);
+
+        bool readPlayerFromFile(std::istringstream &ss, PlayerData &data);
+
+        size_t getMaxNameLength();
+
+        size_t getMaxNicknameLength();
+
+    public:
+
         PlayerManager();
 
         void loadPlayers(const std::string &filename);
@@ -42,15 +62,11 @@ class PlayerManager {
 
         void printPlayerByName(const std::string &name);
 
-        bool readBasicFields(std::istringstream &ss, PlayerData &data);
-
-        bool readStatsFields(std::istringstream &ss, PlayerData &data);
-
-        bool readField(std::istringstream &ss, std::string &field);
-
-        bool readPlayerFromFile(std::istringstream &ss, PlayerData &data);
-
         std::vector<Player>::iterator getPlayer(const std::string &nickname);
+
+        void updatePlayerStats(const std::string &nickname, char result);
+
+        void exportPlayerData();
 
         void printTable();
 

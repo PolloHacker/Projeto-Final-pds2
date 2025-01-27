@@ -1,0 +1,9 @@
+<map id="Lig4::makeMove" name="Lig4::makeMove">
+<area shape="rect" id="Node000001" title="Executes a move in the Lig4 game." alt="" coords="5,56,123,83"/>
+<area shape="rect" id="Node000002" href="$d3/dfd/class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="171,5,313,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,53,177,34,179,39,114,58"/>
+<area shape="rect" id="Node000003" href="$d3/dfd/class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="184,56,300,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,67,169,67,169,72,123,72"/>
+<area shape="rect" id="Node000004" href="$d3/dfd/class_board.html#a565204fa504373e3d02b86d2539551fe" title="Sets the symbol at the specified position on the board." alt="" coords="178,107,306,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="114,81,179,99,177,105,113,86"/>
+</map>
