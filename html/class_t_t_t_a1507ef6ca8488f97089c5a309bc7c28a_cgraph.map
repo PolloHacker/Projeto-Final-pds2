@@ -1,0 +1,5 @@
+<map id="isGameFinished" name="isGameFinished">
+<area shape="rect" id="Node000001" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="Node000002" href="$class_board.html#a98badcf7748478b3d0a54a6f7b7a4719" title="Checks if the board is completely filled." alt="" coords="169,5,297,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,16,153,16,153,21,121,21"/>
+</map>

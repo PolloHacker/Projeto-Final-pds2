@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['isboardfull_0',['isBoardFull',['../d3/dfd/class_board.html#ac9ff300b31942027e0e51a1a816175d8',1,'Board']]],
-  ['isgamefinished_1',['isGameFinished',['../d1/dd4/class_lig4.html#ae45f315ee3db07f09a3da73d1ae49535',1,'Lig4::isGameFinished()'],['../d9/d2f/class_reversi.html#a2082b7ebdf08255a8d4cd36bef0e8048',1,'Reversi::isGameFinished()'],['../d0/dfc/class_t_t_t.html#ab733456aee9bf05f948285a70c959b95',1,'TTT::isGameFinished()']]],
-  ['isinvalidname_2',['IsInvalidName',['../d3/d93/class_string_utils.html#ac8c0283cdcab2949ac97aa6817ba7632',1,'StringUtils']]],
-  ['isinvalidnickname_3',['IsInvalidNickname',['../d3/d93/class_string_utils.html#ad5f94e28e667ae2ae6901e44a4b58274',1,'StringUtils']]],
-  ['isvalidmoveinput_4',['IsValidMoveInput',['../d3/d93/class_string_utils.html#a2ed385038160e2f2717c48ecb17c4620',1,'StringUtils::IsValidMoveInput(const std::string &amp;row, const std::string &amp;col)'],['../d3/d93/class_string_utils.html#a29f8136c7845a1d2c7d1819a489e1796',1,'StringUtils::IsValidMoveInput(const std::string &amp;col)']]],
-  ['iswithinbounds_5',['isWithinBounds',['../d3/dfd/class_board.html#a5bb4c65840612ba28d18ead4c8d3f978',1,'Board']]]
+  ['handlecreateplayer_0',['handleCreatePlayer',['../class_exec_utils.html#a078ac1299658dcd3f7fb49ba9f6b1db2',1,'ExecUtils']]],
+  ['handlelistplayers_1',['handleListPlayers',['../class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7',1,'ExecUtils']]],
+  ['handleloadplayers_2',['handleLoadPlayers',['../class_exec_utils.html#a92315d45480234b64134a6fa55d694e7',1,'ExecUtils']]],
+  ['handleplaygame_3',['handlePlayGame',['../class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf',1,'ExecUtils']]],
+  ['handleremoveplayer_4',['handleRemovePlayer',['../class_exec_utils.html#a9978db0c6aadc32374a5ddcfe22d64b4',1,'ExecUtils']]]
 ];

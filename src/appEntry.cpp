@@ -1,7 +1,28 @@
+#include <algorithm>
+
 #include "exec_utils.hpp"
 #include "terminal_utils.hpp"
 #include "playerManager.hpp"
 
+/**
+ * @file appEntry.cpp
+ * @brief Entry point for the application.
+ *
+ * This file contains the main function which serves as the entry point for the application.
+ * It handles user commands to manage players and play the game.
+ *
+ * The following commands are supported:
+ * - "FS": Finalize the system and exit the application.
+ * - "CA": Load players from a save file.
+ * - "CJ": Create a new player.
+ * - "RJ": Remove an existing player.
+ * - "LJ": List all players.
+ * - "EP": Play the game.
+ *
+ * The commands are case-insensitive.
+ *
+ * @return int Returns 0 upon successful execution.
+ */
 int main() {
 
     std::string cmd;
@@ -14,6 +35,8 @@ int main() {
         ExecUtils::PrintBanner();
         std::cout << "Digite seu comando: ";
         std::cin >> cmd;
+        std::transform(cmd.begin(), cmd.end(), cmd.begin(),
+               [](unsigned char c){ return std::toupper(c); });
 
         if(cmd == "FS") {
             break;

@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['makemove_0',['makeMove',['../d1/dd4/class_lig4.html#ab39144d15b163916b899b383f352d15c',1,'Lig4::makeMove()'],['../d9/d2f/class_reversi.html#a6329650b30aedbe692d6ed2934a508fa',1,'Reversi::makeMove()'],['../d0/dfc/class_t_t_t.html#acd272f89a497945c0197732935986b90',1,'TTT::makeMove()']]]
+  ['handlecreateplayer_0',['handleCreatePlayer',['../class_exec_utils.html#a078ac1299658dcd3f7fb49ba9f6b1db2',1,'ExecUtils']]],
+  ['handlelistplayers_1',['handleListPlayers',['../class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7',1,'ExecUtils']]],
+  ['handleloadplayers_2',['handleLoadPlayers',['../class_exec_utils.html#a92315d45480234b64134a6fa55d694e7',1,'ExecUtils']]],
+  ['handleplaygame_3',['handlePlayGame',['../class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf',1,'ExecUtils']]],
+  ['handleremoveplayer_4',['handleRemovePlayer',['../class_exec_utils.html#a9978db0c6aadc32374a5ddcfe22d64b4',1,'ExecUtils']]]
 ];

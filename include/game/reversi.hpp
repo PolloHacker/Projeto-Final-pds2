@@ -33,8 +33,6 @@ class Reversi: public Game  {
 
         bool checkDirection(const int row, const int col, char other, const Direction& dir);
 
-        void addPositionsToEat(int row, int col, const Direction& dir);
-
     public:
         
         Reversi();

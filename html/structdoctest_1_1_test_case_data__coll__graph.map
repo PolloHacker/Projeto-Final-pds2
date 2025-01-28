@@ -1,0 +1,7 @@
+<map id="TestCaseData" name="TestCaseData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,187,111,213"/>
+<area shape="rect" id="Node000002" href="$classdoctest_1_1_string.html" title=" " alt="" coords="30,96,86,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,138,61,186,55,186,55,138"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="34,5,82,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="61,48,61,95,55,95,55,48"/>
+</map>

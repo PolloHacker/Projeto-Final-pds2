@@ -1,9 +1,17 @@
 var searchData=
 [
-  ['game_0',['Game',['../dd/d1f/class_game.html',1,'Game'],['../dd/d1f/class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c',1,'Game::Game()']]],
-  ['getcols_1',['getCols',['../d3/dfd/class_board.html#abe6f2cdf451b87b990c352229dfca6b8',1,'Board']]],
-  ['getelementat_2',['getElementAt',['../d3/dfd/class_board.html#a59804a2cda464da8aeac8878e297b1be',1,'Board']]],
-  ['getplayer_3',['getPlayer',['../d1/d42/class_player_manager.html#a752160da6404b57d37bd52f3beaf6439',1,'PlayerManager']]],
-  ['getplayercount_4',['getPlayerCount',['../d1/d42/class_player_manager.html#ad6bac96d1d613629c95528310679adc8',1,'PlayerManager']]],
-  ['getrows_5',['getRows',['../d3/dfd/class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1',1,'Board']]]
+  ['de_20jogadores_0',['Cadastro de Jogadores',['../index.html#autotoc_md17',1,'']]],
+  ['de_20partidas_1',['Execução de Partidas',['../index.html#autotoc_md22',1,'']]],
+  ['de_20tabuleiro_2',['Jogos de Tabuleiro',['../index.html',1,'']]],
+  ['desafios_3',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
+  ['descrição_20do_20projeto_4',['Descrição do projeto',['../index.html#autotoc_md1',1,'']]],
+  ['desenvolvimento_20deste_20projeto_20a_20equipe_20enfrentou_20alguns_20desafios_5',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
+  ['deste_20projeto_20a_20equipe_20enfrentou_20alguns_20desafios_6',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
+  ['direction_7',['Direction',['../struct_direction.html',1,'']]],
+  ['do_20projeto_8',['Descrição do projeto',['../index.html#autotoc_md1',1,'']]],
+  ['do_20projeto_9',['Estrutura do Projeto',['../index.html#autotoc_md5',1,'']]],
+  ['documentação_20online_10',['Documentação (online)',['../index.html#autotoc_md26',1,'']]],
+  ['dos_20contribuintes_11',['Github dos contribuintes',['../index.html#autotoc_md29',1,'']]],
+  ['durante_20o_20desenvolvimento_20deste_20projeto_20a_20equipe_20enfrentou_20alguns_20desafios_12',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
+  ['durante_20os_20jogos_13',['Inputs durante os Jogos',['../index.html#autotoc_md25',1,'']]]
 ];

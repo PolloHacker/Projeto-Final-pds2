@@ -1,0 +1,14 @@
+<map id="ResultBuilder" name="ResultBuilder">
+<area shape="rect" id="Node000001" title=" " alt="" coords="113,359,212,385"/>
+<area shape="rect" id="Node000002" href="$structdoctest_1_1_assert_data.html" title=" " alt="" coords="119,283,206,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,324,165,358,160,358,160,324"/>
+<area shape="rect" id="Node000003" href="$structdoctest_1_1_test_case_data.html" title=" " alt="" coords="110,189,215,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="165,232,165,282,160,282,160,232"/>
+<area shape="rect" id="Node000004" href="$classdoctest_1_1_string.html" title=" " alt="" coords="5,96,61,123"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="25,138,17,177,18,198,25,217,44,240,67,258,119,281,117,286,65,262,40,244,21,220,13,199,12,177,20,137"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="65,130,146,187,143,191,62,134"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="9,5,57,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="36,48,36,95,30,95,30,48"/>
+<area shape="rect" id="Node000006" href="$classdoctest_1_1_assert_data_1_1_string_contains.html" title=" " alt="" coords="239,189,347,216"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="278,230,248,261,203,284,201,280,245,257,274,227"/>
+</map>

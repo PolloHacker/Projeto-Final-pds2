@@ -1,0 +1,9 @@
+<map id="Player::updateGameStats" name="Player::updateGameStats">
+<area shape="rect" id="Node000001" title="Updates the game statistics for the player based on the game type and result." alt="" coords="663,13,835,40"/>
+<area shape="rect" id="Node000002" href="$class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="479,13,615,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="648,29,616,29,616,24,648,24"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#a3e23945bfc6ebf37ef894780cb067e12" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,431,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="463,29,431,29,431,24,463,24"/>
+<area shape="rect" id="Node000004" href="$class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="5,13,191,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="223,29,191,29,191,24,223,24"/>
+</map>

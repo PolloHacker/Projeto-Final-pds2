@@ -1,0 +1,10 @@
+<map id="makeMove" name="makeMove">
+<area shape="rect" id="Node000001" title="Makes a move in the Tic&#45;Tac&#45;Toe game." alt="" coords="5,55,91,81"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#af6c6110757baae16656089acad0dd48b" title="Reads a move from the user and validates it." alt="" coords="164,29,242,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,58,148,49,149,54,92,64"/>
+<area shape="rect" id="Node000004" href="$class_board.html#ad5daba47fc5ba8d907dd742e524b798d" title="Sets the symbol at the specified position on the board." alt="" coords="139,80,267,107"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="92,72,124,78,123,83,91,78"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="176,30,171,21,174,11,185,5,203,3,222,5,232,12,229,16,220,10,203,8,187,10,179,15,177,20,181,28"/>
+<area shape="rect" id="Node000003" href="$class_string_utils.html#ae1a37d886919df7273dba405917505d1" title="Checks if the given row and column are valid." alt="" coords="315,21,476,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,40,299,40,299,45,243,45"/>
+</map>

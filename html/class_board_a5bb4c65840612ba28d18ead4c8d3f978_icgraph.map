@@ -1,0 +1,19 @@
+<map id="Board::isWithinBounds" name="Board::isWithinBounds">
+<area shape="rect" id="Node000001" title="Checks if the given row and column indices are within the bounds of the board." alt="" coords="1039,43,1193,69"/>
+<area shape="rect" id="Node000002" href="$class_reversi.html#a8ebe311d77ab81e33025277a9b226d63" title="Checks if the given row and column are within the boundaries of the board." alt="" coords="607,17,782,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1023,53,782,39,782,33,1023,48"/>
+<area shape="rect" id="Node000007" href="$class_reversi.html#af41573cd1953cb163d15fd9cde781142" title="Checks a specific direction from a given position on the board to find and mark opponent&#39;s pieces to ..." alt="" coords="830,68,991,95"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="1024,70,992,74,991,69,1023,65"/>
+<area shape="rect" id="Node000003" href="$class_reversi.html#acab5710783dab3e6dfd4bbf43a73af62" title="Validates a move in the Reversi game." alt="" coords="408,43,559,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="592,46,560,50,559,44,591,40"/>
+<area shape="rect" id="Node000004" href="$class_reversi.html#a2082b7ebdf08255a8d4cd36bef0e8048" title="Checks if the game of Reversi is finished." alt="" coords="192,5,360,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="392,42,353,35,354,30,393,37"/>
+<area shape="rect" id="Node000005" href="$class_reversi.html#a9b0494fc924572cd119af41c74d9cfc2" title="Reads a move from the user and validates it." alt="" coords="210,80,342,107"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="393,75,342,84,341,79,392,70"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="310,67,298,61,276,59,255,61,243,65,241,71,246,78,242,81,235,71,240,62,253,55,276,53,300,56,313,62"/>
+<area shape="rect" id="Node000006" href="$class_reversi.html#a6329650b30aedbe692d6ed2934a508fa" title="Executes a move in the Reversi game." alt="" coords="5,80,144,107"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="195,96,144,96,144,91,195,91"/>
+<area shape="rect" id="Node000008" href="$class_reversi.html#ab8a82f9bee727c9c0736b7b82b6ee2d5" title="Checks all possible directions from a given position on the board." alt="" coords="610,68,779,95"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="814,84,779,84,779,79,814,79"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="595,72,559,68,560,62,595,67"/>
+</map>

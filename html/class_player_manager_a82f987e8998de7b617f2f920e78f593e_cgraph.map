@@ -1,0 +1,5 @@
+<map id="printPlayerByNickname" name="printPlayerByNickname">
+<area shape="rect" id="Node000001" title="Prints the player information based on the provided nickname." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="212,5,288,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+</map>

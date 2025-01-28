@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['direction_0',['Direction',['../d0/d6d/struct_direction.html',1,'']]]
+  ['board_0',['Board',['../class_board.html',1,'Board'],['../class_board.html#a916fa899643f749082120461768fd7df',1,'Board::Board()'],['../index.html#autotoc_md7',1,'Board']]]
 ];

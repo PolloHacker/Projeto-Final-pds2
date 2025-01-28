@@ -1,0 +1,12 @@
+<map id="handlePlayGame" name="handlePlayGame">
+<area shape="rect" id="Node000001" title="Handles the process of playing a game between two players." alt="" coords="5,56,126,83"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ac6d31ba4d162d45cc39d3de910d48364" title="Exports player data to a CSV file." alt="" coords="174,5,391,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,53,207,34,208,39,127,58"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="439,60,610,87"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,67,424,70,424,75,126,73"/>
+<area shape="rect" id="Node000004" href="$class_player_manager.html#ab8c7da6a790aef14dd66385633993bb6" title="Updates the statistics of a player based on the game result." alt="" coords="186,107,378,149"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,81,187,99,186,105,117,86"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="378,104,447,88,448,93,380,109"/>
+<area shape="rect" id="Node000005" href="$class_player.html#a4bb620544520bba5d3b8b2275b32665c" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="456,115,593,141"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="379,125,441,125,441,131,379,131"/>
+</map>

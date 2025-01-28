@@ -1,0 +1,9 @@
+<map id="Lig4::printBoard" name="Lig4::printBoard">
+<area shape="rect" id="Node000001" title="Prints the current state of the game board to the standard output." alt="" coords="5,56,118,83"/>
+<area shape="rect" id="Node000002" href="$class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="183,5,291,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,53,173,34,174,39,111,58"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="166,56,308,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,67,150,67,150,72,118,72"/>
+<area shape="rect" id="Node000004" href="$class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="179,107,294,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,81,174,99,173,104,110,86"/>
+</map>

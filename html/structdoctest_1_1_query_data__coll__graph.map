@@ -1,0 +1,11 @@
+<map id="QueryData" name="QueryData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="58,277,142,304"/>
+<area shape="rect" id="Node000002" href="$structdoctest_1_1_test_run_stats.html" title=" " alt="" coords="5,187,107,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="68,226,79,252,93,276,89,278,74,255,63,229"/>
+<area shape="rect" id="Node000003" href="$structdoctest_1_1_test_case_data.html" title=" " alt="" coords="131,187,237,213"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,227,137,255,114,279,110,275,133,251,160,223"/>
+<area shape="rect" id="Node000004" href="$classdoctest_1_1_string.html" title=" " alt="" coords="156,96,212,123"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="187,138,187,186,181,186,181,138"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="160,5,208,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="187,48,187,95,181,95,181,48"/>
+</map>

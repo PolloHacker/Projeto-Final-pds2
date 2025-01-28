@@ -1,0 +1,16 @@
+<map id="IsInvalidNickname" name="IsInvalidNickname">
+<area shape="rect" id="Node000001" title="Checks if the given nickname is invalid." alt="" coords="735,107,865,133"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="506,56,680,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="727,105,650,86,651,81,728,100"/>
+<area shape="rect" id="Node000004" href="$class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c" title="Handles the creation of a new player." alt="" coords="250,107,450,133"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="720,123,450,123,450,117,720,117"/>
+<area shape="rect" id="Node000007" href="$class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b" title="Handles the listing of players based on user input." alt="" coords="498,157,687,184"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="728,140,651,159,650,154,727,135"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#a2a8639c359060629d6236b506ed9de43" title="Adds a player to the PlayerManager." alt="" coords="263,5,437,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="510,55,417,35,418,30,511,50"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="511,89,418,109,417,103,510,84"/>
+<area shape="rect" id="Node000005" href="$class_player_manager.html#a2e167a9e014b9cc7a5819c9516ecfa1b" title="Loads player data from a file and adds players to the manager." alt="" coords="258,56,442,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="490,72,442,72,442,67,490,67"/>
+<area shape="rect" id="Node000006" href="$class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,56,202,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="242,72,202,72,202,67,242,67"/>
+</map>

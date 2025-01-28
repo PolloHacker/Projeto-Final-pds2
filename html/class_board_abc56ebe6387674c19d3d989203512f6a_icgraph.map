@@ -1,0 +1,15 @@
+<map id="getCols" name="getCols">
+<area shape="rect" id="Node000001" title="Get the number of columns in the board." alt="" coords="222,132,288,159"/>
+<area shape="rect" id="Node000002" href="$class_lig4.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game is finished." alt="" coords="16,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,120,210,82,192,63,172,46,150,35,153,30,175,42,196,59,214,78,241,117"/>
+<area shape="rect" id="Node000003" href="$class_reversi.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game of Reversi is finished." alt="" coords="5,56,174,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,126,173,97,143,86,145,81,175,92,224,121"/>
+<area shape="rect" id="Node000004" href="$class_reversi.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Reversi game." alt="" coords="20,107,159,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,141,159,133,160,128,207,135"/>
+<area shape="rect" id="Node000005" href="$class_game.html#a8310d6d1e915cb179f834d9ca017950a" title="Prints the current state of the game board to the standard output." alt="" coords="28,157,151,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,155,152,164,151,159,206,150"/>
+<area shape="rect" id="Node000006" href="$class_lig4.html#ab7e255e36221bdba1ccb0afc0af7f6cc" title="Prints the current state of the game board to the standard output." alt="" coords="33,208,146,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="224,170,175,198,145,210,143,205,173,194,222,165"/>
+<area shape="rect" id="Node000007" href="$class_lig4.html#ab324a284e0eaf173fb7a04243268953c" title="Validates a move in the Lig4 game." alt="" coords="24,259,155,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="241,173,214,212,196,232,175,249,153,261,150,256,172,244,192,228,210,209,237,170"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="addPlayer" name="addPlayer">
+<area shape="rect" id="Node000001" title="Adds a new player to the player manager." alt="" coords="5,56,85,83"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="194,5,270,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,55,132,41,178,29,179,34,133,47,86,60"/>
+<area shape="rect" id="Node000003" href="$class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="145,56,319,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="85,67,129,67,129,72,85,72"/>
+<area shape="rect" id="Node000004" href="$class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="133,107,331,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="86,78,133,92,162,100,160,105,132,97,84,84"/>
+</map>

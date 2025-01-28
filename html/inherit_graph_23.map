@@ -1,0 +1,9 @@
+<map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
+<area shape="rect" id="Node000000" href="$class_game.html" title=" " alt="" coords="5,56,62,83"/>
+<area shape="rect" id="Node000001" href="$class_lig4.html" title=" " alt="" coords="120,5,166,32"/>
+<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="75,47,119,27,121,31,77,52"/>
+<area shape="rect" id="Node000002" href="$class_reversi.html" title=" " alt="" coords="110,56,176,83"/>
+<area shape="poly" id="edge8_Node000000_Node000002" title=" " alt="" coords="78,67,109,67,109,72,78,72"/>
+<area shape="rect" id="Node000003" href="$class_t_t_t.html" title=" " alt="" coords="120,107,166,133"/>
+<area shape="poly" id="edge9_Node000000_Node000003" title=" " alt="" coords="77,87,121,107,119,112,75,91"/>
+</map>

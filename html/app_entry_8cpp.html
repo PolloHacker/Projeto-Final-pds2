@@ -1,0 +1,239 @@
+<!-- HTML header for doxygen 1.10.0-->
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+  <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=11" />
+  <meta name="generator" content="Doxygen 1.10.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trabalho Prático - PDS2: Referência do Arquivo src/appEntry.cpp</title>
+  <link rel="icon" href="icon.png" type="image/x-icon" />
+  <link href="tabs.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="dynsections.js"></script>
+  <script type="text/javascript" src="clipboard.js"></script>
+  <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+  <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+  <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeDarkModeToggle.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeParagraphLink.init()
+  </script>
+  <script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+  <script type="text/javascript">
+    DoxygenAwesomeInteractiveToc.init()
+  </script>
+</head>
+<body>
+    <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+      <div id="titlearea">
+        <table cellspacing="0" cellpadding="0">
+          <tbody>
+            <tr id="projectrow">
+              <td id="projectlogo"><img alt="Logo" src="icon.png"  /></td>
+              <td id="projectalign">
+                <div id="projectname">Trabalho Prático - PDS2
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- end header part --><!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('app_entry_8cpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo appEntry.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Entry point for the application.  
+<a href="#details">Mais...</a></p>
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &quot;exec_utils.hpp&quot;</code><br />
+<code>#include &quot;terminal_utils.hpp&quot;</code><br />
+<code>#include &quot;playerManager.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para appEntry.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="app_entry_8cpp__incl.png" border="0" usemap="#asrc_2app_entry_8cpp" alt=""/></div>
+<map name="asrc_2app_entry_8cpp" id="asrc_2app_entry_8cpp">
+<area shape="rect" title="Entry point for the application." alt="" coords="632,5,752,32"/>
+<area shape="rect" title=" " alt="" coords="5,229,80,256"/>
+<area shape="poly" title=" " alt="" coords="656,35,95,226,93,221,654,30"/>
+<area shape="rect" href="exec__utils_8hpp_source.html" title=" " alt="" coords="671,80,776,107"/>
+<area shape="poly" title=" " alt="" coords="700,31,715,65,710,67,695,34"/>
+<area shape="rect" href="player_manager_8hpp_source.html" title=" " alt="" coords="441,155,572,181"/>
+<area shape="poly" title=" " alt="" coords="678,35,535,147,532,143,674,30"/>
+<area shape="rect" href="terminal__utils_8hpp_source.html" title=" " alt="" coords="858,304,982,331"/>
+<area shape="poly" title=" " alt="" coords="753,27,836,47,883,64,930,85,975,111,1016,144,1049,183,1073,228,1076,243,1074,256,1057,278,1030,294,998,305,996,300,1028,289,1054,274,1069,254,1071,243,1068,230,1045,185,1012,147,972,116,928,90,881,69,834,52,751,32"/>
+<area shape="rect" title=" " alt="" coords="716,155,793,181"/>
+<area shape="poly" title=" " alt="" coords="732,106,746,139,741,141,727,108"/>
+<area shape="poly" title=" " alt="" coords="687,110,560,152,558,147,685,105"/>
+<area shape="rect" href="_t_t_t_8hpp_source.html" title=" " alt="" coords="926,155,996,181"/>
+<area shape="poly" title=" " alt="" coords="766,105,912,149,911,154,764,110"/>
+<area shape="rect" href="lig4_8hpp_source.html" title=" " alt="" coords="625,155,692,181"/>
+<area shape="poly" title=" " alt="" coords="714,109,682,145,678,141,710,105"/>
+<area shape="rect" href="reversi_8hpp_source.html" title=" " alt="" coords="817,155,902,181"/>
+<area shape="poly" title=" " alt="" coords="749,105,824,145,821,149,746,110"/>
+<area shape="poly" title=" " alt="" coords="441,179,287,200,95,231,95,226,286,194,440,174"/>
+<area shape="rect" title=" " alt="" coords="208,229,274,256"/>
+<area shape="poly" title=" " alt="" coords="461,184,290,231,289,226,460,179"/>
+<area shape="rect" title=" " alt="" coords="1043,379,1100,405"/>
+<area shape="poly" title=" " alt="" coords="512,181,520,212,535,253,559,295,575,313,593,328,627,344,673,355,785,367,900,371,989,376,1028,381,1027,387,989,381,900,376,785,372,672,360,625,349,590,333,571,317,555,298,530,255,515,214,506,182"/>
+<area shape="rect" title=" " alt="" coords="582,379,636,405"/>
+<area shape="poly" title=" " alt="" coords="441,180,398,190,360,205,346,215,338,227,335,240,340,255,359,284,384,309,413,330,445,347,511,370,568,383,567,388,509,375,443,352,411,334,381,313,355,288,335,257,330,240,333,224,343,211,357,201,396,185,440,175"/>
+<area shape="rect" title=" " alt="" coords="906,379,977,405"/>
+<area shape="poly" title=" " alt="" coords="507,182,505,212,507,252,517,294,527,313,540,329,567,345,604,356,700,367,799,371,876,376,890,378,889,384,876,381,799,376,700,372,603,361,565,350,537,333,523,315,512,296,502,253,500,212,502,181"/>
+<area shape="rect" title=" " alt="" coords="798,379,863,405"/>
+<area shape="poly" title=" " alt="" coords="502,183,489,212,477,251,475,293,480,312,489,328,602,351,783,380,782,386,602,356,486,333,475,314,469,293,472,250,484,210,497,180"/>
+<area shape="rect" title=" " alt="" coords="350,229,418,256"/>
+<area shape="poly" title=" " alt="" coords="486,184,420,223,417,219,484,180"/>
+<area shape="poly" title=" " alt="" coords="543,179,871,296,869,301,541,184"/>
+<area shape="rect" href="string__utils_8hpp_source.html" title=" " alt="" coords="797,229,906,256"/>
+<area shape="poly" title=" " alt="" coords="568,179,783,224,782,229,567,185"/>
+<area shape="rect" href="exceptions_8hpp_source.html" title=" " alt="" coords="604,304,713,331"/>
+<area shape="poly" title=" " alt="" coords="524,180,578,227,639,291,636,295,574,231,520,184"/>
+<area shape="rect" href="player_8hpp_source.html" title=" " alt="" coords="103,229,184,256"/>
+<area shape="poly" title=" " alt="" coords="441,184,200,231,199,226,440,179"/>
+<area shape="poly" title=" " alt="" coords="858,333,651,381,650,376,857,328"/>
+<area shape="poly" title=" " alt="" coords="926,330,936,363,931,365,921,332"/>
+<area shape="poly" title=" " alt="" coords="906,333,859,371,856,367,903,329"/>
+<area shape="poly" title=" " alt="" coords="837,259,727,333,650,374,647,369,724,328,834,254"/>
+<area shape="rect" title=" " alt="" coords="787,304,834,331"/>
+<area shape="poly" title=" " alt="" coords="847,258,827,292,823,289,842,255"/>
+<area shape="poly" title=" " alt="" coords="819,259,707,301,706,296,817,254"/>
+<area shape="poly" title=" " alt="" coords="652,333,628,367,624,364,648,330"/>
+<area shape="rect" title=" " alt="" coords="659,379,738,405"/>
+<area shape="poly" title=" " alt="" coords="668,330,687,364,682,366,663,333"/>
+<area shape="poly" title=" " alt="" coords="162,254,219,291,256,311,294,328,368,351,443,367,567,385,567,390,442,372,366,356,292,333,253,316,216,296,159,259"/>
+<area shape="poly" title=" " alt="" coords="185,251,196,253,410,286,589,306,588,312,409,291,195,259,184,256"/>
+<area shape="rect" href="stats_8hpp_source.html" title=" " alt="" coords="106,304,182,331"/>
+<area shape="poly" title=" " alt="" coords="146,257,146,288,141,288,141,257"/>
+<area shape="rect" title=" " alt="" coords="110,379,178,405"/>
+<area shape="poly" title=" " alt="" coords="146,331,146,363,141,363,141,331"/>
+<area shape="poly" title=" " alt="" coords="997,176,1038,195,1058,209,1073,228,1077,242,1073,257,1054,293,1028,324,974,371,971,367,1024,320,1049,290,1068,255,1072,242,1068,231,1054,213,1035,199,995,181"/>
+<area shape="poly" title=" " alt="" coords="944,184,885,223,882,218,941,180"/>
+<area shape="poly" title=" " alt="" coords="961,182,948,220,936,241,920,258,887,275,838,289,729,309,728,304,837,284,885,270,917,254,932,237,944,218,956,181"/>
+<area shape="rect" href="game_8hpp_source.html" title=" " alt="" coords="981,229,1059,256"/>
+<area shape="poly" title=" " alt="" coords="973,180,1002,215,998,219,969,184"/>
+<area shape="poly" title=" " alt="" coords="1004,259,951,297,948,292,1001,254"/>
+<area shape="poly" title=" " alt="" coords="984,259,849,306,847,300,983,254"/>
+<area shape="rect" href="board_8hpp_source.html" title=" " alt="" coords="1055,304,1134,331"/>
+<area shape="poly" title=" " alt="" coords="1035,255,1073,291,1069,295,1031,258"/>
+<area shape="poly" title=" " alt="" coords="1093,332,1083,365,1078,363,1088,330"/>
+<area shape="poly" title=" " alt="" coords="1069,334,983,374,981,369,1067,329"/>
+<area shape="rect" title=" " alt="" coords="1124,379,1193,405"/>
+<area shape="poly" title=" " alt="" coords="1108,329,1139,365,1135,369,1104,333"/>
+<area shape="poly" title=" " alt="" coords="693,179,805,221,803,226,691,184"/>
+<area shape="poly" title=" " alt="" coords="661,182,661,288,656,288,656,182"/>
+<area shape="poly" title=" " alt="" coords="693,176,704,179,845,208,966,230,965,235,844,213,703,184,691,181"/>
+<area shape="poly" title=" " alt="" coords="904,176,997,200,1041,214,1072,227,1118,257,1134,276,1148,303,1151,317,1148,332,1131,354,1111,372,1107,368,1128,351,1143,330,1146,317,1143,305,1129,279,1115,261,1069,232,1039,219,995,205,902,181"/>
+<area shape="poly" title=" " alt="" coords="861,182,858,214,852,213,856,182"/>
+<area shape="poly" title=" " alt="" coords="844,184,689,297,686,293,841,180"/>
+<area shape="poly" title=" " alt="" coords="889,179,979,220,977,225,887,184"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Entry point for the application. </p>
+<p>This file contains the main function which serves as the entry point for the application. It handles user commands to manage players and play the game.</p>
+<p>The following commands are supported:</p><ul>
+<li>"FS": Finalize the system and exit the application.</li>
+<li>"CA": Load players from a save file.</li>
+<li>"CJ": Create a new player.</li>
+<li>"RJ": Remove an existing player.</li>
+<li>"LJ": List all players.</li>
+<li>"EP": Play the game.</li>
+</ul>
+<p>The commands are case-insensitive.</p>
+<dl class="section return"><dt>Retorna</dt><dd>int Returns 0 upon successful execution. </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="app_entry_8cpp.html">appEntry.cpp</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

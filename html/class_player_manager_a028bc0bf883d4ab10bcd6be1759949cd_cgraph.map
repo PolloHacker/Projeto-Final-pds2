@@ -1,0 +1,20 @@
+<map id="PlayerManager::loadPlayers" name="PlayerManager::loadPlayers">
+<area shape="rect" id="Node000001" title="Loads player data from a file and adds players to the manager." alt="" coords="5,136,190,163"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#a649d83540b62657042b860dd8d2c4777" title="Adds a new player to the player manager." alt="" coords="240,81,414,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,133,252,110,254,115,157,138"/>
+<area shape="rect" id="Node000006" href="$class_player_manager.html#ac44d8dff5625d79f1ac162ea61995cc4" title="Reads player data from a given input stream." alt="" coords="238,157,416,200"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="190,158,222,163,222,168,189,164"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="478,5,649,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="362,78,463,41,489,34,490,39,465,47,363,83"/>
+<area shape="rect" id="Node000004" href="$class_string_utils.html#ac8c0283cdcab2949ac97aa6817ba7632" title="Checks if the given name is invalid." alt="" coords="476,56,650,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="414,83,460,78,461,83,415,88"/>
+<area shape="rect" id="Node000005" href="$class_string_utils.html#ad5f94e28e667ae2ae6901e44a4b58274" title="Checks if the given nickname is invalid." alt="" coords="464,107,662,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="415,101,449,105,448,110,414,107"/>
+<area shape="rect" id="Node000007" href="$class_player_manager.html#abf4c76d734eda1f644dfd3b4e1e7c851" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="476,157,650,200"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="417,176,461,176,461,181,417,181"/>
+<area shape="rect" id="Node000009" href="$class_player_manager.html#ab69f94919d389caf3224059a5498162d" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="477,224,649,267"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="405,198,471,217,469,222,404,203"/>
+<area shape="rect" id="Node000008" href="$class_player_manager.html#a414deccebe602c856459577990e5dc64" title="Reads a field from a given input string stream." alt="" coords="710,199,880,225"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="651,189,695,195,694,200,650,194"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="649,230,695,224,695,229,650,236"/>
+</map>

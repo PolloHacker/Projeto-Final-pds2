@@ -1,0 +1,5 @@
+<map id="TTT::checkColumns" name="TTT::checkColumns">
+<area shape="rect" id="Node000001" title="Checks the columns in the game." alt="" coords="200,5,339,32"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#ab733456aee9bf05f948285a70c959b95" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,5,152,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,21,152,21,152,16,184,16"/>
+</map>
