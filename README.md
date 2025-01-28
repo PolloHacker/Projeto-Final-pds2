@@ -107,6 +107,7 @@ O projeto foi organizado em diferentes classes, cada uma com suas responsabilida
   - IsInvalidNickname()
   - IsInvalidName()
   - IsValidMoveInput()
+
 ### Exceções
 
 - **InexistentPlayerException**: Exceção lançada quando um jogador não é encontrado no sistema.
@@ -130,16 +131,19 @@ O projeto foi organizado em diferentes classes, cada uma com suas responsabilida
   ```
 
 - Compile o projeto:
+
   ```bash
     make
   ```
 
 - Execute o programa:
+
   ```bash
     ./tp
     ```
 
 - Limpe os arquivos gerados (remove o executável também):
+
   ```bash
     make clean
   ```
@@ -150,54 +154,61 @@ Os inputs foram estabelecidos pelos desenvolvedores desse projeto, seguindo esse
 
 ### Cadastro de Jogadores
 
-**Carregar execuções anteriores**
+#### Carregar execuções anteriores
+
 - `CA`
-   - Sucesso: `[!] - Jogadores carregados com sucesso`, `[!] - Os jogadores já foram carregados`
+  - Sucesso: `[!] - Jogadores carregados com sucesso`, `[!] - Os jogadores já foram carregados`
 
-**Cadastrar Jogador**: 
+#### Cadastrar Jogador
+
 - `CJ`
--  `Insira o Nome do Jogador: <Nome>`
--  `Insira o Apelido do Jogador: <Apelido>`
-   - Sucesso: `[!] - Jogador criado com sucesso`
-   - Erros: `ERRO: Nome inávlido, digite o nome do jogador novamente`, `ERRO: Apelido inávlido, digite o Apelido do jogador novamente`  
+- `Insira o Nome do Jogador: <Nome>`
+- `Insira o Apelido do Jogador: <Apelido>`
+  - Sucesso: `[!] - Jogador criado com sucesso`
+  - Erros: `ERRO: Nome inávlido, digite o nome do jogador novamente`, `ERRO: Apelido inávlido, digite o Apelido do jogador novamente`  
 
-**Remover Jogador**: 
+#### Remover Jogador
+
 - `RJ`
 - `Digite o Apelido do Jogador a ser removido: <Apelido>`
-   - Sucesso: `[!] - Jogador removido com sucesso`
-   - Erro: `[X] - O jogador não existe`
+  - Sucesso: `[!] - Jogador removido com sucesso`
+  - Erro: `[X] - O jogador não existe`
 
-- **Listar Jogadores**:  
+#### Listar Jogadores
+
 - `LJ`
 - `Digite o tipo de listagem (A - Apelido, N - Nome, C - Lista completa): <A|N|C>`
-   - Sucesso: *printa a lista dos jogadores de acordo com o método solicitado pelo usuário*.
-   - Erro: `[X] - Tipo de listagem inválido.`
+  - Sucesso: *printa a lista dos jogadores de acordo com o método solicitado pelo usuário*.
+  - Erro: `[X] - Tipo de listagem inválido.`
 
 ### Execução de Partidas
 
-- **Executar Partida**: 
-- `EP` 
+#### Executar partida
+
+- `EP`
 - `Digite o tipo de jogo (R - Reversi, L - Lig4, V - Velha): <(R|L|V)>`
 - `Digite o apelido do jogador 1: <Apelido>`
 - `Digite o apelido do jogador 2: <Apelido>`
-   - Sucesso: Inicia o jogo selecionado com os jogadores 1 e 2.
-   - Erro: `[X] - Tipo de jogo inválido`, `[X] - Jogador 1|2 não encontrado.\nDigite o apelido do jogador 1|2 novamente:`
+  - Sucesso: Inicia o jogo selecionado com os jogadores 1 e 2.
+  - Erro: `[X] - Tipo de jogo inválido`, `[X] - Jogador 1|2 não encontrado.\nDigite o apelido do jogador 1|2 novamente:`
 
-- **Finalizar Sistema**: `FS`
+#### Finalizar sistema
+
+- `FS`
 
 ## Inputs durante os Jogos
 
-- **Jogada no TicTacToe**: 
+- **Jogada no TicTacToe**:
   - `Digite a linha e a coluna da jogada: <Linha> <Coluna>`
   - Exemplo: `<0> <2>`
   - Erros: `[X] - Digite apenas números`, `[X] - Fora dos limites`, `[X] - Posicao ocupada`
 
-- **Jogada no Lig 4**: 
+- **Jogada no Lig 4**:
   - `Digite a coluna da jogada: <Coluna>`
   - Exemplo: `<1>`
   - Erros: `[X] - Digite apenas números`, `[X] - Fora dos limites`, `[X] - Posicao ocupada`
 
-- **Jogada no Reversi**: 
+- **Jogada no Reversi**:
   - `Digite a linha e a coluna da jogada: <Linha>` `<Coluna>`
   - Exemplo: `<0> <2>`
   - Erros: `[X] - Digite apenas números`, `[X] - Fora dos limites`, `[X] - Posicao ocupada`, `[X] - Jogada invalida`
@@ -206,9 +217,9 @@ Os inputs foram estabelecidos pelos desenvolvedores desse projeto, seguindo esse
 
 ## Documentação (online)
 
-- Acesse o link: https://pollohacker.github.io/Projeto-Final-pds2/
+- Acesse o link: <https://pollohacker.github.io/Projeto-Final-pds2/>
 
-## Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios:
+## Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios
 
 - Uso de Makefile: Como demoramos a criar o Makefile, já que criamos apenas no final do projeto, observamos que perdemos muito tempo de compilação, já que estavamos sempre recompilando todos os arquivos para realizar os testes.
 

@@ -1,0 +1,6 @@
+<map id="readMove" name="readMove">
+<area shape="rect" id="Node000001" title="Reads a move from the user and validates it." alt="" coords="5,29,84,56"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="16,30,10,21,14,11,26,5,45,3,65,5,76,12,73,16,63,10,44,8,27,10,18,15,16,20,20,28"/>
+<area shape="rect" id="Node000002" href="$class_string_utils.html#ae1a37d886919df7273dba405917505d1" title="Checks if the given row and column are valid." alt="" coords="132,21,293,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,40,116,40,116,45,84,45"/>
+</map>

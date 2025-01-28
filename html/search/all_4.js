@@ -1,9 +1,16 @@
 var searchData=
 [
-  ['game_0',['Game',['../dd/d1f/class_game.html',1,'Game'],['../dd/d1f/class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c',1,'Game::Game()']]],
-  ['getcols_1',['getCols',['../d3/dfd/class_board.html#abe6f2cdf451b87b990c352229dfca6b8',1,'Board']]],
-  ['getelementat_2',['getElementAt',['../d3/dfd/class_board.html#a59804a2cda464da8aeac8878e297b1be',1,'Board']]],
-  ['getplayer_3',['getPlayer',['../d1/d42/class_player_manager.html#a752160da6404b57d37bd52f3beaf6439',1,'PlayerManager']]],
-  ['getplayercount_4',['getPlayerCount',['../d1/d42/class_player_manager.html#ad6bac96d1d613629c95528310679adc8',1,'PlayerManager']]],
-  ['getrows_5',['getRows',['../d3/dfd/class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1',1,'Board']]]
+  ['e_20execução_0',['Compilação e Execução',['../index.html#autotoc_md14',1,'']]],
+  ['enfrentou_20alguns_20desafios_1',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
+  ['equipe_2',['Equipe',['../index.html#autotoc_md2',1,'']]],
+  ['equipe_20enfrentou_20alguns_20desafios_3',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
+  ['estrutura_20do_20projeto_4',['Estrutura do Projeto',['../index.html#autotoc_md5',1,'']]],
+  ['exceções_5',['Exceções',['../index.html#autotoc_md13',1,'']]],
+  ['execução_6',['Compilação e Execução',['../index.html#autotoc_md14',1,'']]],
+  ['execução_20de_20partidas_7',['Execução de Partidas',['../index.html#autotoc_md22',1,'']]],
+  ['execuções_20anteriores_8',['Carregar execuções anteriores',['../index.html#autotoc_md18',1,'']]],
+  ['executar_20partida_9',['Executar partida',['../index.html#autotoc_md23',1,'']]],
+  ['executils_10',['ExecUtils',['../class_exec_utils.html',1,'ExecUtils'],['../index.html#autotoc_md11',1,'ExecUtils']]],
+  ['exportplayerdata_11',['exportPlayerData',['../class_player_manager.html#ac6d31ba4d162d45cc39d3de910d48364',1,'PlayerManager']]],
+  ['extras_20implementadas_12',['Funcionalidades extras implementadas',['../index.html#autotoc_md4',1,'']]]
 ];

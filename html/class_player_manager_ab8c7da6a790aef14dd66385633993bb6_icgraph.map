@@ -1,0 +1,5 @@
+<map id="updatePlayerStats" name="updatePlayerStats">
+<area shape="rect" id="Node000001" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,367,32"/>
+<area shape="rect" id="Node000002" href="$class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf" title="Handles the process of playing a game between two players." alt="" coords="5,5,191,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,21,191,21,191,16,223,16"/>
+</map>

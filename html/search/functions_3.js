@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['game_0',['Game',['../dd/d1f/class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c',1,'Game']]],
-  ['getcols_1',['getCols',['../d3/dfd/class_board.html#abe6f2cdf451b87b990c352229dfca6b8',1,'Board']]],
-  ['getelementat_2',['getElementAt',['../d3/dfd/class_board.html#a59804a2cda464da8aeac8878e297b1be',1,'Board']]],
-  ['getplayer_3',['getPlayer',['../d1/d42/class_player_manager.html#a752160da6404b57d37bd52f3beaf6439',1,'PlayerManager']]],
-  ['getplayercount_4',['getPlayerCount',['../d1/d42/class_player_manager.html#ad6bac96d1d613629c95528310679adc8',1,'PlayerManager']]],
-  ['getrows_5',['getRows',['../d3/dfd/class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1',1,'Board']]]
+  ['game_0',['Game',['../class_game.html#aa7fb37795c7541ffcb2defca56dc2165',1,'Game']]],
+  ['getcols_1',['getCols',['../class_board.html#abc56ebe6387674c19d3d989203512f6a',1,'Board']]],
+  ['getelementat_2',['getElementAt',['../class_board.html#a4ab4871ca20473eb70f989a29ec43a99',1,'Board']]],
+  ['getplayer_3',['getPlayer',['../class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8',1,'PlayerManager']]],
+  ['getplayercount_4',['getPlayerCount',['../class_player_manager.html#a257a047419807db825874e5a047ea014',1,'PlayerManager']]],
+  ['getrows_5',['getRows',['../class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9',1,'Board']]]
 ];

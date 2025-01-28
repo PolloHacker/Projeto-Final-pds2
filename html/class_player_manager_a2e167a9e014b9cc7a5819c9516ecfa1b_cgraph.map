@@ -1,0 +1,11 @@
+<map id="loadPlayers" name="loadPlayers">
+<area shape="rect" id="Node000001" title="Loads player data from a file and adds players to the manager." alt="" coords="5,56,95,83"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="143,56,222,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,67,127,67,127,72,95,72"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="331,5,407,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,55,269,41,315,29,316,34,271,47,223,60"/>
+<area shape="rect" id="Node000004" href="$class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="282,56,456,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,67,266,67,266,72,222,72"/>
+<area shape="rect" id="Node000005" href="$class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="270,107,468,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="223,78,271,92,299,100,297,105,269,97,222,84"/>
+</map>

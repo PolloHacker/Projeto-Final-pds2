@@ -1,0 +1,7 @@
+<map id="validateMove" name="validateMove">
+<area shape="rect" id="Node000001" title="Validates a move in the Lig4 game." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="Node000002" href="$class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="169,5,277,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,34,153,26,154,32,105,39"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="152,56,294,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,49,137,54,136,59,104,54"/>
+</map>

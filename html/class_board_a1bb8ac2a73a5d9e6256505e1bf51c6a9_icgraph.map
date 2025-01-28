@@ -1,0 +1,15 @@
+<map id="getRows" name="getRows">
+<area shape="rect" id="Node000001" title="Get the number of rows in the board." alt="" coords="222,132,295,159"/>
+<area shape="rect" id="Node000002" href="$class_lig4.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game is finished." alt="" coords="16,5,163,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,120,211,82,172,46,150,35,153,30,175,42,215,78,244,117"/>
+<area shape="rect" id="Node000003" href="$class_reversi.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game of Reversi is finished." alt="" coords="5,56,174,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,125,173,97,142,86,144,81,175,92,226,121"/>
+<area shape="rect" id="Node000004" href="$class_lig4.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Lig4 game." alt="" coords="31,107,148,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,140,148,131,149,126,207,135"/>
+<area shape="rect" id="Node000005" href="$class_reversi.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Reversi game." alt="" coords="20,157,159,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,156,160,163,159,158,206,150"/>
+<area shape="rect" id="Node000006" href="$class_game.html#a8310d6d1e915cb179f834d9ca017950a" title="Prints the current state of the game board to the standard output." alt="" coords="28,208,151,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="226,170,175,198,144,210,142,205,173,194,223,165"/>
+<area shape="rect" id="Node000007" href="$class_lig4.html#ab7e255e36221bdba1ccb0afc0af7f6cc" title="Prints the current state of the game board to the standard output." alt="" coords="33,259,146,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="244,173,215,212,175,249,147,263,145,258,172,244,211,209,239,170"/>
+</map>

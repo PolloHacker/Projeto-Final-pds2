@@ -1,0 +1,11 @@
+<map id="addPlayer" name="addPlayer">
+<area shape="rect" id="Node000001" title="Adds a new player to the player manager." alt="" coords="498,56,577,83"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#a2a8639c359060629d6236b506ed9de43" title="Adds a player to the PlayerManager." alt="" coords="310,5,390,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,56,449,47,389,31,390,26,451,41,484,51"/>
+<area shape="rect" id="Node000003" href="$class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c" title="Handles the creation of a new player." alt="" coords="250,56,450,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="482,72,451,72,451,67,482,67"/>
+<area shape="rect" id="Node000004" href="$class_player_manager.html#a2e167a9e014b9cc7a5819c9516ecfa1b" title="Loads player data from a file and adds players to the manager." alt="" coords="305,107,394,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="484,88,451,97,396,112,394,107,449,92,482,83"/>
+<area shape="rect" id="Node000005" href="$class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,107,202,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="290,123,202,123,202,117,290,117"/>
+</map>

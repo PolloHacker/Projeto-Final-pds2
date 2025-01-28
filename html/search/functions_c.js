@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['updateplayerstats_0',['updatePlayerStats',['../d1/d42/class_player_manager.html#a3e23945bfc6ebf37ef894780cb067e12',1,'PlayerManager']]],
-  ['updatestats_1',['updateStats',['../d8/d53/class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7',1,'Player']]]
+  ['updateplayerstats_0',['updatePlayerStats',['../class_player_manager.html#ab8c7da6a790aef14dd66385633993bb6',1,'PlayerManager']]],
+  ['updatestats_1',['updateStats',['../class_player.html#a4bb620544520bba5d3b8b2275b32665c',1,'Player']]]
 ];

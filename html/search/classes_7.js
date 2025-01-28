@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reversi_0',['Reversi',['../d9/d2f/class_reversi.html',1,'']]]
+  ['reversi_0',['Reversi',['../class_reversi.html',1,'']]]
 ];

@@ -1,0 +1,9 @@
+<map id="handleRemovePlayer" name="handleRemovePlayer">
+<area shape="rect" id="Node000001" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,31,151,57"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ac6d31ba4d162d45cc39d3de910d48364" title="Exports player data to a CSV file." alt="" coords="199,5,416,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,33,183,30,184,35,151,39"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#a4fc9969ef0b7f21ffa5ffc762c9af637" title="Removes a player from the player list by their nickname." alt="" coords="209,56,406,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="151,49,194,54,193,59,151,55"/>
+<area shape="rect" id="Node000004" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="464,56,635,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="406,67,449,67,449,72,406,72"/>
+</map>

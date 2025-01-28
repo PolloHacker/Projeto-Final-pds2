@@ -1,0 +1,5 @@
+<map id="loadPlayers" name="loadPlayers">
+<area shape="rect" id="Node000001" title="Loads player data from a file and adds players to the manager." alt="" coords="250,5,339,32"/>
+<area shape="rect" id="Node000002" href="$class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,5,202,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,21,202,21,202,16,234,16"/>
+</map>

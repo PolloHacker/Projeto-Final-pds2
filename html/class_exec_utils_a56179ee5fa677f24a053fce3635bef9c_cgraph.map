@@ -1,0 +1,15 @@
+<map id="handleCreatePlayer" name="handleCreatePlayer">
+<area shape="rect" id="Node000001" title="Handles the creation of a new player." alt="" coords="5,81,141,108"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="210,56,384,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,84,194,78,195,84,141,90"/>
+<area shape="rect" id="Node000004" href="$class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="466,5,640,32"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="98,78,139,58,188,41,255,28,324,20,450,14,450,19,324,25,256,33,189,47,141,63,100,83"/>
+<area shape="rect" id="Node000005" href="$class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="454,107,652,133"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="141,96,439,111,438,117,141,101"/>
+<area shape="rect" id="Node000006" href="$class_player_manager.html#ac6d31ba4d162d45cc39d3de910d48364" title="Exports player data to a CSV file." alt="" coords="189,157,406,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="110,106,190,136,233,150,231,155,188,141,108,111"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="468,56,639,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="385,67,452,67,452,72,385,72"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="368,53,467,33,468,38,369,58"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="369,81,468,100,467,106,368,86"/>
+</map>

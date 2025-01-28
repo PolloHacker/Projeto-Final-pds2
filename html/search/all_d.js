@@ -1,5 +1,18 @@
 var searchData=
 [
-  ['updateplayerstats_0',['updatePlayerStats',['../d1/d42/class_player_manager.html#a3e23945bfc6ebf37ef894780cb067e12',1,'PlayerManager']]],
-  ['updatestats_1',['updateStats',['../d8/d53/class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7',1,'Player']]]
+  ['partida_0',['Executar partida',['../index.html#autotoc_md23',1,'']]],
+  ['partidas_1',['Execução de Partidas',['../index.html#autotoc_md22',1,'']]],
+  ['player_2',['Player',['../class_player.html',1,'Player'],['../index.html#autotoc_md8',1,'Player']]],
+  ['playeralreadyexistsexception_3',['PlayerAlreadyExistsException',['../class_player_already_exists_exception.html',1,'']]],
+  ['playermanager_4',['PlayerManager',['../class_player_manager.html',1,'PlayerManager'],['../class_player_manager.html#ae49bcbbb1dc921777e1193c2b2e6b25e',1,'PlayerManager::PlayerManager()'],['../index.html#autotoc_md10',1,'PlayerManager']]],
+  ['playernotinlistexception_5',['PlayerNotInListException',['../class_player_not_in_list_exception.html',1,'']]],
+  ['pré_20requisitos_6',['Pré-requisitos',['../index.html#autotoc_md15',1,'']]],
+  ['principais_7',['Classes Principais',['../index.html#autotoc_md6',1,'']]],
+  ['printbanner_8',['PrintBanner',['../class_exec_utils.html#a744d28bdc4e36a73c69df991580710ff',1,'ExecUtils']]],
+  ['printboard_9',['printBoard',['../class_game.html#a8310d6d1e915cb179f834d9ca017950a',1,'Game::printBoard()'],['../class_lig4.html#ab7e255e36221bdba1ccb0afc0af7f6cc',1,'Lig4::printBoard()']]],
+  ['printplayerbyname_10',['printPlayerByName',['../class_player_manager.html#a9390b23f1b5f755e172b03bd1edc2258',1,'PlayerManager']]],
+  ['printplayerbynickname_11',['printPlayerByNickname',['../class_player_manager.html#a82f987e8998de7b617f2f920e78f593e',1,'PlayerManager']]],
+  ['printtable_12',['printTable',['../class_player_manager.html#ab967116dd46ae6b0e0fff7f336a069af',1,'PlayerManager']]],
+  ['projeto_13',['Projeto',['../index.html#autotoc_md28',1,'Aprendizados com o projeto'],['../index.html#autotoc_md1',1,'Descrição do projeto'],['../index.html#autotoc_md5',1,'Estrutura do Projeto']]],
+  ['projeto_20a_20equipe_20enfrentou_20alguns_20desafios_14',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]]
 ];

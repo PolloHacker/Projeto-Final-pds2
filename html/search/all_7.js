@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['lig4_0',['Lig4',['../d1/dd4/class_lig4.html',1,'Lig4'],['../d1/dd4/class_lig4.html#a225f6d671611c74bb03c4edbb8a75f16',1,'Lig4::Lig4()']]],
-  ['loadplayers_1',['loadPlayers',['../d1/d42/class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd',1,'PlayerManager']]]
+  ['handlecreateplayer_0',['handleCreatePlayer',['../class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c',1,'ExecUtils']]],
+  ['handlelistplayers_1',['handleListPlayers',['../class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b',1,'ExecUtils']]],
+  ['handleloadplayers_2',['handleLoadPlayers',['../class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030',1,'ExecUtils']]],
+  ['handleplaygame_3',['handlePlayGame',['../class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf',1,'ExecUtils']]],
+  ['handleremoveplayer_4',['handleRemovePlayer',['../class_exec_utils.html#a99d7769ad77fb30ef09a287f59bc1ec4',1,'ExecUtils']]]
 ];

@@ -24,11 +24,11 @@
 */
 var menudata={children:[
 {text:"Página Principal",url:"index.html"},
-{text:"Classes",url:"annotated.html",children:[
-{text:"Lista de Classes",url:"annotated.html"},
-{text:"Índice dos Componentes",url:"classes.html"},
+{text:"Estruturas de dados",url:"annotated.html",children:[
+{text:"Estruturas de Dados",url:"annotated.html"},
+{text:"Índice das Estruturas de Dados",url:"classes.html"},
 {text:"Hierarquia de Classes",url:"inherits.html"},
-{text:"Membros de classe",url:"functions.html",children:[
+{text:"Campos de Dados",url:"functions.html",children:[
 {text:"Todos",url:"functions.html",children:[
 {text:"a",url:"functions.html#index_a"},
 {text:"b",url:"functions.html#index_b"},
