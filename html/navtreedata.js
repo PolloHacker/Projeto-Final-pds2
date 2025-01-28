@@ -26,11 +26,11 @@ var NAVTREE =
 [
   [ "Trabalho Prático - PDS2", "index.html", [
     [ "Jogos de Tabuleiro", "index.html", "index" ],
-    [ "Classes", "annotated.html", [
-      [ "Lista de Classes", "annotated.html", "annotated_dup" ],
-      [ "Índice dos Componentes", "classes.html", null ],
+    [ "Estruturas de dados", "annotated.html", [
+      [ "Estruturas de Dados", "annotated.html", "annotated_dup" ],
+      [ "Índice das Estruturas de Dados", "classes.html", null ],
       [ "Hierarquia de Classes", "hierarchy.html", "hierarchy" ],
-      [ "Membros de classe", "functions.html", [
+      [ "Campos de Dados", "functions.html", [
         [ "Todos", "functions.html", null ],
         [ "Funções", "functions_func.html", null ],
         [ "Variáveis", "functions_vars.html", null ]

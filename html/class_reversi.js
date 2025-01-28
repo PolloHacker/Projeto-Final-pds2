@@ -1,12 +1,12 @@
 var class_reversi =
 [
-    [ "Reversi", "class_reversi.html#a73e3ca5c21b634f9c490b404d62f0e01", null ],
-    [ "checkBoundaries", "class_reversi.html#a8ebe311d77ab81e33025277a9b226d63", null ],
-    [ "checkDirection", "class_reversi.html#af41573cd1953cb163d15fd9cde781142", null ],
-    [ "checkDirections", "class_reversi.html#ab8a82f9bee727c9c0736b7b82b6ee2d5", null ],
-    [ "checkPosition", "class_reversi.html#a3c798cc38c33f60c8b3a7475fc69b107", null ],
-    [ "isGameFinished", "class_reversi.html#a2082b7ebdf08255a8d4cd36bef0e8048", null ],
-    [ "makeMove", "class_reversi.html#a6329650b30aedbe692d6ed2934a508fa", null ],
-    [ "readMove", "class_reversi.html#a9b0494fc924572cd119af41c74d9cfc2", null ],
-    [ "validateMove", "class_reversi.html#acab5710783dab3e6dfd4bbf43a73af62", null ]
+    [ "Reversi", "class_reversi.html#ac31fd0c3629823ee3f2cf9631a311dda", null ],
+    [ "checkBoundaries", "class_reversi.html#a1656f72d26ab1665e0f2f871982fcd05", null ],
+    [ "checkDirection", "class_reversi.html#ac17d001e073d36dc0c20c3bf36cc8877", null ],
+    [ "checkDirections", "class_reversi.html#ae7fde8c946b28b90e0b148bf9eab22dd", null ],
+    [ "checkPosition", "class_reversi.html#ab3af04e12ccca84081a9b9fc75adfb9b", null ],
+    [ "isGameFinished", "class_reversi.html#a1507ef6ca8488f97089c5a309bc7c28a", null ],
+    [ "makeMove", "class_reversi.html#a8866f64affe25d84543472b7d7e6244e", null ],
+    [ "readMove", "class_reversi.html#af6c6110757baae16656089acad0dd48b", null ],
+    [ "validateMove", "class_reversi.html#a8bab9a92388b9fd4f1771f2baa0318d6", null ]
 ];

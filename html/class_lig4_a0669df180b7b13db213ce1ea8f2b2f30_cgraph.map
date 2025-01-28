@@ -1,9 +1,0 @@
-<map id="Lig4::checkDirection" name="Lig4::checkDirection">
-<area shape="rect" id="Node000001" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="5,56,146,83"/>
-<area shape="rect" id="Node000002" href="$class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="211,5,319,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,53,197,34,198,39,129,58"/>
-<area shape="rect" id="Node000003" href="$class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="194,56,336,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,67,178,67,178,72,146,72"/>
-<area shape="rect" id="Node000004" href="$class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="207,107,322,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="129,81,198,100,197,105,128,86"/>
-</map>

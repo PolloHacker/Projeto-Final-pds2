@@ -1,5 +1,5 @@
 var class_game =
 [
-    [ "Game", "class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c", null ],
-    [ "printBoard", "class_game.html#a77611c82d15d9a191655ca57231908da", null ]
+    [ "Game", "class_game.html#aa7fb37795c7541ffcb2defca56dc2165", null ],
+    [ "printBoard", "class_game.html#a8310d6d1e915cb179f834d9ca017950a", null ]
 ];

@@ -1,10 +1,10 @@
 var class_board =
 [
-    [ "Board", "class_board.html#a916fa899643f749082120461768fd7df", null ],
-    [ "getCols", "class_board.html#abe6f2cdf451b87b990c352229dfca6b8", null ],
-    [ "getElementAt", "class_board.html#a59804a2cda464da8aeac8878e297b1be", null ],
-    [ "getRows", "class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1", null ],
-    [ "isBoardFull", "class_board.html#ac9ff300b31942027e0e51a1a816175d8", null ],
-    [ "isWithinBounds", "class_board.html#a5bb4c65840612ba28d18ead4c8d3f978", null ],
-    [ "setPosition", "class_board.html#a565204fa504373e3d02b86d2539551fe", null ]
+    [ "Board", "class_board.html#a732a766d7e3cc6c470505dc06a18b6d7", null ],
+    [ "getCols", "class_board.html#abc56ebe6387674c19d3d989203512f6a", null ],
+    [ "getElementAt", "class_board.html#a4ab4871ca20473eb70f989a29ec43a99", null ],
+    [ "getRows", "class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9", null ],
+    [ "isBoardFull", "class_board.html#a98badcf7748478b3d0a54a6f7b7a4719", null ],
+    [ "isWithinBounds", "class_board.html#abda705891a3b80e83698058e781133f3", null ],
+    [ "setPosition", "class_board.html#ad5daba47fc5ba8d907dd742e524b798d", null ]
 ];

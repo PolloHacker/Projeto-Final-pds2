@@ -1,0 +1,5 @@
+<map id="checkRows" name="checkRows">
+<area shape="rect" id="Node000001" title="Checks the rows in the Tic&#45;Tac&#45;Toe game for a win condition." alt="" coords="169,5,259,32"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,5,121,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+</map>

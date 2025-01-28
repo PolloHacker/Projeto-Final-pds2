@@ -1,0 +1,10 @@
+<map id="readPlayerFromFile" name="readPlayerFromFile">
+<area shape="rect" id="Node000001" title="Reads player data from a given input stream." alt="" coords="5,31,140,57"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ac0cac9de2a4d936c39fc246e112d574b" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="188,5,302,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,31,172,27,173,32,140,37"/>
+<area shape="rect" id="Node000004" href="$class_player_manager.html#ab785c9b3dbf8a84ef0030c49eed570fc" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="189,56,301,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,51,174,56,173,62,140,57"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#ac3b157363ae05702279aa2d38ec46dab" title="Reads a field from a given input string stream." alt="" coords="350,31,424,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="303,26,335,32,334,37,302,32"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="301,57,334,51,335,56,302,62"/>
+</map>

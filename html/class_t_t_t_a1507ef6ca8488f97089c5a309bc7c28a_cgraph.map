@@ -1,5 +1,17 @@
 <map id="isGameFinished" name="isGameFinished">
-<area shape="rect" id="Node000001" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,5,121,32"/>
-<area shape="rect" id="Node000002" href="$class_board.html#a98badcf7748478b3d0a54a6f7b7a4719" title="Checks if the board is completely filled." alt="" coords="169,5,297,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,16,153,16,153,21,121,21"/>
+<area shape="rect" id="Node000001" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,81,121,108"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#a81912bbc6d0f01d4200d253c662d219a" title="Checks the columns in the game." alt="" coords="179,5,287,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,78,168,42,181,36,183,41,170,46,93,83"/>
+<area shape="rect" id="Node000005" href="$class_t_t_t.html#abfbaf7f3f4350e06ba87f1b6b5081e84" title="Checks the diagonals of the Tic&#45;Tac&#45;Toe board to determine if there is a winner." alt="" coords="345,107,459,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="121,96,329,112,329,117,121,102"/>
+<area shape="rect" id="Node000006" href="$class_t_t_t.html#a739ea11ed8aabd637b012373dae75e7a" title="Checks the rows in the Tic&#45;Tac&#45;Toe game for a win condition." alt="" coords="188,56,278,83"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="121,83,172,76,173,81,121,89"/>
+<area shape="rect" id="Node000007" href="$class_board.html#a98badcf7748478b3d0a54a6f7b7a4719" title="Checks if the board is completely filled." alt="" coords="169,157,297,184"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="96,106,188,148,186,153,94,111"/>
+<area shape="rect" id="Node000003" href="$class_t_t_t.html#a3e98b43ec4c9d347a6c021f4b242ec4f" title="Checks if there is a winning line (row or column) in the Tic&#45;Tac&#45;Toe board." alt="" coords="362,56,442,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,30,348,51,347,56,279,35"/>
+<area shape="rect" id="Node000004" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="507,81,650,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="443,72,492,80,492,85,443,78"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="459,109,492,104,493,110,460,114"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="278,67,347,67,347,72,278,72"/>
 </map>

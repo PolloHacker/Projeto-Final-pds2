@@ -1,0 +1,22 @@
+<map id="readMove" name="readMove">
+<area shape="rect" id="Node000001" title="Reads a move from the user and validates it." alt="" coords="5,43,84,69"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="16,44,10,34,14,24,26,18,45,16,65,19,76,25,73,30,63,24,44,21,27,23,18,28,16,33,20,41"/>
+<area shape="rect" id="Node000002" href="$class_string_utils.html#ae1a37d886919df7273dba405917505d1" title="Checks if the given row and column are valid." alt="" coords="132,5,293,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,47,116,41,117,46,85,52"/>
+<area shape="rect" id="Node000003" href="$class_reversi.html#a8bab9a92388b9fd4f1771f2baa0318d6" title="Validates a move in the Reversi game." alt="" coords="163,72,262,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="85,60,149,72,148,77,84,65"/>
+<area shape="rect" id="Node000004" href="$class_reversi.html#a1656f72d26ab1665e0f2f871982fcd05" title="Checks if the given row and column are within the boundaries of the board." alt="" coords="504,21,626,48"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="261,72,341,57,489,39,489,44,341,63,262,77"/>
+<area shape="rect" id="Node000006" href="$class_reversi.html#ae7fde8c946b28b90e0b148bf9eab22dd" title="Checks all possible directions from a given position on the board." alt="" coords="341,72,456,99"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="262,83,326,83,326,88,262,88"/>
+<area shape="rect" id="Node000009" href="$class_reversi.html#ab3af04e12ccca84081a9b9fc75adfb9b" title="Checks if the specified position on the board is occupied." alt="" coords="347,123,450,149"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="263,96,333,115,331,121,261,101"/>
+<area shape="rect" id="Node000005" href="$class_board.html#abda705891a3b80e83698058e781133f3" title="Checks if the given row and column indices are within the bounds of the board." alt="" coords="674,35,828,61"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="627,36,658,39,658,44,626,42"/>
+<area shape="rect" id="Node000007" href="$class_reversi.html#ac17d001e073d36dc0c20c3bf36cc8877" title="Checks a specific direction from a given position on the board to find and mark opponent&#39;s pieces to ..." alt="" coords="511,72,619,99"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="457,83,495,83,495,88,457,88"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="619,72,665,62,667,68,620,77"/>
+<area shape="rect" id="Node000008" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="680,97,822,124"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="620,90,665,96,664,102,619,95"/>
+<area shape="poly" id="edge11_Node000009_Node000008" title=" " alt="" coords="451,130,664,114,664,120,451,135"/>
+</map>

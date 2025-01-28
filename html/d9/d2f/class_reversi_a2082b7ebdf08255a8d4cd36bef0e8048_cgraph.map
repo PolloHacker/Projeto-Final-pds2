@@ -1,9 +1,0 @@
-<map id="Reversi::isGameFinished" name="Reversi::isGameFinished">
-<area shape="rect" id="Node000001" title="Checks if the game of Reversi is finished." alt="" coords="5,56,174,83"/>
-<area shape="rect" id="Node000002" href="$d3/dfd/class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="239,5,347,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,53,223,33,224,38,147,58"/>
-<area shape="rect" id="Node000003" href="$d3/dfd/class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="222,56,364,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,67,206,67,206,72,174,72"/>
-<area shape="rect" id="Node000004" href="$d3/dfd/class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="235,107,350,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,81,222,100,221,105,146,86"/>
-</map>

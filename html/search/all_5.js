@@ -11,6 +11,6 @@ var searchData=
   ['execuções_20anteriores_8',['Carregar execuções anteriores',['../index.html#autotoc_md18',1,'']]],
   ['executar_20partida_9',['Executar partida',['../index.html#autotoc_md23',1,'']]],
   ['executils_10',['ExecUtils',['../class_exec_utils.html',1,'ExecUtils'],['../index.html#autotoc_md11',1,'ExecUtils']]],
-  ['exportplayerdata_11',['exportPlayerData',['../class_player_manager.html#a8157229d7633b629d6a6afcccd6ec254',1,'PlayerManager']]],
+  ['exportplayerdata_11',['exportPlayerData',['../class_player_manager.html#ac6d31ba4d162d45cc39d3de910d48364',1,'PlayerManager']]],
   ['extras_20implementadas_12',['Funcionalidades extras implementadas',['../index.html#autotoc_md4',1,'']]]
 ];

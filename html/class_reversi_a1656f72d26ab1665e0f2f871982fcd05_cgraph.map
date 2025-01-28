@@ -1,0 +1,5 @@
+<map id="checkBoundaries" name="checkBoundaries">
+<area shape="rect" id="Node000001" title="Checks if the given row and column are within the boundaries of the board." alt="" coords="5,5,127,32"/>
+<area shape="rect" id="Node000002" href="$class_board.html#abda705891a3b80e83698058e781133f3" title="Checks if the given row and column indices are within the bounds of the board." alt="" coords="175,5,329,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,16,159,16,159,21,127,21"/>
+</map>

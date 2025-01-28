@@ -1,11 +1,20 @@
 <map id="loadPlayers" name="loadPlayers">
-<area shape="rect" id="Node000001" title="Loads player data from a file and adds players to the manager." alt="" coords="5,56,95,83"/>
-<area shape="rect" id="Node000002" href="$class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="143,56,222,83"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,67,127,67,127,72,95,72"/>
-<area shape="rect" id="Node000003" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="331,5,407,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="222,55,269,41,315,29,316,34,271,47,223,60"/>
-<area shape="rect" id="Node000004" href="$class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="282,56,456,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="222,67,266,67,266,72,222,72"/>
-<area shape="rect" id="Node000005" href="$class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="270,107,468,133"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="223,78,271,92,299,100,297,105,269,97,222,84"/>
+<area shape="rect" id="Node000001" title="Loads player data from a file and adds players to the manager." alt="" coords="5,132,95,159"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="170,81,250,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,129,154,109,156,114,96,134"/>
+<area shape="rect" id="Node000006" href="$class_player_manager.html#af91edcdd479d38efcd9ccf8f099b0468" title="Reads player data from a given input stream." alt="" coords="143,157,277,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="96,150,127,155,127,160,95,155"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="386,5,462,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="238,78,324,41,370,28,372,33,326,47,240,83"/>
+<area shape="rect" id="Node000004" href="$class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="337,56,511,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="250,87,321,79,322,84,250,93"/>
+<area shape="rect" id="Node000005" href="$class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="325,107,523,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="250,97,310,104,309,109,250,102"/>
+<area shape="rect" id="Node000007" href="$class_player_manager.html#ac0cac9de2a4d936c39fc246e112d574b" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="367,157,481,184"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="278,168,351,168,351,173,278,173"/>
+<area shape="rect" id="Node000009" href="$class_player_manager.html#ab785c9b3dbf8a84ef0030c49eed570fc" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="368,208,480,235"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="270,182,354,202,352,207,269,187"/>
+<area shape="rect" id="Node000008" href="$class_player_manager.html#ac3b157363ae05702279aa2d38ec46dab" title="Reads a field from a given input string stream." alt="" coords="571,183,646,209"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="482,176,556,186,555,191,482,181"/>
+<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="481,211,556,201,556,206,481,216"/>
 </map>

@@ -1,5 +1,0 @@
-<map id="PlayerManager::printPlayerByName" name="PlayerManager::printPlayerByName">
-<area shape="rect" id="Node000001" title="Prints the player information by name." alt="" coords="243,5,421,48"/>
-<area shape="rect" id="Node000002" href="$da/dda/class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="5,13,195,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,29,195,29,195,24,227,24"/>
-</map>

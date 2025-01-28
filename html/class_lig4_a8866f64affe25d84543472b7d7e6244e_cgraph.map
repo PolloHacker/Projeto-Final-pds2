@@ -1,9 +1,19 @@
 <map id="makeMove" name="makeMove">
-<area shape="rect" id="Node000001" title="Executes a move in the Lig4 game." alt="" coords="5,56,91,83"/>
-<area shape="rect" id="Node000002" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="139,5,281,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,53,149,35,151,40,92,59"/>
-<area shape="rect" id="Node000003" href="$class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="152,56,268,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,67,137,67,137,72,91,72"/>
-<area shape="rect" id="Node000004" href="$class_board.html#ad5daba47fc5ba8d907dd742e524b798d" title="Sets the symbol at the specified position on the board." alt="" coords="146,107,274,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,80,151,99,149,104,90,85"/>
+<area shape="rect" id="Node000001" title="Executes a move in the Lig4 game." alt="" coords="5,80,91,106"/>
+<area shape="rect" id="Node000002" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="524,29,667,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,77,94,50,115,37,138,28,188,15,239,7,342,4,439,11,519,23,518,28,438,16,342,9,239,13,189,20,140,33,118,42,97,55,65,81"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="145,42,260,69"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="91,80,129,70,131,76,92,85"/>
+<area shape="rect" id="Node000004" href="$class_lig4.html#af6c6110757baae16656089acad0dd48b" title="Reads a move from the user and validates it." alt="" coords="164,117,242,144"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="92,101,149,115,148,120,91,106"/>
+<area shape="rect" id="Node000008" href="$class_board.html#ad5daba47fc5ba8d907dd742e524b798d" title="Sets the symbol at the specified position on the board." alt="" coords="139,168,267,194"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="68,105,101,129,140,153,150,158,148,163,137,158,98,133,65,109"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="176,118,171,108,174,99,185,92,203,90,222,93,232,99,229,104,220,98,203,96,187,97,179,102,177,108,181,115"/>
+<area shape="rect" id="Node000005" href="$class_string_utils.html#ae1a37d886919df7273dba405917505d1" title="Checks if the given row and column are valid." alt="" coords="315,50,476,93"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="242,116,308,95,310,100,243,121"/>
+<area shape="rect" id="Node000006" href="$class_lig4.html#ab324a284e0eaf173fb7a04243268953c" title="Validates a move in the Lig4 game." alt="" coords="346,117,445,144"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="243,128,331,128,331,133,243,133"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="444,114,475,102,557,61,559,66,477,107,446,119"/>
+<area shape="rect" id="Node000007" href="$class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="541,117,650,144"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="445,128,526,128,526,133,445,133"/>
 </map>

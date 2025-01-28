@@ -1,0 +1,6 @@
+<map id="readMove" name="readMove">
+<area shape="rect" id="Node000001" title="Reads a move from the user and validates it." alt="" coords="139,29,217,56"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="199,16,192,10,178,8,165,10,158,14,156,20,160,28,155,30,151,21,154,11,163,5,178,3,194,5,202,12"/>
+<area shape="rect" id="Node000002" href="$class_reversi.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Reversi game." alt="" coords="5,29,91,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,45,91,45,91,40,123,40"/>
+</map>

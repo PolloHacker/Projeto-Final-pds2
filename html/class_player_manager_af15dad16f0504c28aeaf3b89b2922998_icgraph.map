@@ -1,0 +1,7 @@
+<map id="getMaxNameLength" name="getMaxNameLength">
+<area shape="rect" id="Node000001" title="Get the maximum length of player names." alt="" coords="368,5,506,32"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ab967116dd46ae6b0e0fff7f336a069af" title="Prints a formatted table of player information." alt="" coords="243,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,21,320,21,320,16,352,16"/>
+<area shape="rect" id="Node000003" href="$class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b" title="Handles the listing of players based on user input." alt="" coords="5,5,195,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="227,21,195,21,195,16,227,16"/>
+</map>

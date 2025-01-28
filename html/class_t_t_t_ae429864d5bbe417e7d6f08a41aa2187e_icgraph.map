@@ -1,5 +1,0 @@
-<map id="TTT::checkRows" name="TTT::checkRows">
-<area shape="rect" id="Node000001" title="Checks the rows in the Tic&#45;Tac&#45;Toe game for a win condition." alt="" coords="200,5,321,32"/>
-<area shape="rect" id="Node000002" href="$class_t_t_t.html#ab733456aee9bf05f948285a70c959b95" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,5,152,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,21,152,21,152,16,184,16"/>
-</map>

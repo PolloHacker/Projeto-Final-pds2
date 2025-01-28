@@ -1,0 +1,8 @@
+<map id="validateMove" name="validateMove">
+<area shape="rect" id="Node000001" title="Validates a move in the Tic&#45;Tac&#45;Toe game." alt="" coords="265,29,363,56"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#af6c6110757baae16656089acad0dd48b" title="Reads a move from the user and validates it." alt="" coords="139,29,217,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,45,217,45,217,40,249,40"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="199,16,192,10,178,8,165,10,158,14,156,20,160,28,155,30,151,21,154,11,163,5,178,3,194,5,202,12"/>
+<area shape="rect" id="Node000003" href="$class_t_t_t.html#a8866f64affe25d84543472b7d7e6244e" title="Makes a move in the Tic&#45;Tac&#45;Toe game." alt="" coords="5,29,91,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,45,91,45,91,40,123,40"/>
+</map>

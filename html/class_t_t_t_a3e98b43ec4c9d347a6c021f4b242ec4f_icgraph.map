@@ -1,0 +1,10 @@
+<map id="checkLine" name="checkLine">
+<area shape="rect" id="Node000001" title="Checks if there is a winning line (row or column) in the Tic&#45;Tac&#45;Toe board." alt="" coords="325,31,405,57"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#a81912bbc6d0f01d4200d253c662d219a" title="Checks the columns in the game." alt="" coords="169,5,277,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="309,37,277,31,278,26,310,32"/>
+<area shape="rect" id="Node000004" href="$class_t_t_t.html#a739ea11ed8aabd637b012373dae75e7a" title="Checks the rows in the Tic&#45;Tac&#45;Toe game for a win condition." alt="" coords="178,56,268,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,56,269,64,268,59,309,51"/>
+<area shape="rect" id="Node000003" href="$class_t_t_t.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,31,121,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="154,32,122,37,121,32,153,27"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="162,62,121,56,122,51,163,57"/>
+</map>

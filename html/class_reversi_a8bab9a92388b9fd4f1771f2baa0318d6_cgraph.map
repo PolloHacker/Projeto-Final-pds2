@@ -1,0 +1,17 @@
+<map id="validateMove" name="validateMove">
+<area shape="rect" id="Node000001" title="Validates a move in the Reversi game." alt="" coords="5,56,104,83"/>
+<area shape="rect" id="Node000002" href="$class_reversi.html#a1656f72d26ab1665e0f2f871982fcd05" title="Checks if the given row and column are within the boundaries of the board." alt="" coords="152,5,273,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,53,153,35,155,40,99,58"/>
+<area shape="rect" id="Node000004" href="$class_reversi.html#ae7fde8c946b28b90e0b148bf9eab22dd" title="Checks all possible directions from a given position on the board." alt="" coords="155,56,270,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="104,67,139,67,139,72,104,72"/>
+<area shape="rect" id="Node000007" href="$class_reversi.html#ab3af04e12ccca84081a9b9fc75adfb9b" title="Checks if the specified position on the board is occupied." alt="" coords="324,107,427,133"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="103,81,152,92,233,104,308,112,308,118,233,110,151,97,102,86"/>
+<area shape="rect" id="Node000003" href="$class_board.html#abda705891a3b80e83698058e781133f3" title="Checks if the given row and column indices are within the bounds of the board." alt="" coords="477,19,632,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,18,462,26,462,31,273,24"/>
+<area shape="rect" id="Node000005" href="$class_reversi.html#ac17d001e073d36dc0c20c3bf36cc8877" title="Checks a specific direction from a given position on the board to find and mark opponent&#39;s pieces to ..." alt="" coords="321,56,429,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="271,67,306,67,306,72,271,72"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="429,55,472,46,473,52,431,61"/>
+<area shape="rect" id="Node000006" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="483,81,626,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="430,74,468,80,467,85,430,80"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="427,110,467,104,468,110,428,115"/>
+</map>

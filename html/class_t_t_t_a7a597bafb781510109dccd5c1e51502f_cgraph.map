@@ -1,5 +1,0 @@
-<map id="TTT::checkLine" name="TTT::checkLine">
-<area shape="rect" id="Node000001" title="Checks if there is a winning line (row or column) in the Tic&#45;Tac&#45;Toe board." alt="" coords="5,5,117,32"/>
-<area shape="rect" id="Node000002" href="$class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="165,5,307,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,16,149,16,149,21,117,21"/>
-</map>

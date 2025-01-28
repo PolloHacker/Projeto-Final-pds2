@@ -1,0 +1,9 @@
+<map id="checkDirections" name="checkDirections">
+<area shape="rect" id="Node000001" title="Checks all possible directions from a given position on the board." alt="" coords="5,31,121,57"/>
+<area shape="rect" id="Node000002" href="$class_reversi.html#ac17d001e073d36dc0c20c3bf36cc8877" title="Checks a specific direction from a given position on the board to find and mark opponent&#39;s pieces to ..." alt="" coords="169,31,277,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,41,153,41,153,47,121,47"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="331,5,473,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="277,34,315,28,316,34,278,39"/>
+<area shape="rect" id="Node000004" href="$class_board.html#abda705891a3b80e83698058e781133f3" title="Checks if the given row and column indices are within the bounds of the board." alt="" coords="325,56,479,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="278,49,310,54,309,59,277,54"/>
+</map>

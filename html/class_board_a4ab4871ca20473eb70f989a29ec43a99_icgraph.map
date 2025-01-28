@@ -1,15 +1,56 @@
 <map id="getElementAt" name="getElementAt">
-<area shape="rect" id="Node000001" title="Retrieves the element at the specified row and column in the board." alt="" coords="222,132,322,159"/>
-<area shape="rect" id="Node000002" href="$class_lig4.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game is finished." alt="" coords="16,5,163,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,121,216,82,172,46,149,35,151,30,175,42,220,78,254,117"/>
-<area shape="rect" id="Node000003" href="$class_reversi.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game of Reversi is finished." alt="" coords="5,56,174,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="232,126,173,97,141,86,143,81,175,92,235,122"/>
-<area shape="rect" id="Node000004" href="$class_lig4.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Lig4 game." alt="" coords="31,107,148,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="206,139,148,131,149,126,207,134"/>
-<area shape="rect" id="Node000005" href="$class_game.html#a8310d6d1e915cb179f834d9ca017950a" title="Prints the current state of the game board to the standard output." alt="" coords="28,157,151,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="207,157,152,165,151,159,206,152"/>
-<area shape="rect" id="Node000006" href="$class_lig4.html#ab7e255e36221bdba1ccb0afc0af7f6cc" title="Prints the current state of the game board to the standard output." alt="" coords="33,208,146,235"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="235,169,175,198,143,210,141,205,173,194,232,164"/>
-<area shape="rect" id="Node000007" href="$class_lig4.html#ab324a284e0eaf173fb7a04243268953c" title="Validates a move in the Lig4 game." alt="" coords="24,259,155,285"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="254,173,220,212,175,249,151,260,149,256,172,244,216,208,250,170"/>
+<area shape="rect" id="Node000001" title="Retrieves the element at the specified row and column in the board." alt="" coords="1033,304,1133,330"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#abfbaf7f3f4350e06ba87f1b6b5081e84" title="Checks the diagonals of the Tic&#45;Tac&#45;Toe board to determine if there is a winner." alt="" coords="619,76,764,102"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1075,289,1065,249,1048,201,1021,154,1004,134,983,117,958,102,931,91,874,79,817,76,764,79,764,74,817,71,875,74,933,86,961,97,987,112,1008,130,1025,151,1053,199,1070,247,1080,288"/>
+<area shape="rect" id="Node000004" href="$class_reversi.html#ac17d001e073d36dc0c20c3bf36cc8877" title="Checks a specific direction from a given position on the board to find and mark opponent&#39;s pieces to ..." alt="" coords="824,329,985,356"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1018,329,986,334,985,328,1017,324"/>
+<area shape="rect" id="Node000007" href="$class_reversi.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game of Reversi is finished." alt="" coords="192,114,360,141"/>
+<area shape="poly" id="edge20_Node000001_Node000007" title=" " alt="" coords="1077,288,1070,240,1054,182,1042,152,1026,124,1007,99,983,78,941,52,897,33,850,20,801,12,752,8,702,9,603,21,510,42,426,68,307,116,305,111,424,63,508,37,602,16,702,4,752,3,802,6,851,15,899,28,944,48,987,74,1011,95,1031,121,1047,150,1059,180,1075,239,1082,288"/>
+<area shape="rect" id="Node000010" href="$class_lig4.html#a6185b984ee67e64d9ba30fc259fb3f9c" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="834,126,974,153"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="1068,291,1034,232,1011,201,983,174,952,156,955,151,987,170,1015,198,1039,230,1072,289"/>
+<area shape="rect" id="Node000011" href="$class_lig4.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks if the game is finished." alt="" coords="618,126,765,153"/>
+<area shape="poly" id="edge19_Node000001_Node000011" title=" " alt="" coords="1062,293,1028,254,1007,234,984,218,944,202,888,185,764,156,765,151,889,180,946,197,986,213,1010,230,1032,250,1066,289"/>
+<area shape="rect" id="Node000012" href="$class_t_t_t.html#a3e98b43ec4c9d347a6c021f4b242ec4f" title="Checks if there is a winning line (row or column) in the Tic&#45;Tac&#45;Toe board." alt="" coords="849,228,960,254"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="1037,299,984,276,940,257,942,253,986,271,1040,294"/>
+<area shape="rect" id="Node000015" href="$class_reversi.html#ab3af04e12ccca84081a9b9fc75adfb9b" title="Checks if the specified position on the board is occupied." alt="" coords="613,278,770,305"/>
+<area shape="poly" id="edge17_Node000001_Node000015" title=" " alt="" coords="1017,316,770,299,770,294,1018,310"/>
+<area shape="rect" id="Node000016" href="$class_lig4.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Lig4 game." alt="" coords="425,430,542,457"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="1049,341,1019,357,986,370,864,402,742,424,630,437,543,444,542,439,630,432,741,419,863,397,984,365,1017,352,1046,336"/>
+<area shape="rect" id="Node000017" href="$class_game.html#a8310d6d1e915cb179f834d9ca017950a" title="Prints the current state of the game board to the standard output." alt="" coords="843,430,966,457"/>
+<area shape="poly" id="edge22_Node000001_Node000017" title=" " alt="" coords="1063,344,1029,380,986,414,950,432,948,428,984,410,1026,376,1059,340"/>
+<area shape="rect" id="Node000018" href="$class_lig4.html#ab7e255e36221bdba1ccb0afc0af7f6cc" title="Prints the current state of the game board to the standard output." alt="" coords="848,481,960,508"/>
+<area shape="poly" id="edge23_Node000001_Node000018" title=" " alt="" coords="1074,346,1041,409,1017,442,987,471,962,485,960,480,983,467,1012,439,1037,406,1069,343"/>
+<area shape="rect" id="Node000019" href="$class_lig4.html#ab324a284e0eaf173fb7a04243268953c" title="Validates a move in the Lig4 game." alt="" coords="839,532,970,558"/>
+<area shape="poly" id="edge24_Node000001_Node000019" title=" " alt="" coords="1078,346,1067,385,1049,432,1023,480,987,522,969,533,966,529,983,518,1018,477,1044,430,1062,384,1073,345"/>
+<area shape="rect" id="Node000021" href="$class_t_t_t.html#af7cea583d974b6c5f0ce5007016b13eb" title="Validates a move in the Tic&#45;Tac&#45;Toe game." alt="" coords="840,582,969,609"/>
+<area shape="poly" id="edge28_Node000001_Node000021" title=" " alt="" coords="1082,346,1073,395,1056,456,1029,518,1010,547,987,572,970,584,967,580,983,568,1005,544,1024,515,1051,454,1068,394,1076,346"/>
+<area shape="rect" id="Node000003" href="$class_t_t_t.html#a1507ef6ca8488f97089c5a309bc7c28a" title="Checks the current state of the game to determine if it has finished." alt="" coords="410,177,557,204"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="624,110,608,117,551,148,505,179,502,175,548,144,606,112,622,106"/>
+<area shape="rect" id="Node000005" href="$class_reversi.html#ae7fde8c946b28b90e0b148bf9eab22dd" title="Checks all possible directions from a given position on the board." alt="" coords="607,329,776,356"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="808,345,776,345,776,340,808,340"/>
+<area shape="rect" id="Node000006" href="$class_reversi.html#a8bab9a92388b9fd4f1771f2baa0318d6" title="Validates a move in the Reversi game." alt="" coords="408,278,559,305"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="618,327,541,308,542,303,620,322"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="451,271,293,144,296,140,455,266"/>
+<area shape="rect" id="Node000008" href="$class_reversi.html#af6c6110757baae16656089acad0dd48b" title="Reads a move from the user and validates it." alt="" coords="210,278,342,305"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="393,294,342,294,342,289,393,289"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="310,266,298,259,276,257,255,259,243,264,241,269,246,277,242,279,235,270,240,260,253,254,276,252,300,254,313,261"/>
+<area shape="rect" id="Node000009" href="$class_reversi.html#a8866f64affe25d84543472b7d7e6244e" title="Executes a move in the Reversi game." alt="" coords="5,278,144,305"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="195,294,144,294,144,289,195,289"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="819,142,766,142,766,137,819,137"/>
+<area shape="rect" id="Node000013" href="$class_t_t_t.html#a81912bbc6d0f01d4200d253c662d219a" title="Checks the columns in the game." alt="" coords="622,228,761,254"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="834,244,762,244,762,238,834,238"/>
+<area shape="rect" id="Node000014" href="$class_t_t_t.html#a739ea11ed8aabd637b012373dae75e7a" title="Checks the rows in the Tic&#45;Tac&#45;Toe game for a win condition." alt="" coords="631,177,752,204"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="833,227,750,207,751,202,834,222"/>
+<area shape="poly" id="edge14_Node000013_Node000003" title=" " alt="" coords="618,226,541,207,542,202,620,221"/>
+<area shape="poly" id="edge16_Node000014_Node000003" title=" " alt="" coords="615,193,557,193,557,188,615,188"/>
+<area shape="poly" id="edge18_Node000015_Node000006" title=" " alt="" coords="598,294,560,294,560,289,598,289"/>
+<area shape="rect" id="Node000020" href="$class_lig4.html#af6c6110757baae16656089acad0dd48b" title="Reads a move from the user and validates it." alt="" coords="636,481,747,508"/>
+<area shape="poly" id="edge25_Node000019_Node000020" title=" " alt="" coords="830,530,746,510,748,505,831,525"/>
+<area shape="poly" id="edge26_Node000020_Node000016" title=" " alt="" coords="620,480,541,460,542,455,622,475"/>
+<area shape="poly" id="edge27_Node000020_Node000020" title=" " alt="" coords="727,468,715,462,691,460,670,462,658,466,655,472,661,479,656,482,650,472,654,463,668,457,692,454,716,457,729,463"/>
+<area shape="rect" id="Node000022" href="$class_t_t_t.html#af6c6110757baae16656089acad0dd48b" title="Reads a move from the user and validates it." alt="" coords="637,582,746,609"/>
+<area shape="poly" id="edge29_Node000021_Node000022" title=" " alt="" coords="824,598,747,598,747,593,824,593"/>
+<area shape="poly" id="edge31_Node000022_Node000022" title=" " alt="" coords="727,570,715,563,691,561,670,563,658,568,655,573,661,580,656,584,650,574,654,564,668,558,692,556,716,558,729,565"/>
+<area shape="rect" id="Node000023" href="$class_t_t_t.html#a8866f64affe25d84543472b7d7e6244e" title="Makes a move in the Tic&#45;Tac&#45;Toe game." alt="" coords="426,582,542,609"/>
+<area shape="poly" id="edge30_Node000022_Node000023" title=" " alt="" coords="621,598,542,598,542,593,621,593"/>
 </map>
