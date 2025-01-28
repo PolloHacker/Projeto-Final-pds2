@@ -204,10 +204,21 @@ Os inputs foram estabelecidos pelos desenvolvedores desse projeto, seguindo esse
 
 (Preencher com breve tutorial de como acessar a documentação HTML)
 
+## Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios:
+
+- Uso de Makefile: Como demoramos a criar o Makefile, já que criamos apenas no final do projeto, observamos que perdemos muito tempo de compilação, já que estavamos sempre recompilando todos os arquivos para realizar os testes.
+
+- Realização dos Testes: Compreender e executar os testes se mostrou um processo desafiador. Houve dificuldades em entender a estrutura e como conseguir integrá-los no nosso processo de desenvolvimento.
+
+- Dificuldades na lógica do reversi: Ao desenvolver a função de checkDiretions, usada para verificar as jogadas, encontramos problemas que foram um desafio a mais para nosso desenvolvimento, sendo necessário várias horas para encontrar e solucionar o erro.
+
+Essas dificuldades, embora desafiadoras, contribuíram para um grande aprendizado por parte de toda a equipe.
+
 ## Aprendizados com o projeto
 
 Este projeto foi uma oportunidade valiosa para aprimorar nossas habilidades em programação, colaboração e gerenciamento de projetos. Os principais aprendizados incluem:
 
+- Uso de técnicas de Modularização de projetos em C++ (CRC cards).
 - Programação orientada a objetos em C++.
 - Colaboração efetiva em um projeto conjunto.
 - Comunicação.
