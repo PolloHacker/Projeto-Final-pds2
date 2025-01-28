@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['tabuleiro_0',['Jogos de Tabuleiro',['../index.html',1,'']]],
-  ['tecnologias_20utilizadas_1',['Tecnologias Utilizadas',['../index.html#autotoc_md3',1,'']]],
-  ['ttt_2',['TTT',['../class_t_t_t.html',1,'TTT'],['../class_t_t_t.html#aae1c884011a4275e9151ed7fc249cb15',1,'TTT::TTT()']]]
+  ['setposition_0',['setPosition',['../class_board.html#a565204fa504373e3d02b86d2539551fe',1,'Board']]],
+  ['sistema_1',['Finalizar sistema',['../index.html#autotoc_md24',1,'']]],
+  ['stats_2',['Stats',['../class_stats.html',1,'Stats'],['../index.html#autotoc_md9',1,'Stats']]],
+  ['stringutils_3',['StringUtils',['../class_string_utils.html',1,'StringUtils'],['../index.html#autotoc_md12',1,'StringUtils']]]
 ];

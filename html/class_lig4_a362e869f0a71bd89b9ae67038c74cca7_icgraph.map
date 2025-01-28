@@ -1,0 +1,8 @@
+<map id="Lig4::validateMove" name="Lig4::validateMove">
+<area shape="rect" id="Node000001" title="Validates a move in the Lig4 game." alt="" coords="329,29,459,56"/>
+<area shape="rect" id="Node000002" href="$class_lig4.html#ac3af3ad2d6ca0b359ea6c235179d39ec" title="Reads a move from the user and validates it." alt="" coords="171,29,281,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,45,281,45,281,40,314,40"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="253,16,244,10,226,8,209,10,200,15,198,20,202,28,198,30,193,21,196,11,208,5,226,3,245,5,256,12"/>
+<area shape="rect" id="Node000003" href="$class_lig4.html#ab39144d15b163916b899b383f352d15c" title="Executes a move in the Lig4 game." alt="" coords="5,29,123,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
+</map>

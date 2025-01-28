@@ -136,7 +136,7 @@ $(function(){initNavTree('player_8hpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        std::string _nickname;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_class" href="class_stats.html">Stats</a> _stats;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">void</span> updateGameStats(<span class="keywordtype">char</span> game, <span class="keywordtype">bool</span> isWin);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a73e5a276bebeace20cbb5360b5044d2a">updateGameStats</a>(<span class="keywordtype">char</span> game, <span class="keywordtype">bool</span> isWin);</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
@@ -155,7 +155,7 @@ $(function(){initNavTree('player_8hpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="class_stats.html">Stats</a> getStats() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#a4bb620544520bba5d3b8b2275b32665c">updateStats</a>(<span class="keywordtype">char</span> result, <span class="keywordtype">char</span> game);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7">updateStats</a>(<span class="keywordtype">char</span> result, <span class="keywordtype">char</span> game);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream&amp; os, <span class="keyword">const</span> <a class="code hl_class" href="class_player.html">Player</a>&amp; player);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
@@ -164,7 +164,8 @@ $(function(){initNavTree('player_8hpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclass_player_html"><div class="ttname"><a href="class_player.html">Player</a></div><div class="ttdef"><b>Definição</b> player.hpp:8</div></div>
-<div class="ttc" id="aclass_player_html_a4bb620544520bba5d3b8b2275b32665c"><div class="ttname"><a href="class_player.html#a4bb620544520bba5d3b8b2275b32665c">Player::updateStats</a></div><div class="ttdeci">void updateStats(char result, char game)</div><div class="ttdoc">Updates the player's statistics based on the result of a game.</div><div class="ttdef"><b>Definição</b> player.cpp:34</div></div>
+<div class="ttc" id="aclass_player_html_a73e5a276bebeace20cbb5360b5044d2a"><div class="ttname"><a href="class_player.html#a73e5a276bebeace20cbb5360b5044d2a">Player::updateGameStats</a></div><div class="ttdeci">void updateGameStats(char game, bool isWin)</div><div class="ttdoc">Updates the game statistics for the player based on the game type and result.</div><div class="ttdef"><b>Definição</b> player.cpp:60</div></div>
+<div class="ttc" id="aclass_player_html_aafeaa6ebc0cbf677b89ec4d45adff9f7"><div class="ttname"><a href="class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7">Player::updateStats</a></div><div class="ttdeci">void updateStats(char result, char game)</div><div class="ttdoc">Updates the player's statistics based on the result of a game.</div><div class="ttdef"><b>Definição</b> player.cpp:34</div></div>
 <div class="ttc" id="aclass_stats_html"><div class="ttname"><a href="class_stats.html">Stats</a></div><div class="ttdef"><b>Definição</b> stats.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

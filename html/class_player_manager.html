@@ -114,63 +114,102 @@ $(function(){initNavTree('class_player_manager.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Membros Públicos</a>  </div>
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="#pri-methods">Membros privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="class_player_manager-members.html">Lista de todos os Membros</a>  </div>
   <div class="headertitle"><div class="title">Referência da Classe PlayerManager</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros Públicos</h2></td></tr>
-<tr class="memitem:ae49bcbbb1dc921777e1193c2b2e6b25e" id="r_ae49bcbbb1dc921777e1193c2b2e6b25e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae49bcbbb1dc921777e1193c2b2e6b25e">PlayerManager</a> ()</td></tr>
-<tr class="memdesc:ae49bcbbb1dc921777e1193c2b2e6b25e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_player_manager.html">PlayerManager</a> object.  <br /></td></tr>
-<tr class="separator:ae49bcbbb1dc921777e1193c2b2e6b25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e167a9e014b9cc7a5819c9516ecfa1b" id="r_a2e167a9e014b9cc7a5819c9516ecfa1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e167a9e014b9cc7a5819c9516ecfa1b">loadPlayers</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:a2e167a9e014b9cc7a5819c9516ecfa1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads player data from a file and adds players to the manager.  <br /></td></tr>
-<tr class="separator:a2e167a9e014b9cc7a5819c9516ecfa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a374702237f060c162e23541941528286" id="r_a374702237f060c162e23541941528286"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a374702237f060c162e23541941528286">addPlayer</a> (const std::string &amp;name, const std::string &amp;nickname, <a class="el" href="class_stats.html">Stats</a> stats)</td></tr>
-<tr class="memdesc:a374702237f060c162e23541941528286"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new player to the player manager.  <br /></td></tr>
-<tr class="separator:a374702237f060c162e23541941528286"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a8639c359060629d6236b506ed9de43" id="r_a2a8639c359060629d6236b506ed9de43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a8639c359060629d6236b506ed9de43">addPlayer</a> (const std::string &amp;name, const std::string &amp;nickname)</td></tr>
-<tr class="memdesc:a2a8639c359060629d6236b506ed9de43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a player to the <a class="el" href="class_player_manager.html">PlayerManager</a>.  <br /></td></tr>
-<tr class="separator:a2a8639c359060629d6236b506ed9de43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fc9969ef0b7f21ffa5ffc762c9af637" id="r_a4fc9969ef0b7f21ffa5ffc762c9af637"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc9969ef0b7f21ffa5ffc762c9af637">removePlayer</a> (const std::string &amp;nickname)</td></tr>
-<tr class="memdesc:a4fc9969ef0b7f21ffa5ffc762c9af637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a player from the player list by their nickname.  <br /></td></tr>
-<tr class="separator:a4fc9969ef0b7f21ffa5ffc762c9af637"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f987e8998de7b617f2f920e78f593e" id="r_a82f987e8998de7b617f2f920e78f593e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82f987e8998de7b617f2f920e78f593e">printPlayerByNickname</a> (const std::string &amp;nickname)</td></tr>
-<tr class="memdesc:a82f987e8998de7b617f2f920e78f593e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the player information based on the provided nickname.  <br /></td></tr>
-<tr class="separator:a82f987e8998de7b617f2f920e78f593e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9390b23f1b5f755e172b03bd1edc2258" id="r_a9390b23f1b5f755e172b03bd1edc2258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9390b23f1b5f755e172b03bd1edc2258">printPlayerByName</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a9390b23f1b5f755e172b03bd1edc2258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the player information by name.  <br /></td></tr>
-<tr class="separator:a9390b23f1b5f755e172b03bd1edc2258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad88c6b8c3d363707c1ee8dd48d9f9ad8" id="r_ad88c6b8c3d363707c1ee8dd48d9f9ad8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_player.html">Player</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad88c6b8c3d363707c1ee8dd48d9f9ad8">getPlayer</a> (const std::string &amp;nickname)</td></tr>
-<tr class="memdesc:ad88c6b8c3d363707c1ee8dd48d9f9ad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an iterator to a player with the specified nickname.  <br /></td></tr>
-<tr class="separator:ad88c6b8c3d363707c1ee8dd48d9f9ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c7da6a790aef14dd66385633993bb6" id="r_ab8c7da6a790aef14dd66385633993bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8c7da6a790aef14dd66385633993bb6">updatePlayerStats</a> (const std::string &amp;nickname, char result)</td></tr>
-<tr class="memdesc:ab8c7da6a790aef14dd66385633993bb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the statistics of a player based on the game result.  <br /></td></tr>
-<tr class="separator:ab8c7da6a790aef14dd66385633993bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6d31ba4d162d45cc39d3de910d48364" id="r_ac6d31ba4d162d45cc39d3de910d48364"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6d31ba4d162d45cc39d3de910d48364">exportPlayerData</a> ()</td></tr>
-<tr class="memdesc:ac6d31ba4d162d45cc39d3de910d48364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports player data to a CSV file.  <br /></td></tr>
-<tr class="separator:ac6d31ba4d162d45cc39d3de910d48364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab967116dd46ae6b0e0fff7f336a069af" id="r_ab967116dd46ae6b0e0fff7f336a069af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab967116dd46ae6b0e0fff7f336a069af">printTable</a> ()</td></tr>
-<tr class="memdesc:ab967116dd46ae6b0e0fff7f336a069af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a formatted table of player information.  <br /></td></tr>
-<tr class="separator:ab967116dd46ae6b0e0fff7f336a069af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a257a047419807db825874e5a047ea014" id="r_a257a047419807db825874e5a047ea014"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a257a047419807db825874e5a047ea014">getPlayerCount</a> ()</td></tr>
-<tr class="memdesc:a257a047419807db825874e5a047ea014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current number of players.  <br /></td></tr>
-<tr class="separator:a257a047419807db825874e5a047ea014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad149b7d1737ad7aad73e70e470785200" id="r_ad149b7d1737ad7aad73e70e470785200"><td class="memItemLeft" align="right" valign="top"><a id="ad149b7d1737ad7aad73e70e470785200" name="ad149b7d1737ad7aad73e70e470785200"></a>
+<tr class="memitem:ae093e4e4e7eecdf5b46de72f5827d71d" id="r_ae093e4e4e7eecdf5b46de72f5827d71d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae093e4e4e7eecdf5b46de72f5827d71d">PlayerManager</a> ()</td></tr>
+<tr class="memdesc:ae093e4e4e7eecdf5b46de72f5827d71d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_player_manager.html">PlayerManager</a> object.  <br /></td></tr>
+<tr class="separator:ae093e4e4e7eecdf5b46de72f5827d71d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a028bc0bf883d4ab10bcd6be1759949cd" id="r_a028bc0bf883d4ab10bcd6be1759949cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a028bc0bf883d4ab10bcd6be1759949cd">loadPlayers</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a028bc0bf883d4ab10bcd6be1759949cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads player data from a file and adds players to the manager.  <br /></td></tr>
+<tr class="separator:a028bc0bf883d4ab10bcd6be1759949cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649d83540b62657042b860dd8d2c4777" id="r_a649d83540b62657042b860dd8d2c4777"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a649d83540b62657042b860dd8d2c4777">addPlayer</a> (const std::string &amp;name, const std::string &amp;nickname, <a class="el" href="class_stats.html">Stats</a> stats)</td></tr>
+<tr class="memdesc:a649d83540b62657042b860dd8d2c4777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new player to the player manager.  <br /></td></tr>
+<tr class="separator:a649d83540b62657042b860dd8d2c4777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb004e0f6c4eba408851b41778ecd4e" id="r_a2eb004e0f6c4eba408851b41778ecd4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eb004e0f6c4eba408851b41778ecd4e">addPlayer</a> (const std::string &amp;name, const std::string &amp;nickname)</td></tr>
+<tr class="memdesc:a2eb004e0f6c4eba408851b41778ecd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a player to the <a class="el" href="class_player_manager.html">PlayerManager</a>.  <br /></td></tr>
+<tr class="separator:a2eb004e0f6c4eba408851b41778ecd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f3b699521a4ddec4cdf7b76fd8c97c" id="r_a81f3b699521a4ddec4cdf7b76fd8c97c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81f3b699521a4ddec4cdf7b76fd8c97c">removePlayer</a> (const std::string &amp;nickname)</td></tr>
+<tr class="memdesc:a81f3b699521a4ddec4cdf7b76fd8c97c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a player from the player list by their nickname.  <br /></td></tr>
+<tr class="separator:a81f3b699521a4ddec4cdf7b76fd8c97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9b70ea7dc011e0e663470808655cb8" id="r_adf9b70ea7dc011e0e663470808655cb8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf9b70ea7dc011e0e663470808655cb8">printPlayerByNickname</a> (const std::string &amp;nickname)</td></tr>
+<tr class="memdesc:adf9b70ea7dc011e0e663470808655cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the player information based on the provided nickname.  <br /></td></tr>
+<tr class="separator:adf9b70ea7dc011e0e663470808655cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1511e00bb04e0c8317f3d063c98a6d02" id="r_a1511e00bb04e0c8317f3d063c98a6d02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1511e00bb04e0c8317f3d063c98a6d02">printPlayerByName</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a1511e00bb04e0c8317f3d063c98a6d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the player information by name.  <br /></td></tr>
+<tr class="separator:a1511e00bb04e0c8317f3d063c98a6d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a752160da6404b57d37bd52f3beaf6439" id="r_a752160da6404b57d37bd52f3beaf6439"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_player.html">Player</a> &gt;::iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a752160da6404b57d37bd52f3beaf6439">getPlayer</a> (const std::string &amp;nickname)</td></tr>
+<tr class="memdesc:a752160da6404b57d37bd52f3beaf6439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an iterator to a player with the specified nickname.  <br /></td></tr>
+<tr class="separator:a752160da6404b57d37bd52f3beaf6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e23945bfc6ebf37ef894780cb067e12" id="r_a3e23945bfc6ebf37ef894780cb067e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e23945bfc6ebf37ef894780cb067e12">updatePlayerStats</a> (const std::string &amp;nickname, char result)</td></tr>
+<tr class="memdesc:a3e23945bfc6ebf37ef894780cb067e12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the statistics of a player based on the game result.  <br /></td></tr>
+<tr class="separator:a3e23945bfc6ebf37ef894780cb067e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8157229d7633b629d6a6afcccd6ec254" id="r_a8157229d7633b629d6a6afcccd6ec254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8157229d7633b629d6a6afcccd6ec254">exportPlayerData</a> ()</td></tr>
+<tr class="memdesc:a8157229d7633b629d6a6afcccd6ec254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports player data to a CSV file.  <br /></td></tr>
+<tr class="separator:a8157229d7633b629d6a6afcccd6ec254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2942fa04557437d26cd3e3c1777bfb" id="r_abb2942fa04557437d26cd3e3c1777bfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb2942fa04557437d26cd3e3c1777bfb">printTable</a> ()</td></tr>
+<tr class="memdesc:abb2942fa04557437d26cd3e3c1777bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints a formatted table of player information.  <br /></td></tr>
+<tr class="separator:abb2942fa04557437d26cd3e3c1777bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bac96d1d613629c95528310679adc8" id="r_ad6bac96d1d613629c95528310679adc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6bac96d1d613629c95528310679adc8">getPlayerCount</a> ()</td></tr>
+<tr class="memdesc:ad6bac96d1d613629c95528310679adc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current number of players.  <br /></td></tr>
+<tr class="separator:ad6bac96d1d613629c95528310679adc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab53de6b16914b7591fc2bd3038069ac7" id="r_ab53de6b16914b7591fc2bd3038069ac7"><td class="memItemLeft" align="right" valign="top"><a id="ab53de6b16914b7591fc2bd3038069ac7" name="ab53de6b16914b7591fc2bd3038069ac7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>~PlayerManager</b> ()</td></tr>
-<tr class="memdesc:ad149b7d1737ad7aad73e70e470785200"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="class_player_manager.html">PlayerManager</a> class. <br /></td></tr>
-<tr class="separator:ad149b7d1737ad7aad73e70e470785200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ab53de6b16914b7591fc2bd3038069ac7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="class_player_manager.html">PlayerManager</a> class. <br /></td></tr>
+<tr class="separator:ab53de6b16914b7591fc2bd3038069ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:abf4c76d734eda1f644dfd3b4e1e7c851" id="r_abf4c76d734eda1f644dfd3b4e1e7c851"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf4c76d734eda1f644dfd3b4e1e7c851">readBasicFields</a> (std::istringstream &amp;ss, <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> &amp;data)</td></tr>
+<tr class="memdesc:abf4c76d734eda1f644dfd3b4e1e7c851"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads basic fields (id, name, and nickname) from a given input stream.  <br /></td></tr>
+<tr class="separator:abf4c76d734eda1f644dfd3b4e1e7c851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69f94919d389caf3224059a5498162d" id="r_ab69f94919d389caf3224059a5498162d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab69f94919d389caf3224059a5498162d">readStatsFields</a> (std::istringstream &amp;ss, <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> &amp;data)</td></tr>
+<tr class="memdesc:ab69f94919d389caf3224059a5498162d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the statistics fields from the input stream and populates the <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> structure.  <br /></td></tr>
+<tr class="separator:ab69f94919d389caf3224059a5498162d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a414deccebe602c856459577990e5dc64" id="r_a414deccebe602c856459577990e5dc64"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414deccebe602c856459577990e5dc64">readField</a> (std::istringstream &amp;ss, std::string &amp;field)</td></tr>
+<tr class="memdesc:a414deccebe602c856459577990e5dc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a field from a given input string stream.  <br /></td></tr>
+<tr class="separator:a414deccebe602c856459577990e5dc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44d8dff5625d79f1ac162ea61995cc4" id="r_ac44d8dff5625d79f1ac162ea61995cc4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac44d8dff5625d79f1ac162ea61995cc4">readPlayerFromFile</a> (std::istringstream &amp;ss, <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> &amp;data)</td></tr>
+<tr class="memdesc:ac44d8dff5625d79f1ac162ea61995cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads player data from a given input stream.  <br /></td></tr>
+<tr class="separator:ac44d8dff5625d79f1ac162ea61995cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e6fea12ebc482de8cafe47281d5b26" id="r_ae3e6fea12ebc482de8cafe47281d5b26"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3e6fea12ebc482de8cafe47281d5b26">getMaxNameLength</a> ()</td></tr>
+<tr class="memdesc:ae3e6fea12ebc482de8cafe47281d5b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum length of player names.  <br /></td></tr>
+<tr class="separator:ae3e6fea12ebc482de8cafe47281d5b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee282a93070919da8e76520dbbe7b1f" id="r_acee282a93070919da8e76520dbbe7b1f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acee282a93070919da8e76520dbbe7b1f">getMaxNicknameLength</a> ()</td></tr>
+<tr class="memdesc:acee282a93070919da8e76520dbbe7b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum length of nicknames among all players.  <br /></td></tr>
+<tr class="separator:acee282a93070919da8e76520dbbe7b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:ada88b7db6806ac537075af2c0bb0a63c" id="r_ada88b7db6806ac537075af2c0bb0a63c"><td class="memItemLeft" align="right" valign="top"><a id="ada88b7db6806ac537075af2c0bb0a63c" name="ada88b7db6806ac537075af2c0bb0a63c"></a>
+std::vector&lt; <a class="el" href="class_player.html">Player</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>players</b></td></tr>
+<tr class="separator:ada88b7db6806ac537075af2c0bb0a63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6001d52688403e7765ce83c84d2e7ba" id="r_ab6001d52688403e7765ce83c84d2e7ba"><td class="memItemLeft" align="right" valign="top"><a id="ab6001d52688403e7765ce83c84d2e7ba" name="ab6001d52688403e7765ce83c84d2e7ba"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>num_players</b></td></tr>
+<tr class="separator:ab6001d52688403e7765ce83c84d2e7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Construtores e Destrutores</h2>
-<a id="ae49bcbbb1dc921777e1193c2b2e6b25e" name="ae49bcbbb1dc921777e1193c2b2e6b25e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae49bcbbb1dc921777e1193c2b2e6b25e">&#9670;&#160;</a></span>PlayerManager()</h2>
+<a id="ae093e4e4e7eecdf5b46de72f5827d71d" name="ae093e4e4e7eecdf5b46de72f5827d71d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae093e4e4e7eecdf5b46de72f5827d71d">&#9670;&#160;</a></span>PlayerManager()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_player_manager.html">PlayerManager</a> </td>
+          <td class="memname">PlayerManager::PlayerManager </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -184,14 +223,14 @@ Membros Públicos</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentação das funções</h2>
-<a id="a2a8639c359060629d6236b506ed9de43" name="a2a8639c359060629d6236b506ed9de43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a8639c359060629d6236b506ed9de43">&#9670;&#160;</a></span>addPlayer() <span class="overload">[1/2]</span></h2>
+<a id="a2eb004e0f6c4eba408851b41778ecd4e" name="a2eb004e0f6c4eba408851b41778ecd4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb004e0f6c4eba408851b41778ecd4e">&#9670;&#160;</a></span>addPlayer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void addPlayer </td>
+          <td class="memname">void PlayerManager::addPlayer </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
         </tr>
@@ -220,30 +259,30 @@ Membros Públicos</h2></td></tr>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a2a8639c359060629d6236b506ed9de43_cgraph.png" border="0" usemap="#aclass_player_manager_a2a8639c359060629d6236b506ed9de43_cgraph" alt=""/></div>
-<map name="aclass_player_manager_a2a8639c359060629d6236b506ed9de43_cgraph" id="aclass_player_manager_a2a8639c359060629d6236b506ed9de43_cgraph">
-<area shape="rect" title="Adds a player to the PlayerManager." alt="" coords="5,56,85,83"/>
-<area shape="rect" href="class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="133,56,212,83"/>
-<area shape="poly" title=" " alt="" coords="85,67,117,67,117,72,85,72"/>
-<area shape="rect" href="class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="321,5,397,32"/>
-<area shape="poly" title=" " alt="" coords="212,55,259,41,305,29,306,34,261,47,213,60"/>
-<area shape="rect" href="class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="272,56,446,83"/>
-<area shape="poly" title=" " alt="" coords="212,67,256,67,256,72,212,72"/>
-<area shape="rect" href="class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="260,107,458,133"/>
-<area shape="poly" title=" " alt="" coords="213,78,261,92,289,100,287,105,259,97,212,84"/>
+<div class="center"><img src="class_player_manager_a2eb004e0f6c4eba408851b41778ecd4e_cgraph.png" border="0" usemap="#aclass_player_manager_a2eb004e0f6c4eba408851b41778ecd4e_cgraph" alt=""/></div>
+<map name="aclass_player_manager_a2eb004e0f6c4eba408851b41778ecd4e_cgraph" id="aclass_player_manager_a2eb004e0f6c4eba408851b41778ecd4e_cgraph">
+<area shape="rect" title="Adds a player to the PlayerManager." alt="" coords="5,56,180,83"/>
+<area shape="rect" href="class_player_manager.html#a649d83540b62657042b860dd8d2c4777" title="Adds a new player to the player manager." alt="" coords="228,56,402,83"/>
+<area shape="poly" title=" " alt="" coords="180,67,212,67,212,72,180,72"/>
+<area shape="rect" href="class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="464,5,635,32"/>
+<area shape="poly" title=" " alt="" coords="380,53,469,33,470,38,381,58"/>
+<area shape="rect" href="class_string_utils.html#ac8c0283cdcab2949ac97aa6817ba7632" title="Checks if the given name is invalid." alt="" coords="462,56,636,83"/>
+<area shape="poly" title=" " alt="" coords="402,67,446,67,446,72,402,72"/>
+<area shape="rect" href="class_string_utils.html#ad5f94e28e667ae2ae6901e44a4b58274" title="Checks if the given nickname is invalid." alt="" coords="450,107,648,133"/>
+<area shape="poly" title=" " alt="" coords="381,81,470,100,469,105,380,86"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a374702237f060c162e23541941528286" name="a374702237f060c162e23541941528286"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a374702237f060c162e23541941528286">&#9670;&#160;</a></span>addPlayer() <span class="overload">[2/2]</span></h2>
+<a id="a649d83540b62657042b860dd8d2c4777" name="a649d83540b62657042b860dd8d2c4777"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649d83540b62657042b860dd8d2c4777">&#9670;&#160;</a></span>addPlayer() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void addPlayer </td>
+          <td class="memname">void PlayerManager::addPlayer </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
         </tr>
@@ -279,44 +318,44 @@ Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a374702237f060c162e23541941528286_cgraph.png" border="0" usemap="#aclass_player_manager_a374702237f060c162e23541941528286_cgraph" alt=""/></div>
-<map name="aclass_player_manager_a374702237f060c162e23541941528286_cgraph" id="aclass_player_manager_a374702237f060c162e23541941528286_cgraph">
-<area shape="rect" title="Adds a new player to the player manager." alt="" coords="5,56,85,83"/>
-<area shape="rect" href="class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="194,5,270,32"/>
-<area shape="poly" title=" " alt="" coords="84,55,132,41,178,29,179,34,133,47,86,60"/>
-<area shape="rect" href="class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="145,56,319,83"/>
-<area shape="poly" title=" " alt="" coords="85,67,129,67,129,72,85,72"/>
-<area shape="rect" href="class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="133,107,331,133"/>
-<area shape="poly" title=" " alt="" coords="86,78,133,92,162,100,160,105,132,97,84,84"/>
+<div class="center"><img src="class_player_manager_a649d83540b62657042b860dd8d2c4777_cgraph.png" border="0" usemap="#aclass_player_manager_a649d83540b62657042b860dd8d2c4777_cgraph" alt=""/></div>
+<map name="aclass_player_manager_a649d83540b62657042b860dd8d2c4777_cgraph" id="aclass_player_manager_a649d83540b62657042b860dd8d2c4777_cgraph">
+<area shape="rect" title="Adds a new player to the player manager." alt="" coords="5,56,180,83"/>
+<area shape="rect" href="class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="241,5,412,32"/>
+<area shape="poly" title=" " alt="" coords="157,53,246,33,248,38,158,58"/>
+<area shape="rect" href="class_string_utils.html#ac8c0283cdcab2949ac97aa6817ba7632" title="Checks if the given name is invalid." alt="" coords="240,56,414,83"/>
+<area shape="poly" title=" " alt="" coords="180,67,224,67,224,72,180,72"/>
+<area shape="rect" href="class_string_utils.html#ad5f94e28e667ae2ae6901e44a4b58274" title="Checks if the given nickname is invalid." alt="" coords="228,107,426,133"/>
+<area shape="poly" title=" " alt="" coords="158,81,248,100,246,105,157,86"/>
 </map>
 </div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a374702237f060c162e23541941528286_icgraph.png" border="0" usemap="#aclass_player_manager_a374702237f060c162e23541941528286_icgraph" alt=""/></div>
-<map name="aclass_player_manager_a374702237f060c162e23541941528286_icgraph" id="aclass_player_manager_a374702237f060c162e23541941528286_icgraph">
-<area shape="rect" title="Adds a new player to the player manager." alt="" coords="498,56,577,83"/>
-<area shape="rect" href="class_player_manager.html#a2a8639c359060629d6236b506ed9de43" title="Adds a player to the PlayerManager." alt="" coords="310,5,390,32"/>
-<area shape="poly" title=" " alt="" coords="482,56,449,47,389,31,390,26,451,41,484,51"/>
-<area shape="rect" href="class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c" title="Handles the creation of a new player." alt="" coords="250,56,450,83"/>
-<area shape="poly" title=" " alt="" coords="482,72,451,72,451,67,482,67"/>
-<area shape="rect" href="class_player_manager.html#a2e167a9e014b9cc7a5819c9516ecfa1b" title="Loads player data from a file and adds players to the manager." alt="" coords="305,107,394,133"/>
-<area shape="poly" title=" " alt="" coords="484,88,451,97,396,112,394,107,449,92,482,83"/>
-<area shape="rect" href="class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,107,202,133"/>
-<area shape="poly" title=" " alt="" coords="290,123,202,123,202,117,290,117"/>
+<div class="center"><img src="class_player_manager_a649d83540b62657042b860dd8d2c4777_icgraph.png" border="0" usemap="#aclass_player_manager_a649d83540b62657042b860dd8d2c4777_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a649d83540b62657042b860dd8d2c4777_icgraph" id="aclass_player_manager_a649d83540b62657042b860dd8d2c4777_icgraph">
+<area shape="rect" title="Adds a new player to the player manager." alt="" coords="498,56,672,83"/>
+<area shape="rect" href="class_player_manager.html#a2eb004e0f6c4eba408851b41778ecd4e" title="Adds a player to the PlayerManager." alt="" coords="263,5,437,32"/>
+<area shape="poly" title=" " alt="" coords="504,55,415,35,416,30,505,50"/>
+<area shape="rect" href="class_exec_utils.html#a078ac1299658dcd3f7fb49ba9f6b1db2" title="Handles the creation of a new player." alt="" coords="250,56,450,83"/>
+<area shape="poly" title=" " alt="" coords="483,72,451,72,451,67,483,67"/>
+<area shape="rect" href="class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd" title="Loads player data from a file and adds players to the manager." alt="" coords="258,107,442,133"/>
+<area shape="poly" title=" " alt="" coords="505,89,416,109,415,103,504,84"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,107,202,133"/>
+<area shape="poly" title=" " alt="" coords="242,123,202,123,202,117,242,117"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac6d31ba4d162d45cc39d3de910d48364" name="ac6d31ba4d162d45cc39d3de910d48364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6d31ba4d162d45cc39d3de910d48364">&#9670;&#160;</a></span>exportPlayerData()</h2>
+<a id="a8157229d7633b629d6a6afcccd6ec254" name="a8157229d7633b629d6a6afcccd6ec254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8157229d7633b629d6a6afcccd6ec254">&#9670;&#160;</a></span>exportPlayerData()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void exportPlayerData </td>
+          <td class="memname">void PlayerManager::exportPlayerData </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -347,28 +386,108 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_ac6d31ba4d162d45cc39d3de910d48364_icgraph.png" border="0" usemap="#aclass_player_manager_ac6d31ba4d162d45cc39d3de910d48364_icgraph" alt=""/></div>
-<map name="aclass_player_manager_ac6d31ba4d162d45cc39d3de910d48364_icgraph" id="aclass_player_manager_ac6d31ba4d162d45cc39d3de910d48364_icgraph">
-<area shape="rect" title="Exports player data to a CSV file." alt="" coords="264,56,386,83"/>
-<area shape="rect" href="class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c" title="Handles the creation of a new player." alt="" coords="10,5,211,32"/>
-<area shape="poly" title=" " alt="" coords="250,54,169,35,171,30,251,49"/>
-<area shape="rect" href="class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf" title="Handles the process of playing a game between two players." alt="" coords="18,56,203,83"/>
-<area shape="poly" title=" " alt="" coords="248,72,204,72,204,67,248,67"/>
-<area shape="rect" href="class_exec_utils.html#a99d7769ad77fb30ef09a287f59bc1ec4" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,107,216,133"/>
-<area shape="poly" title=" " alt="" coords="251,89,171,109,169,103,250,84"/>
+<div class="center"><img src="class_player_manager_a8157229d7633b629d6a6afcccd6ec254_icgraph.png" border="0" usemap="#aclass_player_manager_a8157229d7633b629d6a6afcccd6ec254_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a8157229d7633b629d6a6afcccd6ec254_icgraph" id="aclass_player_manager_a8157229d7633b629d6a6afcccd6ec254_icgraph">
+<area shape="rect" title="Exports player data to a CSV file." alt="" coords="264,56,481,83"/>
+<area shape="rect" href="class_exec_utils.html#a078ac1299658dcd3f7fb49ba9f6b1db2" title="Handles the creation of a new player." alt="" coords="10,5,211,32"/>
+<area shape="poly" title=" " alt="" coords="284,55,183,35,184,30,285,50"/>
+<area shape="rect" href="class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="18,56,203,83"/>
+<area shape="poly" title=" " alt="" coords="248,72,203,72,203,67,248,67"/>
+<area shape="rect" href="class_exec_utils.html#a9978db0c6aadc32374a5ddcfe22d64b4" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,107,216,133"/>
+<area shape="poly" title=" " alt="" coords="285,89,184,109,183,103,284,84"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad88c6b8c3d363707c1ee8dd48d9f9ad8" name="ad88c6b8c3d363707c1ee8dd48d9f9ad8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad88c6b8c3d363707c1ee8dd48d9f9ad8">&#9670;&#160;</a></span>getPlayer()</h2>
+<a id="ae3e6fea12ebc482de8cafe47281d5b26" name="ae3e6fea12ebc482de8cafe47281d5b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3e6fea12ebc482de8cafe47281d5b26">&#9670;&#160;</a></span>getMaxNameLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PlayerManager::getMaxNameLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the maximum length of player names. </p>
+<dl class="section return"><dt>Retorna</dt><dd>size_t The length of the longest player name. </dd></dl>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_ae3e6fea12ebc482de8cafe47281d5b26_icgraph.png" border="0" usemap="#aclass_player_manager_ae3e6fea12ebc482de8cafe47281d5b26_icgraph" alt=""/></div>
+<map name="aclass_player_manager_ae3e6fea12ebc482de8cafe47281d5b26_icgraph" id="aclass_player_manager_ae3e6fea12ebc482de8cafe47281d5b26_icgraph">
+<area shape="rect" title="Get the maximum length of player names." alt="" coords="463,5,657,48"/>
+<area shape="rect" href="class_player_manager.html#abb2942fa04557437d26cd3e3c1777bfb" title="Prints a formatted table of player information." alt="" coords="243,13,415,40"/>
+<area shape="poly" title=" " alt="" coords="447,29,415,29,415,24,447,24"/>
+<area shape="rect" href="class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="5,13,195,40"/>
+<area shape="poly" title=" " alt="" coords="228,29,195,29,195,24,228,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acee282a93070919da8e76520dbbe7b1f" name="acee282a93070919da8e76520dbbe7b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee282a93070919da8e76520dbbe7b1f">&#9670;&#160;</a></span>getMaxNicknameLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t PlayerManager::getMaxNicknameLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the maximum length of nicknames among all players. </p>
+<dl class="section return"><dt>Retorna</dt><dd>size_t The length of the longest nickname. </dd></dl>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_acee282a93070919da8e76520dbbe7b1f_icgraph.png" border="0" usemap="#aclass_player_manager_acee282a93070919da8e76520dbbe7b1f_icgraph" alt=""/></div>
+<map name="aclass_player_manager_acee282a93070919da8e76520dbbe7b1f_icgraph" id="aclass_player_manager_acee282a93070919da8e76520dbbe7b1f_icgraph">
+<area shape="rect" title="Get the maximum length of nicknames among all players." alt="" coords="463,5,681,48"/>
+<area shape="rect" href="class_player_manager.html#abb2942fa04557437d26cd3e3c1777bfb" title="Prints a formatted table of player information." alt="" coords="243,13,415,40"/>
+<area shape="poly" title=" " alt="" coords="447,29,416,29,416,24,447,24"/>
+<area shape="rect" href="class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="5,13,195,40"/>
+<area shape="poly" title=" " alt="" coords="228,29,195,29,195,24,228,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a752160da6404b57d37bd52f3beaf6439" name="a752160da6404b57d37bd52f3beaf6439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752160da6404b57d37bd52f3beaf6439">&#9670;&#160;</a></span>getPlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="class_player.html">Player</a> &gt;::iterator getPlayer </td>
+          <td class="memname">std::vector&lt; <a class="el" href="class_player.html">Player</a> &gt;::iterator PlayerManager::getPlayer </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nickname</em></span></td><td>)</td>
           <td></td>
@@ -393,45 +512,45 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_ad88c6b8c3d363707c1ee8dd48d9f9ad8_icgraph.png" border="0" usemap="#aclass_player_manager_ad88c6b8c3d363707c1ee8dd48d9f9ad8_icgraph" alt=""/></div>
-<map name="aclass_player_manager_ad88c6b8c3d363707c1ee8dd48d9f9ad8_icgraph" id="aclass_player_manager_ad88c6b8c3d363707c1ee8dd48d9f9ad8_icgraph">
-<area shape="rect" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="714,157,791,184"/>
-<area shape="rect" href="class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="548,56,627,83"/>
-<area shape="poly" title=" " alt="" coords="724,149,697,126,665,104,626,85,628,80,668,99,700,121,728,145"/>
-<area shape="rect" href="class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf" title="Handles the process of playing a game between two players." alt="" coords="262,157,448,184"/>
-<area shape="poly" title=" " alt="" coords="698,155,666,148,602,143,536,145,422,159,421,154,536,140,602,138,667,143,700,150"/>
-<area shape="rect" href="class_player_manager.html#a82f987e8998de7b617f2f920e78f593e" title="Prints the player information based on the provided nickname." alt="" coords="508,208,666,235"/>
-<area shape="poly" title=" " alt="" coords="700,189,634,210,632,205,699,184"/>
-<area shape="rect" href="class_player_manager.html#a4fc9969ef0b7f21ffa5ffc762c9af637" title="Removes a player from the player list by their nickname." alt="" coords="536,259,638,285"/>
-<area shape="poly" title=" " alt="" coords="731,197,702,224,668,249,639,262,637,257,665,244,699,220,727,193"/>
-<area shape="rect" href="class_player_manager.html#ab8c7da6a790aef14dd66385633993bb6" title="Updates the statistics of a player based on the game result." alt="" coords="523,157,651,184"/>
-<area shape="poly" title=" " alt="" coords="699,173,652,173,652,168,699,168"/>
-<area shape="rect" href="class_player_manager.html#a2a8639c359060629d6236b506ed9de43" title="Adds a player to the PlayerManager." alt="" coords="315,5,394,32"/>
-<area shape="poly" title=" " alt="" coords="532,60,394,30,396,25,533,55"/>
-<area shape="rect" href="class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c" title="Handles the creation of a new player." alt="" coords="255,56,455,83"/>
-<area shape="poly" title=" " alt="" coords="532,72,455,72,455,67,532,67"/>
-<area shape="rect" href="class_player_manager.html#a2e167a9e014b9cc7a5819c9516ecfa1b" title="Loads player data from a file and adds players to the manager." alt="" coords="310,107,400,133"/>
-<area shape="poly" title=" " alt="" coords="533,84,401,113,399,108,532,79"/>
-<area shape="rect" href="class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,107,202,133"/>
-<area shape="poly" title=" " alt="" coords="295,123,202,123,202,117,295,117"/>
-<area shape="rect" href="class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b" title="Handles the listing of players based on user input." alt="" coords="260,208,450,235"/>
-<area shape="poly" title=" " alt="" coords="492,224,450,224,450,219,492,219"/>
-<area shape="rect" href="class_exec_utils.html#a99d7769ad77fb30ef09a287f59bc1ec4" title="Handles the removal of a player from the PlayerManager." alt="" coords="250,259,460,285"/>
-<area shape="poly" title=" " alt="" coords="521,275,461,275,461,269,521,269"/>
-<area shape="poly" title=" " alt="" coords="508,173,448,173,448,168,508,168"/>
+<div class="center"><img src="class_player_manager_a752160da6404b57d37bd52f3beaf6439_icgraph.png" border="0" usemap="#aclass_player_manager_a752160da6404b57d37bd52f3beaf6439_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a752160da6404b57d37bd52f3beaf6439_icgraph" id="aclass_player_manager_a752160da6404b57d37bd52f3beaf6439_icgraph">
+<area shape="rect" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="752,165,924,192"/>
+<area shape="rect" href="class_player_manager.html#a649d83540b62657042b860dd8d2c4777" title="Adds a new player to the player manager." alt="" coords="519,56,693,83"/>
+<area shape="poly" title=" " alt="" coords="802,159,756,131,703,104,656,86,657,81,705,99,759,126,805,155"/>
+<area shape="rect" href="class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="262,161,448,188"/>
+<area shape="poly" title=" " alt="" coords="778,163,704,148,606,141,508,148,415,163,414,158,508,143,606,136,705,143,779,158"/>
+<area shape="rect" href="class_player_manager.html#adf9b70ea7dc011e0e663470808655cb8" title="Prints the player information based on the provided nickname." alt="" coords="517,224,695,267"/>
+<area shape="poly" title=" " alt="" coords="775,199,684,226,682,221,773,194"/>
+<area shape="rect" href="class_player_manager.html#a81f3b699521a4ddec4cdf7b76fd8c97c" title="Removes a player from the player list by their nickname." alt="" coords="508,291,704,317"/>
+<area shape="poly" title=" " alt="" coords="813,205,765,244,706,281,676,293,674,288,703,276,762,240,810,201"/>
+<area shape="rect" href="class_player_manager.html#a3e23945bfc6ebf37ef894780cb067e12" title="Updates the statistics of a player based on the game result." alt="" coords="510,157,702,200"/>
+<area shape="poly" title=" " alt="" coords="737,181,703,181,703,176,737,176"/>
+<area shape="rect" href="class_player_manager.html#a2eb004e0f6c4eba408851b41778ecd4e" title="Adds a player to the PlayerManager." alt="" coords="268,5,442,32"/>
+<area shape="poly" title=" " alt="" coords="521,55,424,35,425,30,522,50"/>
+<area shape="rect" href="class_exec_utils.html#a078ac1299658dcd3f7fb49ba9f6b1db2" title="Handles the creation of a new player." alt="" coords="255,56,455,83"/>
+<area shape="poly" title=" " alt="" coords="504,72,456,72,456,67,504,67"/>
+<area shape="rect" href="class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd" title="Loads player data from a file and adds players to the manager." alt="" coords="263,107,447,133"/>
+<area shape="poly" title=" " alt="" coords="522,89,425,109,424,103,521,84"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,107,202,133"/>
+<area shape="poly" title=" " alt="" coords="247,123,202,123,202,117,247,117"/>
+<area shape="rect" href="class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="260,232,450,259"/>
+<area shape="poly" title=" " alt="" coords="501,248,450,248,450,243,501,243"/>
+<area shape="rect" href="class_exec_utils.html#a9978db0c6aadc32374a5ddcfe22d64b4" title="Handles the removal of a player from the PlayerManager." alt="" coords="250,291,460,317"/>
+<area shape="poly" title=" " alt="" coords="493,307,460,307,460,301,493,301"/>
+<area shape="poly" title=" " alt="" coords="494,180,448,179,448,173,494,174"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a257a047419807db825874e5a047ea014" name="a257a047419807db825874e5a047ea014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a257a047419807db825874e5a047ea014">&#9670;&#160;</a></span>getPlayerCount()</h2>
+<a id="ad6bac96d1d613629c95528310679adc8" name="ad6bac96d1d613629c95528310679adc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bac96d1d613629c95528310679adc8">&#9670;&#160;</a></span>getPlayerCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int getPlayerCount </td>
+          <td class="memname">int PlayerManager::getPlayerCount </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -444,14 +563,14 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 
 </div>
 </div>
-<a id="a2e167a9e014b9cc7a5819c9516ecfa1b" name="a2e167a9e014b9cc7a5819c9516ecfa1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e167a9e014b9cc7a5819c9516ecfa1b">&#9670;&#160;</a></span>loadPlayers()</h2>
+<a id="a028bc0bf883d4ab10bcd6be1759949cd" name="a028bc0bf883d4ab10bcd6be1759949cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a028bc0bf883d4ab10bcd6be1759949cd">&#9670;&#160;</a></span>loadPlayers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void loadPlayers </td>
+          <td class="memname">void PlayerManager::loadPlayers </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>filename</em></span></td><td>)</td>
           <td></td>
@@ -481,40 +600,49 @@ If there is an error parsing a line, an error message is printed to the standard
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_cgraph.png" border="0" usemap="#aclass_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_cgraph" alt=""/></div>
-<map name="aclass_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_cgraph" id="aclass_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_cgraph">
-<area shape="rect" title="Loads player data from a file and adds players to the manager." alt="" coords="5,56,95,83"/>
-<area shape="rect" href="class_player_manager.html#a374702237f060c162e23541941528286" title="Adds a new player to the player manager." alt="" coords="143,56,222,83"/>
-<area shape="poly" title=" " alt="" coords="95,67,127,67,127,72,95,72"/>
-<area shape="rect" href="class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="331,5,407,32"/>
-<area shape="poly" title=" " alt="" coords="222,55,269,41,315,29,316,34,271,47,223,60"/>
-<area shape="rect" href="class_string_utils.html#ae2e93c16b75f99a609296d7032623d5d" title="Checks if the given name is invalid." alt="" coords="282,56,456,83"/>
-<area shape="poly" title=" " alt="" coords="222,67,266,67,266,72,222,72"/>
-<area shape="rect" href="class_string_utils.html#a660989fb00bf10d4db86d29ca3c2dd60" title="Checks if the given nickname is invalid." alt="" coords="270,107,468,133"/>
-<area shape="poly" title=" " alt="" coords="223,78,271,92,299,100,297,105,269,97,222,84"/>
+<div class="center"><img src="class_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_cgraph.png" border="0" usemap="#aclass_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_cgraph" alt=""/></div>
+<map name="aclass_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_cgraph" id="aclass_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_cgraph">
+<area shape="rect" title="Loads player data from a file and adds players to the manager." alt="" coords="5,136,190,163"/>
+<area shape="rect" href="class_player_manager.html#a649d83540b62657042b860dd8d2c4777" title="Adds a new player to the player manager." alt="" coords="240,81,414,108"/>
+<area shape="poly" title=" " alt="" coords="156,133,252,110,254,115,157,138"/>
+<area shape="rect" href="class_player_manager.html#ac44d8dff5625d79f1ac162ea61995cc4" title="Reads player data from a given input stream." alt="" coords="238,157,416,200"/>
+<area shape="poly" title=" " alt="" coords="190,158,222,163,222,168,189,164"/>
+<area shape="rect" href="class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="478,5,649,32"/>
+<area shape="poly" title=" " alt="" coords="362,78,463,41,489,34,490,39,465,47,363,83"/>
+<area shape="rect" href="class_string_utils.html#ac8c0283cdcab2949ac97aa6817ba7632" title="Checks if the given name is invalid." alt="" coords="476,56,650,83"/>
+<area shape="poly" title=" " alt="" coords="414,83,460,78,461,83,415,88"/>
+<area shape="rect" href="class_string_utils.html#ad5f94e28e667ae2ae6901e44a4b58274" title="Checks if the given nickname is invalid." alt="" coords="464,107,662,133"/>
+<area shape="poly" title=" " alt="" coords="415,101,449,105,448,110,414,107"/>
+<area shape="rect" href="class_player_manager.html#abf4c76d734eda1f644dfd3b4e1e7c851" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="476,157,650,200"/>
+<area shape="poly" title=" " alt="" coords="417,176,461,176,461,181,417,181"/>
+<area shape="rect" href="class_player_manager.html#ab69f94919d389caf3224059a5498162d" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="477,224,649,267"/>
+<area shape="poly" title=" " alt="" coords="405,198,471,217,469,222,404,203"/>
+<area shape="rect" href="class_player_manager.html#a414deccebe602c856459577990e5dc64" title="Reads a field from a given input string stream." alt="" coords="710,199,880,225"/>
+<area shape="poly" title=" " alt="" coords="651,189,695,195,694,200,650,194"/>
+<area shape="poly" title=" " alt="" coords="649,230,695,224,695,229,650,236"/>
 </map>
 </div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_icgraph.png" border="0" usemap="#aclass_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_icgraph" alt=""/></div>
-<map name="aclass_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_icgraph" id="aclass_player_manager_a2e167a9e014b9cc7a5819c9516ecfa1b_icgraph">
-<area shape="rect" title="Loads player data from a file and adds players to the manager." alt="" coords="250,5,339,32"/>
-<area shape="rect" href="class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,5,202,32"/>
+<div class="center"><img src="class_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_icgraph.png" border="0" usemap="#aclass_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_icgraph" id="aclass_player_manager_a028bc0bf883d4ab10bcd6be1759949cd_icgraph">
+<area shape="rect" title="Loads player data from a file and adds players to the manager." alt="" coords="250,5,434,32"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,5,202,32"/>
 <area shape="poly" title=" " alt="" coords="234,21,202,21,202,16,234,16"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a9390b23f1b5f755e172b03bd1edc2258" name="a9390b23f1b5f755e172b03bd1edc2258"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9390b23f1b5f755e172b03bd1edc2258">&#9670;&#160;</a></span>printPlayerByName()</h2>
+<a id="a1511e00bb04e0c8317f3d063c98a6d02" name="a1511e00bb04e0c8317f3d063c98a6d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1511e00bb04e0c8317f3d063c98a6d02">&#9670;&#160;</a></span>printPlayerByName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void printPlayerByName </td>
+          <td class="memname">void PlayerManager::printPlayerByName </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
           <td></td>
@@ -538,24 +666,24 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a9390b23f1b5f755e172b03bd1edc2258_icgraph.png" border="0" usemap="#aclass_player_manager_a9390b23f1b5f755e172b03bd1edc2258_icgraph" alt=""/></div>
-<map name="aclass_player_manager_a9390b23f1b5f755e172b03bd1edc2258_icgraph" id="aclass_player_manager_a9390b23f1b5f755e172b03bd1edc2258_icgraph">
-<area shape="rect" title="Prints the player information by name." alt="" coords="243,5,377,32"/>
-<area shape="rect" href="class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b" title="Handles the listing of players based on user input." alt="" coords="5,5,195,32"/>
-<area shape="poly" title=" " alt="" coords="227,21,195,21,195,16,227,16"/>
+<div class="center"><img src="class_player_manager_a1511e00bb04e0c8317f3d063c98a6d02_icgraph.png" border="0" usemap="#aclass_player_manager_a1511e00bb04e0c8317f3d063c98a6d02_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a1511e00bb04e0c8317f3d063c98a6d02_icgraph" id="aclass_player_manager_a1511e00bb04e0c8317f3d063c98a6d02_icgraph">
+<area shape="rect" title="Prints the player information by name." alt="" coords="243,5,421,48"/>
+<area shape="rect" href="class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="5,13,195,40"/>
+<area shape="poly" title=" " alt="" coords="227,29,195,29,195,24,227,24"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a82f987e8998de7b617f2f920e78f593e" name="a82f987e8998de7b617f2f920e78f593e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82f987e8998de7b617f2f920e78f593e">&#9670;&#160;</a></span>printPlayerByNickname()</h2>
+<a id="adf9b70ea7dc011e0e663470808655cb8" name="adf9b70ea7dc011e0e663470808655cb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf9b70ea7dc011e0e663470808655cb8">&#9670;&#160;</a></span>printPlayerByNickname()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void printPlayerByNickname </td>
+          <td class="memname">void PlayerManager::printPlayerByNickname </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nickname</em></span></td><td>)</td>
           <td></td>
@@ -579,34 +707,34 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a82f987e8998de7b617f2f920e78f593e_cgraph.png" border="0" usemap="#aclass_player_manager_a82f987e8998de7b617f2f920e78f593e_cgraph" alt=""/></div>
-<map name="aclass_player_manager_a82f987e8998de7b617f2f920e78f593e_cgraph" id="aclass_player_manager_a82f987e8998de7b617f2f920e78f593e_cgraph">
-<area shape="rect" title="Prints the player information based on the provided nickname." alt="" coords="5,5,164,32"/>
-<area shape="rect" href="class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="212,5,288,32"/>
-<area shape="poly" title=" " alt="" coords="164,16,196,16,196,21,164,21"/>
+<div class="center"><img src="class_player_manager_adf9b70ea7dc011e0e663470808655cb8_cgraph.png" border="0" usemap="#aclass_player_manager_adf9b70ea7dc011e0e663470808655cb8_cgraph" alt=""/></div>
+<map name="aclass_player_manager_adf9b70ea7dc011e0e663470808655cb8_cgraph" id="aclass_player_manager_adf9b70ea7dc011e0e663470808655cb8_cgraph">
+<area shape="rect" title="Prints the player information based on the provided nickname." alt="" coords="5,5,184,48"/>
+<area shape="rect" href="class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="232,13,403,40"/>
+<area shape="poly" title=" " alt="" coords="184,24,216,24,216,29,184,29"/>
 </map>
 </div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a82f987e8998de7b617f2f920e78f593e_icgraph.png" border="0" usemap="#aclass_player_manager_a82f987e8998de7b617f2f920e78f593e_icgraph" alt=""/></div>
-<map name="aclass_player_manager_a82f987e8998de7b617f2f920e78f593e_icgraph" id="aclass_player_manager_a82f987e8998de7b617f2f920e78f593e_icgraph">
-<area shape="rect" title="Prints the player information based on the provided nickname." alt="" coords="243,5,401,32"/>
-<area shape="rect" href="class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b" title="Handles the listing of players based on user input." alt="" coords="5,5,195,32"/>
-<area shape="poly" title=" " alt="" coords="228,21,195,21,195,16,228,16"/>
+<div class="center"><img src="class_player_manager_adf9b70ea7dc011e0e663470808655cb8_icgraph.png" border="0" usemap="#aclass_player_manager_adf9b70ea7dc011e0e663470808655cb8_icgraph" alt=""/></div>
+<map name="aclass_player_manager_adf9b70ea7dc011e0e663470808655cb8_icgraph" id="aclass_player_manager_adf9b70ea7dc011e0e663470808655cb8_icgraph">
+<area shape="rect" title="Prints the player information based on the provided nickname." alt="" coords="243,5,421,48"/>
+<area shape="rect" href="class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="5,13,195,40"/>
+<area shape="poly" title=" " alt="" coords="227,29,195,29,195,24,227,24"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab967116dd46ae6b0e0fff7f336a069af" name="ab967116dd46ae6b0e0fff7f336a069af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab967116dd46ae6b0e0fff7f336a069af">&#9670;&#160;</a></span>printTable()</h2>
+<a id="abb2942fa04557437d26cd3e3c1777bfb" name="abb2942fa04557437d26cd3e3c1777bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2942fa04557437d26cd3e3c1777bfb">&#9670;&#160;</a></span>printTable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void printTable </td>
+          <td class="memname">void PlayerManager::printTable </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -624,26 +752,288 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 </ul>
 <p>The column widths are dynamically adjusted based on the maximum lengths of the player names and nicknames to ensure proper alignment. </p>
 <div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_abb2942fa04557437d26cd3e3c1777bfb_cgraph.png" border="0" usemap="#aclass_player_manager_abb2942fa04557437d26cd3e3c1777bfb_cgraph" alt=""/></div>
+<map name="aclass_player_manager_abb2942fa04557437d26cd3e3c1777bfb_cgraph" id="aclass_player_manager_abb2942fa04557437d26cd3e3c1777bfb_cgraph">
+<area shape="rect" title="Prints a formatted table of player information." alt="" coords="5,47,178,73"/>
+<area shape="rect" href="class_player_manager.html#ae3e6fea12ebc482de8cafe47281d5b26" title="Get the maximum length of player names." alt="" coords="238,5,432,48"/>
+<area shape="poly" title=" " alt="" coords="178,46,222,39,223,45,178,51"/>
+<area shape="rect" href="class_player_manager.html#acee282a93070919da8e76520dbbe7b1f" title="Get the maximum length of nicknames among all players." alt="" coords="226,72,444,115"/>
+<area shape="poly" title=" " alt="" coords="178,69,211,74,210,79,178,74"/>
+</map>
+</div>
+<div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_ab967116dd46ae6b0e0fff7f336a069af_icgraph.png" border="0" usemap="#aclass_player_manager_ab967116dd46ae6b0e0fff7f336a069af_icgraph" alt=""/></div>
-<map name="aclass_player_manager_ab967116dd46ae6b0e0fff7f336a069af_icgraph" id="aclass_player_manager_ab967116dd46ae6b0e0fff7f336a069af_icgraph">
-<area shape="rect" title="Prints a formatted table of player information." alt="" coords="243,5,320,32"/>
-<area shape="rect" href="class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b" title="Handles the listing of players based on user input." alt="" coords="5,5,195,32"/>
-<area shape="poly" title=" " alt="" coords="227,21,195,21,195,16,227,16"/>
+<div class="center"><img src="class_player_manager_abb2942fa04557437d26cd3e3c1777bfb_icgraph.png" border="0" usemap="#aclass_player_manager_abb2942fa04557437d26cd3e3c1777bfb_icgraph" alt=""/></div>
+<map name="aclass_player_manager_abb2942fa04557437d26cd3e3c1777bfb_icgraph" id="aclass_player_manager_abb2942fa04557437d26cd3e3c1777bfb_icgraph">
+<area shape="rect" title="Prints a formatted table of player information." alt="" coords="243,5,415,32"/>
+<area shape="rect" href="class_exec_utils.html#aa0ae070c04849e119123ca913da1c0a7" title="Handles the listing of players based on user input." alt="" coords="5,5,195,32"/>
+<area shape="poly" title=" " alt="" coords="228,21,195,21,195,16,228,16"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a4fc9969ef0b7f21ffa5ffc762c9af637" name="a4fc9969ef0b7f21ffa5ffc762c9af637"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fc9969ef0b7f21ffa5ffc762c9af637">&#9670;&#160;</a></span>removePlayer()</h2>
+<a id="abf4c76d734eda1f644dfd3b4e1e7c851" name="abf4c76d734eda1f644dfd3b4e1e7c851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf4c76d734eda1f644dfd3b4e1e7c851">&#9670;&#160;</a></span>readBasicFields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerManager::readBasicFields </td>
+          <td>(</td>
+          <td class="paramtype">std::istringstream &amp;</td>          <td class="paramname"><span class="paramname"><em>ss</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads basic fields (id, name, and nickname) from a given input stream. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ss</td><td>The input stream containing the player data. </td></tr>
+    <tr><td class="paramname">data</td><td>The <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> object where the read fields will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if all fields are successfully read, false otherwise. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_cgraph.png" border="0" usemap="#aclass_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_cgraph" alt=""/></div>
+<map name="aclass_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_cgraph" id="aclass_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_cgraph">
+<area shape="rect" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="5,5,180,48"/>
+<area shape="rect" href="class_player_manager.html#a414deccebe602c856459577990e5dc64" title="Reads a field from a given input string stream." alt="" coords="228,13,397,40"/>
+<area shape="poly" title=" " alt="" coords="180,24,212,24,212,29,180,29"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_icgraph.png" border="0" usemap="#aclass_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_icgraph" alt=""/></div>
+<map name="aclass_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_icgraph" id="aclass_player_manager_abf4c76d734eda1f644dfd3b4e1e7c851_icgraph">
+<area shape="rect" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="708,5,883,48"/>
+<area shape="rect" href="class_player_manager.html#ac44d8dff5625d79f1ac162ea61995cc4" title="Reads player data from a given input stream." alt="" coords="482,5,660,48"/>
+<area shape="poly" title=" " alt="" coords="693,29,661,29,661,24,693,24"/>
+<area shape="rect" href="class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd" title="Loads player data from a file and adds players to the manager." alt="" coords="250,13,434,40"/>
+<area shape="poly" title=" " alt="" coords="466,29,435,29,435,24,466,24"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,13,202,40"/>
+<area shape="poly" title=" " alt="" coords="234,29,202,29,202,24,234,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a414deccebe602c856459577990e5dc64" name="a414deccebe602c856459577990e5dc64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414deccebe602c856459577990e5dc64">&#9670;&#160;</a></span>readField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerManager::readField </td>
+          <td>(</td>
+          <td class="paramtype">std::istringstream &amp;</td>          <td class="paramname"><span class="paramname"><em>ss</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>field</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a field from a given input string stream. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ss</td><td>The input string stream to read from. </td></tr>
+    <tr><td class="paramname">field</td><td>The string reference where the read field will be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if a field was successfully read, false otherwise. </dd></dl>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_a414deccebe602c856459577990e5dc64_icgraph.png" border="0" usemap="#aclass_player_manager_a414deccebe602c856459577990e5dc64_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a414deccebe602c856459577990e5dc64_icgraph" id="aclass_player_manager_a414deccebe602c856459577990e5dc64_icgraph">
+<area shape="rect" title="Reads a field from a given input string stream." alt="" coords="931,47,1100,73"/>
+<area shape="rect" href="class_player_manager.html#abf4c76d734eda1f644dfd3b4e1e7c851" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="708,5,883,48"/>
+<area shape="poly" title=" " alt="" coords="915,47,883,43,883,37,915,42"/>
+<area shape="rect" href="class_player_manager.html#ab69f94919d389caf3224059a5498162d" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="709,72,882,115"/>
+<area shape="poly" title=" " alt="" coords="916,78,882,83,882,78,915,73"/>
+<area shape="rect" href="class_player_manager.html#ac44d8dff5625d79f1ac162ea61995cc4" title="Reads player data from a given input stream." alt="" coords="482,39,660,81"/>
+<area shape="poly" title=" " alt="" coords="693,45,661,49,660,44,692,39"/>
+<area shape="rect" href="class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd" title="Loads player data from a file and adds players to the manager." alt="" coords="250,47,434,73"/>
+<area shape="poly" title=" " alt="" coords="466,63,435,63,435,57,466,57"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,47,202,73"/>
+<area shape="poly" title=" " alt="" coords="234,63,202,63,202,57,234,57"/>
+<area shape="poly" title=" " alt="" coords="694,81,660,76,661,71,694,76"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac44d8dff5625d79f1ac162ea61995cc4" name="ac44d8dff5625d79f1ac162ea61995cc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44d8dff5625d79f1ac162ea61995cc4">&#9670;&#160;</a></span>readPlayerFromFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerManager::readPlayerFromFile </td>
+          <td>(</td>
+          <td class="paramtype">std::istringstream &amp;</td>          <td class="paramname"><span class="paramname"><em>ss</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads player data from a given input stream. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ss</td><td>The input stream containing player data. </td></tr>
+    <tr><td class="paramname">data</td><td>The <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> structure to be populated with the read values. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if both basic fields and stats fields are successfully read, false otherwise. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_cgraph.png" border="0" usemap="#aclass_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_cgraph" alt=""/></div>
+<map name="aclass_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_cgraph" id="aclass_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_cgraph">
+<area shape="rect" title="Reads player data from a given input stream." alt="" coords="5,39,184,81"/>
+<area shape="rect" href="class_player_manager.html#abf4c76d734eda1f644dfd3b4e1e7c851" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="232,5,406,48"/>
+<area shape="poly" title=" " alt="" coords="184,44,216,39,216,45,184,49"/>
+<area shape="rect" href="class_player_manager.html#ab69f94919d389caf3224059a5498162d" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="233,72,405,115"/>
+<area shape="poly" title=" " alt="" coords="184,71,218,76,217,81,184,76"/>
+<area shape="rect" href="class_player_manager.html#a414deccebe602c856459577990e5dc64" title="Reads a field from a given input string stream." alt="" coords="454,47,623,73"/>
+<area shape="poly" title=" " alt="" coords="407,37,439,42,438,47,406,43"/>
+<area shape="poly" title=" " alt="" coords="405,78,438,73,439,78,406,83"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_icgraph.png" border="0" usemap="#aclass_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_icgraph" alt=""/></div>
+<map name="aclass_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_icgraph" id="aclass_player_manager_ac44d8dff5625d79f1ac162ea61995cc4_icgraph">
+<area shape="rect" title="Reads player data from a given input stream." alt="" coords="482,5,660,48"/>
+<area shape="rect" href="class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd" title="Loads player data from a file and adds players to the manager." alt="" coords="250,13,434,40"/>
+<area shape="poly" title=" " alt="" coords="466,29,435,29,435,24,466,24"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,13,202,40"/>
+<area shape="poly" title=" " alt="" coords="234,29,202,29,202,24,234,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab69f94919d389caf3224059a5498162d" name="ab69f94919d389caf3224059a5498162d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69f94919d389caf3224059a5498162d">&#9670;&#160;</a></span>readStatsFields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool PlayerManager::readStatsFields </td>
+          <td>(</td>
+          <td class="paramtype">std::istringstream &amp;</td>          <td class="paramname"><span class="paramname"><em>ss</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads the statistics fields from the input stream and populates the <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> structure. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ss</td><td>The input string stream containing the statistics data. </td></tr>
+    <tr><td class="paramname">data</td><td>The <a class="el" href="struct_player_manager_1_1_player_data.html">PlayerData</a> structure to be populated with the read statistics. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>true if all fields were successfully read and assigned; false otherwise. </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_ab69f94919d389caf3224059a5498162d_cgraph.png" border="0" usemap="#aclass_player_manager_ab69f94919d389caf3224059a5498162d_cgraph" alt=""/></div>
+<map name="aclass_player_manager_ab69f94919d389caf3224059a5498162d_cgraph" id="aclass_player_manager_ab69f94919d389caf3224059a5498162d_cgraph">
+<area shape="rect" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="5,5,178,48"/>
+<area shape="rect" href="class_player_manager.html#a414deccebe602c856459577990e5dc64" title="Reads a field from a given input string stream." alt="" coords="226,13,395,40"/>
+<area shape="poly" title=" " alt="" coords="178,24,210,24,210,29,178,29"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_manager_ab69f94919d389caf3224059a5498162d_icgraph.png" border="0" usemap="#aclass_player_manager_ab69f94919d389caf3224059a5498162d_icgraph" alt=""/></div>
+<map name="aclass_player_manager_ab69f94919d389caf3224059a5498162d_icgraph" id="aclass_player_manager_ab69f94919d389caf3224059a5498162d_icgraph">
+<area shape="rect" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="708,5,881,48"/>
+<area shape="rect" href="class_player_manager.html#ac44d8dff5625d79f1ac162ea61995cc4" title="Reads player data from a given input stream." alt="" coords="482,5,660,48"/>
+<area shape="poly" title=" " alt="" coords="693,29,661,29,661,24,693,24"/>
+<area shape="rect" href="class_player_manager.html#a028bc0bf883d4ab10bcd6be1759949cd" title="Loads player data from a file and adds players to the manager." alt="" coords="250,13,434,40"/>
+<area shape="poly" title=" " alt="" coords="466,29,435,29,435,24,466,24"/>
+<area shape="rect" href="class_exec_utils.html#a92315d45480234b64134a6fa55d694e7" title="Handles the loading of players from the save file." alt="" coords="5,13,202,40"/>
+<area shape="poly" title=" " alt="" coords="234,29,202,29,202,24,234,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a81f3b699521a4ddec4cdf7b76fd8c97c" name="a81f3b699521a4ddec4cdf7b76fd8c97c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f3b699521a4ddec4cdf7b76fd8c97c">&#9670;&#160;</a></span>removePlayer()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void removePlayer </td>
+          <td class="memname">void PlayerManager::removePlayer </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nickname</em></span></td><td>)</td>
           <td></td>
@@ -667,34 +1057,34 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_cgraph.png" border="0" usemap="#aclass_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_cgraph" alt=""/></div>
-<map name="aclass_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_cgraph" id="aclass_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_cgraph">
-<area shape="rect" title="Removes a player from the player list by their nickname." alt="" coords="5,5,107,32"/>
-<area shape="rect" href="class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="155,5,231,32"/>
-<area shape="poly" title=" " alt="" coords="107,16,139,16,139,21,107,21"/>
+<div class="center"><img src="class_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_cgraph.png" border="0" usemap="#aclass_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_cgraph" alt=""/></div>
+<map name="aclass_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_cgraph" id="aclass_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_cgraph">
+<area shape="rect" title="Removes a player from the player list by their nickname." alt="" coords="5,5,202,32"/>
+<area shape="rect" href="class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="250,5,421,32"/>
+<area shape="poly" title=" " alt="" coords="202,16,234,16,234,21,202,21"/>
 </map>
 </div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_icgraph.png" border="0" usemap="#aclass_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_icgraph" alt=""/></div>
-<map name="aclass_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_icgraph" id="aclass_player_manager_a4fc9969ef0b7f21ffa5ffc762c9af637_icgraph">
-<area shape="rect" title="Removes a player from the player list by their nickname." alt="" coords="264,5,365,32"/>
-<area shape="rect" href="class_exec_utils.html#a99d7769ad77fb30ef09a287f59bc1ec4" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,5,216,32"/>
+<div class="center"><img src="class_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_icgraph.png" border="0" usemap="#aclass_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_icgraph" id="aclass_player_manager_a81f3b699521a4ddec4cdf7b76fd8c97c_icgraph">
+<area shape="rect" title="Removes a player from the player list by their nickname." alt="" coords="264,5,460,32"/>
+<area shape="rect" href="class_exec_utils.html#a9978db0c6aadc32374a5ddcfe22d64b4" title="Handles the removal of a player from the PlayerManager." alt="" coords="5,5,216,32"/>
 <area shape="poly" title=" " alt="" coords="248,21,216,21,216,16,248,16"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab8c7da6a790aef14dd66385633993bb6" name="ab8c7da6a790aef14dd66385633993bb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8c7da6a790aef14dd66385633993bb6">&#9670;&#160;</a></span>updatePlayerStats()</h2>
+<a id="a3e23945bfc6ebf37ef894780cb067e12" name="a3e23945bfc6ebf37ef894780cb067e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e23945bfc6ebf37ef894780cb067e12">&#9670;&#160;</a></span>updatePlayerStats()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void updatePlayerStats </td>
+          <td class="memname">void PlayerManager::updatePlayerStats </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>nickname</em>, </span></td>
         </tr>
@@ -717,23 +1107,25 @@ Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_ab8c7da6a790aef14dd66385633993bb6_cgraph.png" border="0" usemap="#aclass_player_manager_ab8c7da6a790aef14dd66385633993bb6_cgraph" alt=""/></div>
-<map name="aclass_player_manager_ab8c7da6a790aef14dd66385633993bb6_cgraph" id="aclass_player_manager_ab8c7da6a790aef14dd66385633993bb6_cgraph">
-<area shape="rect" title="Updates the statistics of a player based on the game result." alt="" coords="5,31,134,57"/>
-<area shape="rect" href="class_player_manager.html#ad88c6b8c3d363707c1ee8dd48d9f9ad8" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="212,5,288,32"/>
-<area shape="poly" title=" " alt="" coords="134,32,196,23,197,29,134,38"/>
-<area shape="rect" href="class_player.html#a4bb620544520bba5d3b8b2275b32665c" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="182,56,318,83"/>
-<area shape="poly" title=" " alt="" coords="134,50,167,55,166,60,134,56"/>
+<div class="center"><img src="class_player_manager_a3e23945bfc6ebf37ef894780cb067e12_cgraph.png" border="0" usemap="#aclass_player_manager_a3e23945bfc6ebf37ef894780cb067e12_cgraph" alt=""/></div>
+<map name="aclass_player_manager_a3e23945bfc6ebf37ef894780cb067e12_cgraph" id="aclass_player_manager_a3e23945bfc6ebf37ef894780cb067e12_cgraph">
+<area shape="rect" title="Updates the statistics of a player based on the game result." alt="" coords="5,23,198,65"/>
+<area shape="rect" href="class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="246,5,417,32"/>
+<area shape="poly" title=" " alt="" coords="198,31,230,27,230,32,198,36"/>
+<area shape="rect" href="class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="263,56,400,83"/>
+<area shape="poly" title=" " alt="" coords="198,52,248,57,247,63,198,57"/>
+<area shape="rect" href="class_player.html#a73e5a276bebeace20cbb5360b5044d2a" title="Updates the game statistics for the player based on the game type and result." alt="" coords="465,56,636,83"/>
+<area shape="poly" title=" " alt="" coords="400,67,449,67,449,72,400,72"/>
 </map>
 </div>
 <div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_manager_ab8c7da6a790aef14dd66385633993bb6_icgraph.png" border="0" usemap="#aclass_player_manager_ab8c7da6a790aef14dd66385633993bb6_icgraph" alt=""/></div>
-<map name="aclass_player_manager_ab8c7da6a790aef14dd66385633993bb6_icgraph" id="aclass_player_manager_ab8c7da6a790aef14dd66385633993bb6_icgraph">
-<area shape="rect" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,367,32"/>
-<area shape="rect" href="class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf" title="Handles the process of playing a game between two players." alt="" coords="5,5,191,32"/>
-<area shape="poly" title=" " alt="" coords="223,21,191,21,191,16,223,16"/>
+<div class="center"><img src="class_player_manager_a3e23945bfc6ebf37ef894780cb067e12_icgraph.png" border="0" usemap="#aclass_player_manager_a3e23945bfc6ebf37ef894780cb067e12_icgraph" alt=""/></div>
+<map name="aclass_player_manager_a3e23945bfc6ebf37ef894780cb067e12_icgraph" id="aclass_player_manager_a3e23945bfc6ebf37ef894780cb067e12_icgraph">
+<area shape="rect" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,431,48"/>
+<area shape="rect" href="class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="5,13,191,40"/>
+<area shape="poly" title=" " alt="" coords="223,29,191,29,191,24,223,24"/>
 </map>
 </div>
 

@@ -1,0 +1,19 @@
+<map id="Lig4::makeMove" name="Lig4::makeMove">
+<area shape="rect" id="Node000001" title="Executes a move in the Lig4 game." alt="" coords="5,76,123,103"/>
+<area shape="rect" id="Node000002" href="$class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="556,26,699,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,74,119,47,144,34,170,24,219,13,269,7,369,3,464,9,543,20,543,25,463,15,369,9,269,12,220,19,171,29,146,39,122,51,83,78"/>
+<area shape="rect" id="Node000003" href="$class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="177,39,292,66"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,74,161,66,162,71,124,79"/>
+<area shape="rect" id="Node000004" href="$class_lig4.html#ac3af3ad2d6ca0b359ea6c235179d39ec" title="Reads a move from the user and validates it." alt="" coords="180,114,290,140"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,100,165,109,164,114,123,105"/>
+<area shape="rect" id="Node000008" href="$class_board.html#a565204fa504373e3d02b86d2539551fe" title="Sets the symbol at the specified position on the board." alt="" coords="171,164,299,191"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="88,101,172,150,184,155,182,160,169,155,85,106"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="205,114,200,105,204,95,216,89,235,87,255,89,266,96,264,101,254,95,235,92,217,94,208,99,206,104,210,112"/>
+<area shape="rect" id="Node000005" href="$class_string_utils.html#a2ed385038160e2f2717c48ecb17c4620" title="Checks if the given row and column are valid." alt="" coords="347,47,508,90"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="280,110,340,92,342,97,282,116"/>
+<area shape="rect" id="Node000006" href="$class_lig4.html#a362e869f0a71bd89b9ae67038c74cca7" title="Validates a move in the Lig4 game." alt="" coords="362,114,493,140"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="291,124,347,124,347,130,291,130"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="476,110,507,99,589,58,591,63,509,104,478,115"/>
+<area shape="rect" id="Node000007" href="$class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="573,114,682,140"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="493,124,558,124,558,130,493,130"/>
+</map>

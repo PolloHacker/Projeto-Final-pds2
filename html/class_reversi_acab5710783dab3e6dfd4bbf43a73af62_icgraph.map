@@ -1,0 +1,10 @@
+<map id="Reversi::validateMove" name="Reversi::validateMove">
+<area shape="rect" id="Node000001" title="Validates a move in the Reversi game." alt="" coords="408,43,559,69"/>
+<area shape="rect" id="Node000002" href="$class_reversi.html#a2082b7ebdf08255a8d4cd36bef0e8048" title="Checks if the game of Reversi is finished." alt="" coords="192,5,360,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="392,42,353,35,354,30,393,37"/>
+<area shape="rect" id="Node000003" href="$class_reversi.html#a9b0494fc924572cd119af41c74d9cfc2" title="Reads a move from the user and validates it." alt="" coords="210,80,342,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="393,75,342,84,341,79,392,70"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="310,67,298,61,276,59,255,61,243,65,241,71,246,78,242,81,235,71,240,62,253,55,276,53,300,56,313,62"/>
+<area shape="rect" id="Node000004" href="$class_reversi.html#a6329650b30aedbe692d6ed2934a508fa" title="Executes a move in the Reversi game." alt="" coords="5,80,144,107"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,96,144,96,144,91,195,91"/>
+</map>

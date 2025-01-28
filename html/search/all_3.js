@@ -1,17 +1,18 @@
 var searchData=
 [
-  ['de_20jogadores_0',['Cadastro de Jogadores',['../index.html#autotoc_md17',1,'']]],
-  ['de_20partidas_1',['Execução de Partidas',['../index.html#autotoc_md22',1,'']]],
-  ['de_20tabuleiro_2',['Jogos de Tabuleiro',['../index.html',1,'']]],
-  ['desafios_3',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
-  ['descrição_20do_20projeto_4',['Descrição do projeto',['../index.html#autotoc_md1',1,'']]],
-  ['desenvolvimento_20deste_20projeto_20a_20equipe_20enfrentou_20alguns_20desafios_5',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
-  ['deste_20projeto_20a_20equipe_20enfrentou_20alguns_20desafios_6',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
-  ['direction_7',['Direction',['../struct_direction.html',1,'']]],
-  ['do_20projeto_8',['Descrição do projeto',['../index.html#autotoc_md1',1,'']]],
-  ['do_20projeto_9',['Estrutura do Projeto',['../index.html#autotoc_md5',1,'']]],
-  ['documentação_20online_10',['Documentação (online)',['../index.html#autotoc_md26',1,'']]],
-  ['dos_20contribuintes_11',['Github dos contribuintes',['../index.html#autotoc_md29',1,'']]],
-  ['durante_20o_20desenvolvimento_20deste_20projeto_20a_20equipe_20enfrentou_20alguns_20desafios_12',['Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios',['../index.html#autotoc_md27',1,'']]],
-  ['durante_20os_20jogos_13',['Inputs durante os Jogos',['../index.html#autotoc_md25',1,'']]]
+  ['cadastrar_20jogador_0',['Cadastrar Jogador',['../index.html#autotoc_md19',1,'']]],
+  ['cadastro_20de_20jogadores_1',['Cadastro de Jogadores',['../index.html#autotoc_md17',1,'']]],
+  ['carregar_20execuções_20anteriores_2',['Carregar execuções anteriores',['../index.html#autotoc_md18',1,'']]],
+  ['checkboundaries_3',['checkBoundaries',['../class_reversi.html#a8ebe311d77ab81e33025277a9b226d63',1,'Reversi']]],
+  ['checkcolumns_4',['checkColumns',['../class_t_t_t.html#ab216748d6ca240c453d7f4d2959b90f0',1,'TTT']]],
+  ['checkdiagonals_5',['checkDiagonals',['../class_t_t_t.html#a3054fb862265d4270808dc576635311a',1,'TTT']]],
+  ['checkdirection_6',['checkDirection',['../class_lig4.html#a0669df180b7b13db213ce1ea8f2b2f30',1,'Lig4::checkDirection()'],['../class_reversi.html#af41573cd1953cb163d15fd9cde781142',1,'Reversi::checkDirection(const int row, const int col, char other, const Direction &amp;dir)']]],
+  ['checkdirections_7',['checkDirections',['../class_reversi.html#ab8a82f9bee727c9c0736b7b82b6ee2d5',1,'Reversi']]],
+  ['checkline_8',['checkLine',['../class_t_t_t.html#a7a597bafb781510109dccd5c1e51502f',1,'TTT']]],
+  ['checkposition_9',['checkPosition',['../class_reversi.html#a3c798cc38c33f60c8b3a7475fc69b107',1,'Reversi']]],
+  ['checkrows_10',['checkRows',['../class_t_t_t.html#ae429864d5bbe417e7d6f08a41aa2187e',1,'TTT']]],
+  ['classes_20principais_11',['Classes Principais',['../index.html#autotoc_md6',1,'']]],
+  ['com_20o_20projeto_12',['Aprendizados com o projeto',['../index.html#autotoc_md28',1,'']]],
+  ['compilação_20e_20execução_13',['Compilação e Execução',['../index.html#autotoc_md14',1,'']]],
+  ['contribuintes_14',['Github dos contribuintes',['../index.html#autotoc_md29',1,'']]]
 ];

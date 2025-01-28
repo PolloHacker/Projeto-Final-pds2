@@ -114,7 +114,9 @@ $(function(){initNavTree('class_lig4.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Membros Públicos</a>  </div>
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="#pri-methods">Membros privados</a> &#124;
+<a href="class_lig4-members.html">Lista de todos os Membros</a>  </div>
   <div class="headertitle"><div class="title">Referência da Classe Lig4</div></div>
 </div><!--header-->
 <div class="contents">
@@ -143,51 +145,60 @@ Diagrama de colaboração para Lig4:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros Públicos</h2></td></tr>
-<tr class="memitem:ad920b8f9a05263c69d275be5ce7fcb2a" id="r_ad920b8f9a05263c69d275be5ce7fcb2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad920b8f9a05263c69d275be5ce7fcb2a">Lig4</a> (int rows, int cols)</td></tr>
-<tr class="memdesc:ad920b8f9a05263c69d275be5ce7fcb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_lig4.html">Lig4</a> object with the specified number of rows and columns.  <br /></td></tr>
-<tr class="separator:ad920b8f9a05263c69d275be5ce7fcb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab324a284e0eaf173fb7a04243268953c" id="r_ab324a284e0eaf173fb7a04243268953c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab324a284e0eaf173fb7a04243268953c">validateMove</a> (int col)</td></tr>
-<tr class="memdesc:ab324a284e0eaf173fb7a04243268953c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a move in the <a class="el" href="class_lig4.html">Lig4</a> game.  <br /></td></tr>
-<tr class="separator:ab324a284e0eaf173fb7a04243268953c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8866f64affe25d84543472b7d7e6244e" id="r_a8866f64affe25d84543472b7d7e6244e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8866f64affe25d84543472b7d7e6244e">makeMove</a> () override</td></tr>
-<tr class="memdesc:a8866f64affe25d84543472b7d7e6244e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a move in the <a class="el" href="class_lig4.html">Lig4</a> game.  <br /></td></tr>
-<tr class="separator:a8866f64affe25d84543472b7d7e6244e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1507ef6ca8488f97089c5a309bc7c28a" id="r_a1507ef6ca8488f97089c5a309bc7c28a"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1507ef6ca8488f97089c5a309bc7c28a">isGameFinished</a> () override</td></tr>
-<tr class="memdesc:a1507ef6ca8488f97089c5a309bc7c28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game is finished.  <br /></td></tr>
-<tr class="separator:a1507ef6ca8488f97089c5a309bc7c28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e255e36221bdba1ccb0afc0af7f6cc" id="r_ab7e255e36221bdba1ccb0afc0af7f6cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e255e36221bdba1ccb0afc0af7f6cc">printBoard</a> () override</td></tr>
-<tr class="memdesc:ab7e255e36221bdba1ccb0afc0af7f6cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the current state of the game board to the standard output.  <br /></td></tr>
-<tr class="separator:ab7e255e36221bdba1ccb0afc0af7f6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a225f6d671611c74bb03c4edbb8a75f16" id="r_a225f6d671611c74bb03c4edbb8a75f16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225f6d671611c74bb03c4edbb8a75f16">Lig4</a> (int rows, int cols)</td></tr>
+<tr class="memdesc:a225f6d671611c74bb03c4edbb8a75f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_lig4.html">Lig4</a> object with the specified number of rows and columns.  <br /></td></tr>
+<tr class="separator:a225f6d671611c74bb03c4edbb8a75f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362e869f0a71bd89b9ae67038c74cca7" id="r_a362e869f0a71bd89b9ae67038c74cca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a362e869f0a71bd89b9ae67038c74cca7">validateMove</a> (int col)</td></tr>
+<tr class="memdesc:a362e869f0a71bd89b9ae67038c74cca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a move in the <a class="el" href="class_lig4.html">Lig4</a> game.  <br /></td></tr>
+<tr class="separator:a362e869f0a71bd89b9ae67038c74cca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39144d15b163916b899b383f352d15c" id="r_ab39144d15b163916b899b383f352d15c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab39144d15b163916b899b383f352d15c">makeMove</a> () override</td></tr>
+<tr class="memdesc:ab39144d15b163916b899b383f352d15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a move in the <a class="el" href="class_lig4.html">Lig4</a> game.  <br /></td></tr>
+<tr class="separator:ab39144d15b163916b899b383f352d15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45f315ee3db07f09a3da73d1ae49535" id="r_ae45f315ee3db07f09a3da73d1ae49535"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae45f315ee3db07f09a3da73d1ae49535">isGameFinished</a> () override</td></tr>
+<tr class="memdesc:ae45f315ee3db07f09a3da73d1ae49535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the game is finished.  <br /></td></tr>
+<tr class="separator:ae45f315ee3db07f09a3da73d1ae49535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ba93867e19a5241c76ea9c49b3b0a4" id="r_ad1ba93867e19a5241c76ea9c49b3b0a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad1ba93867e19a5241c76ea9c49b3b0a4">printBoard</a> () override</td></tr>
+<tr class="memdesc:ad1ba93867e19a5241c76ea9c49b3b0a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the current state of the game board to the standard output.  <br /></td></tr>
+<tr class="separator:ad1ba93867e19a5241c76ea9c49b3b0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_game"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_game.html">Game</a></td></tr>
-<tr class="memitem:aa7fb37795c7541ffcb2defca56dc2165 inherit pub_methods_class_game" id="r_aa7fb37795c7541ffcb2defca56dc2165"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#aa7fb37795c7541ffcb2defca56dc2165">Game</a> (int rows, int cols)</td></tr>
-<tr class="memdesc:aa7fb37795c7541ffcb2defca56dc2165 inherit pub_methods_class_game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_game.html">Game</a> object with the specified number of rows and columns.  <br /></td></tr>
-<tr class="separator:aa7fb37795c7541ffcb2defca56dc2165 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d4521f7ffc0e370f23a32d25532dd77 inherit pub_methods_class_game" id="r_a4d4521f7ffc0e370f23a32d25532dd77"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:ab9fc5f2ec8a74c25149e8fe4a33f724c inherit pub_methods_class_game" id="r_ab9fc5f2ec8a74c25149e8fe4a33f724c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c">Game</a> (int rows, int cols)</td></tr>
+<tr class="memdesc:ab9fc5f2ec8a74c25149e8fe4a33f724c inherit pub_methods_class_game"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_game.html">Game</a> object with the specified number of rows and columns.  <br /></td></tr>
+<tr class="separator:ab9fc5f2ec8a74c25149e8fe4a33f724c inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a478c3b61f622bf63ea377766e11e73f2 inherit pub_methods_class_game" id="r_a478c3b61f622bf63ea377766e11e73f2"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>changePlayer</b> ()</td></tr>
-<tr class="separator:a4d4521f7ffc0e370f23a32d25532dd77 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a478c3b61f622bf63ea377766e11e73f2 inherit pub_methods_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a0669df180b7b13db213ce1ea8f2b2f30" id="r_a0669df180b7b13db213ce1ea8f2b2f30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0669df180b7b13db213ce1ea8f2b2f30">checkDirection</a> (int row, int col, int rowDir, int colDir)</td></tr>
+<tr class="memdesc:a0669df180b7b13db213ce1ea8f2b2f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if there are four consecutive elements in a specified direction.  <br /></td></tr>
+<tr class="separator:a0669df180b7b13db213ce1ea8f2b2f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3af3ad2d6ca0b359ea6c235179d39ec" id="r_ac3af3ad2d6ca0b359ea6c235179d39ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac3af3ad2d6ca0b359ea6c235179d39ec">readMove</a> () override</td></tr>
+<tr class="memdesc:ac3af3ad2d6ca0b359ea6c235179d39ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a move from the user and validates it.  <br /></td></tr>
+<tr class="separator:ac3af3ad2d6ca0b359ea6c235179d39ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Outros membros herdados</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_game"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_game')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="class_game.html">Game</a></td></tr>
-<tr class="memitem:aa82ec2ef46b7f2f6b838b07403015cee inherit pro_attribs_class_game" id="r_aa82ec2ef46b7f2f6b838b07403015cee"><td class="memItemLeft" align="right" valign="top">
+<tr class="memitem:af5bc546b0c766ecf2f7e008f750832ed inherit pro_attribs_class_game" id="r_af5bc546b0c766ecf2f7e008f750832ed"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_board.html">Board</a>&#160;</td><td class="memItemRight" valign="bottom"><b>board</b></td></tr>
-<tr class="separator:aa82ec2ef46b7f2f6b838b07403015cee inherit pro_attribs_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78979798e00f927da7e6272b4e1bd56d inherit pro_attribs_class_game" id="r_a78979798e00f927da7e6272b4e1bd56d"><td class="memItemLeft" align="right" valign="top">
+<tr class="separator:af5bc546b0c766ecf2f7e008f750832ed inherit pro_attribs_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632386a0ecd3a2a5cd5db9052ad817d5 inherit pro_attribs_class_game" id="r_a632386a0ecd3a2a5cd5db9052ad817d5"><td class="memItemLeft" align="right" valign="top">
 std::pair&lt; int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>move</b></td></tr>
-<tr class="separator:a78979798e00f927da7e6272b4e1bd56d inherit pro_attribs_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d168a3c29d2f3559c7c24d12907fc6d inherit pro_attribs_class_game" id="r_a1d168a3c29d2f3559c7c24d12907fc6d"><td class="memItemLeft" align="right" valign="top">
+<tr class="separator:a632386a0ecd3a2a5cd5db9052ad817d5 inherit pro_attribs_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83606ddf647d495ad2c83f5cccf946a4 inherit pro_attribs_class_game" id="r_a83606ddf647d495ad2c83f5cccf946a4"><td class="memItemLeft" align="right" valign="top">
 char&#160;</td><td class="memItemRight" valign="bottom"><b>current_player</b></td></tr>
-<tr class="separator:a1d168a3c29d2f3559c7c24d12907fc6d inherit pro_attribs_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a83606ddf647d495ad2c83f5cccf946a4 inherit pro_attribs_class_game"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Construtores e Destrutores</h2>
-<a id="ad920b8f9a05263c69d275be5ce7fcb2a" name="ad920b8f9a05263c69d275be5ce7fcb2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad920b8f9a05263c69d275be5ce7fcb2a">&#9670;&#160;</a></span>Lig4()</h2>
+<a id="a225f6d671611c74bb03c4edbb8a75f16" name="a225f6d671611c74bb03c4edbb8a75f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a225f6d671611c74bb03c4edbb8a75f16">&#9670;&#160;</a></span>Lig4()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_lig4.html">Lig4</a> </td>
+          <td class="memname">Lig4::Lig4 </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>rows</em>, </span></td>
         </tr>
@@ -211,8 +222,8 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>current_player</b></t
 </div>
 </div>
 <h2 class="groupheader">Documentação das funções</h2>
-<a id="a1507ef6ca8488f97089c5a309bc7c28a" name="a1507ef6ca8488f97089c5a309bc7c28a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1507ef6ca8488f97089c5a309bc7c28a">&#9670;&#160;</a></span>isGameFinished()</h2>
+<a id="a0669df180b7b13db213ce1ea8f2b2f30" name="a0669df180b7b13db213ce1ea8f2b2f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0669df180b7b13db213ce1ea8f2b2f30">&#9670;&#160;</a></span>checkDirection()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +232,82 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>current_player</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">char isGameFinished </td>
+          <td class="memname">bool Lig4::checkDirection </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>row</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>col</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>rowDir</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>colDir</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if there are four consecutive elements in a specified direction. </p>
+<p>This function checks if there are four consecutive elements starting from the given position (row, col) in the direction specified by (rowDir, colDir).</p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td>The starting row position. </td></tr>
+    <tr><td class="paramname">col</td><td>The starting column position. </td></tr>
+    <tr><td class="paramname">rowDir</td><td>The row direction to check (e.g., 1 for down, -1 for up, 0 for no vertical movement). </td></tr>
+    <tr><td class="paramname">colDir</td><td>The column direction to check (e.g., 1 for right, -1 for left, 0 for no horizontal movement). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lig4_a0669df180b7b13db213ce1ea8f2b2f30_cgraph.png" border="0" usemap="#aclass_lig4_a0669df180b7b13db213ce1ea8f2b2f30_cgraph" alt=""/></div>
+<map name="aclass_lig4_a0669df180b7b13db213ce1ea8f2b2f30_cgraph" id="aclass_lig4_a0669df180b7b13db213ce1ea8f2b2f30_cgraph">
+<area shape="rect" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="5,56,146,83"/>
+<area shape="rect" href="class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="211,5,319,32"/>
+<area shape="poly" title=" " alt="" coords="128,53,197,34,198,39,129,58"/>
+<area shape="rect" href="class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="194,56,336,83"/>
+<area shape="poly" title=" " alt="" coords="146,67,178,67,178,72,146,72"/>
+<area shape="rect" href="class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="207,107,322,133"/>
+<area shape="poly" title=" " alt="" coords="129,81,198,100,197,105,128,86"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lig4_a0669df180b7b13db213ce1ea8f2b2f30_icgraph.png" border="0" usemap="#aclass_lig4_a0669df180b7b13db213ce1ea8f2b2f30_icgraph" alt=""/></div>
+<map name="aclass_lig4_a0669df180b7b13db213ce1ea8f2b2f30_icgraph" id="aclass_lig4_a0669df180b7b13db213ce1ea8f2b2f30_icgraph">
+<area shape="rect" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="201,5,341,32"/>
+<area shape="rect" href="class_lig4.html#ae45f315ee3db07f09a3da73d1ae49535" title="Checks if the game is finished." alt="" coords="5,5,153,32"/>
+<area shape="poly" title=" " alt="" coords="185,21,153,21,153,16,185,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae45f315ee3db07f09a3da73d1ae49535" name="ae45f315ee3db07f09a3da73d1ae49535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae45f315ee3db07f09a3da73d1ae49535">&#9670;&#160;</a></span>isGameFinished()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Lig4::isGameFinished </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -242,24 +328,29 @@ char&#160;</td><td class="memItemRight" valign="bottom"><b>current_player</b></t
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_lig4_a1507ef6ca8488f97089c5a309bc7c28a_cgraph.png" border="0" usemap="#aclass_lig4_a1507ef6ca8488f97089c5a309bc7c28a_cgraph" alt=""/></div>
-<map name="aclass_lig4_a1507ef6ca8488f97089c5a309bc7c28a_cgraph" id="aclass_lig4_a1507ef6ca8488f97089c5a309bc7c28a_cgraph">
-<area shape="rect" title="Checks if the game is finished." alt="" coords="5,81,121,108"/>
-<area shape="rect" href="class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="186,5,294,32"/>
-<area shape="poly" title=" " alt="" coords="90,78,168,42,183,35,185,40,170,46,92,83"/>
-<area shape="rect" href="class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="169,56,311,83"/>
-<area shape="poly" title=" " alt="" coords="120,84,153,79,154,84,121,89"/>
-<area shape="rect" href="class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="182,107,298,133"/>
-<area shape="poly" title=" " alt="" coords="121,100,167,107,166,112,120,106"/>
-<area shape="rect" href="class_board.html#a98badcf7748478b3d0a54a6f7b7a4719" title="Checks if the board is completely filled." alt="" coords="176,157,304,184"/>
-<area shape="poly" title=" " alt="" coords="92,106,170,143,185,149,183,154,168,148,90,111"/>
+<div class="center"><img src="class_lig4_ae45f315ee3db07f09a3da73d1ae49535_cgraph.png" border="0" usemap="#aclass_lig4_ae45f315ee3db07f09a3da73d1ae49535_cgraph" alt=""/></div>
+<map name="aclass_lig4_ae45f315ee3db07f09a3da73d1ae49535_cgraph" id="aclass_lig4_ae45f315ee3db07f09a3da73d1ae49535_cgraph">
+<area shape="rect" title="Checks if the game is finished." alt="" coords="5,93,153,120"/>
+<area shape="rect" href="class_lig4.html#a0669df180b7b13db213ce1ea8f2b2f30" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="201,93,341,120"/>
+<area shape="poly" title=" " alt="" coords="153,104,185,104,185,109,153,109"/>
+<area shape="rect" href="class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="406,5,514,32"/>
+<area shape="poly" title=" " alt="" coords="110,90,152,73,200,57,299,36,390,23,391,28,300,41,201,63,154,78,112,95"/>
+<area shape="rect" href="class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="389,68,531,95"/>
+<area shape="poly" title=" " alt="" coords="134,90,200,79,290,74,373,74,373,80,290,79,201,84,135,95"/>
+<area shape="rect" href="class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="402,119,518,145"/>
+<area shape="poly" title=" " alt="" coords="135,118,201,129,298,134,387,133,387,139,298,140,200,135,134,123"/>
+<area shape="rect" href="class_board.html#ac9ff300b31942027e0e51a1a816175d8" title="Checks if the board is completely filled." alt="" coords="207,195,335,221"/>
+<area shape="poly" title=" " alt="" coords="104,118,202,174,225,185,223,190,199,178,102,123"/>
+<area shape="poly" title=" " alt="" coords="301,90,415,37,417,41,303,95"/>
+<area shape="poly" title=" " alt="" coords="341,95,374,90,374,95,342,100"/>
+<area shape="poly" title=" " alt="" coords="342,113,388,120,387,125,341,119"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8866f64affe25d84543472b7d7e6244e" name="a8866f64affe25d84543472b7d7e6244e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8866f64affe25d84543472b7d7e6244e">&#9670;&#160;</a></span>makeMove()</h2>
+<a id="ab39144d15b163916b899b383f352d15c" name="ab39144d15b163916b899b383f352d15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39144d15b163916b899b383f352d15c">&#9670;&#160;</a></span>makeMove()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +359,7 @@ Este é o diagrama das funções utilizadas por essa função:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void makeMove </td>
+          <td class="memname">void Lig4::makeMove </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -289,22 +380,32 @@ Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_lig4_a8866f64affe25d84543472b7d7e6244e_cgraph.png" border="0" usemap="#aclass_lig4_a8866f64affe25d84543472b7d7e6244e_cgraph" alt=""/></div>
-<map name="aclass_lig4_a8866f64affe25d84543472b7d7e6244e_cgraph" id="aclass_lig4_a8866f64affe25d84543472b7d7e6244e_cgraph">
-<area shape="rect" title="Executes a move in the Lig4 game." alt="" coords="5,56,91,83"/>
-<area shape="rect" href="class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="139,5,281,32"/>
-<area shape="poly" title=" " alt="" coords="90,53,149,35,151,40,92,59"/>
-<area shape="rect" href="class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="152,56,268,83"/>
-<area shape="poly" title=" " alt="" coords="91,67,137,67,137,72,91,72"/>
-<area shape="rect" href="class_board.html#ad5daba47fc5ba8d907dd742e524b798d" title="Sets the symbol at the specified position on the board." alt="" coords="146,107,274,133"/>
-<area shape="poly" title=" " alt="" coords="92,80,151,99,149,104,90,85"/>
+<div class="center"><img src="class_lig4_ab39144d15b163916b899b383f352d15c_cgraph.png" border="0" usemap="#aclass_lig4_ab39144d15b163916b899b383f352d15c_cgraph" alt=""/></div>
+<map name="aclass_lig4_ab39144d15b163916b899b383f352d15c_cgraph" id="aclass_lig4_ab39144d15b163916b899b383f352d15c_cgraph">
+<area shape="rect" title="Executes a move in the Lig4 game." alt="" coords="5,76,123,103"/>
+<area shape="rect" href="class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="556,26,699,52"/>
+<area shape="poly" title=" " alt="" coords="80,74,119,47,144,34,170,24,219,13,269,7,369,3,464,9,543,20,543,25,463,15,369,9,269,12,220,19,171,29,146,39,122,51,83,78"/>
+<area shape="rect" href="class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="177,39,292,66"/>
+<area shape="poly" title=" " alt="" coords="123,74,161,66,162,71,124,79"/>
+<area shape="rect" href="class_lig4.html#ac3af3ad2d6ca0b359ea6c235179d39ec" title="Reads a move from the user and validates it." alt="" coords="180,114,290,140"/>
+<area shape="poly" title=" " alt="" coords="124,100,165,109,164,114,123,105"/>
+<area shape="rect" href="class_board.html#a565204fa504373e3d02b86d2539551fe" title="Sets the symbol at the specified position on the board." alt="" coords="171,164,299,191"/>
+<area shape="poly" title=" " alt="" coords="88,101,172,150,184,155,182,160,169,155,85,106"/>
+<area shape="poly" title=" " alt="" coords="205,114,200,105,204,95,216,89,235,87,255,89,266,96,264,101,254,95,235,92,217,94,208,99,206,104,210,112"/>
+<area shape="rect" href="class_string_utils.html#a2ed385038160e2f2717c48ecb17c4620" title="Checks if the given row and column are valid." alt="" coords="347,47,508,90"/>
+<area shape="poly" title=" " alt="" coords="280,110,340,92,342,97,282,116"/>
+<area shape="rect" href="class_lig4.html#a362e869f0a71bd89b9ae67038c74cca7" title="Validates a move in the Lig4 game." alt="" coords="362,114,493,140"/>
+<area shape="poly" title=" " alt="" coords="291,124,347,124,347,130,291,130"/>
+<area shape="poly" title=" " alt="" coords="476,110,507,99,589,58,591,63,509,104,478,115"/>
+<area shape="rect" href="class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="573,114,682,140"/>
+<area shape="poly" title=" " alt="" coords="493,124,558,124,558,130,493,130"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab7e255e36221bdba1ccb0afc0af7f6cc" name="ab7e255e36221bdba1ccb0afc0af7f6cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7e255e36221bdba1ccb0afc0af7f6cc">&#9670;&#160;</a></span>printBoard()</h2>
+<a id="ad1ba93867e19a5241c76ea9c49b3b0a4" name="ad1ba93867e19a5241c76ea9c49b3b0a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ba93867e19a5241c76ea9c49b3b0a4">&#9670;&#160;</a></span>printBoard()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +414,7 @@ Este é o diagrama das funções utilizadas por essa função:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void printBoard </td>
+          <td class="memname">void Lig4::printBoard </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -328,32 +429,95 @@ Este é o diagrama das funções utilizadas por essa função:</div>
 
 <p>Prints the current state of the game board to the standard output. </p>
 
-<p>Reimplementa <a class="el" href="class_game.html#a8310d6d1e915cb179f834d9ca017950a">Game</a>.</p>
+<p>Reimplementa <a class="el" href="class_game.html#a77611c82d15d9a191655ca57231908da">Game</a>.</p>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_lig4_ab7e255e36221bdba1ccb0afc0af7f6cc_cgraph.png" border="0" usemap="#aclass_lig4_ab7e255e36221bdba1ccb0afc0af7f6cc_cgraph" alt=""/></div>
-<map name="aclass_lig4_ab7e255e36221bdba1ccb0afc0af7f6cc_cgraph" id="aclass_lig4_ab7e255e36221bdba1ccb0afc0af7f6cc_cgraph">
-<area shape="rect" title="Prints the current state of the game board to the standard output." alt="" coords="5,56,86,83"/>
-<area shape="rect" href="class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="151,5,259,32"/>
-<area shape="poly" title=" " alt="" coords="85,54,145,35,147,40,87,59"/>
-<area shape="rect" href="class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="134,56,276,83"/>
-<area shape="poly" title=" " alt="" coords="86,67,118,67,118,72,86,72"/>
-<area shape="rect" href="class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="147,107,262,133"/>
-<area shape="poly" title=" " alt="" coords="87,79,147,99,145,104,85,85"/>
+<div class="center"><img src="class_lig4_ad1ba93867e19a5241c76ea9c49b3b0a4_cgraph.png" border="0" usemap="#aclass_lig4_ad1ba93867e19a5241c76ea9c49b3b0a4_cgraph" alt=""/></div>
+<map name="aclass_lig4_ad1ba93867e19a5241c76ea9c49b3b0a4_cgraph" id="aclass_lig4_ad1ba93867e19a5241c76ea9c49b3b0a4_cgraph">
+<area shape="rect" title="Prints the current state of the game board to the standard output." alt="" coords="5,56,118,83"/>
+<area shape="rect" href="class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="183,5,291,32"/>
+<area shape="poly" title=" " alt="" coords="110,53,173,34,174,39,111,58"/>
+<area shape="rect" href="class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="166,56,308,83"/>
+<area shape="poly" title=" " alt="" coords="118,67,150,67,150,72,118,72"/>
+<area shape="rect" href="class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1" title="Get the number of rows in the board." alt="" coords="179,107,294,133"/>
+<area shape="poly" title=" " alt="" coords="111,81,174,99,173,104,110,86"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab324a284e0eaf173fb7a04243268953c" name="ab324a284e0eaf173fb7a04243268953c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab324a284e0eaf173fb7a04243268953c">&#9670;&#160;</a></span>validateMove()</h2>
+<a id="ac3af3ad2d6ca0b359ea6c235179d39ec" name="ac3af3ad2d6ca0b359ea6c235179d39ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3af3ad2d6ca0b359ea6c235179d39ec">&#9670;&#160;</a></span>readMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Lig4::readMove </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads a move from the user and validates it. </p>
+<dl class="exception"><dt>Exceções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="class_invalid_input_exception.html" title="Exception thrown when the input is invalid.">InvalidInputException</a></td><td>if the input column is invalid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_game.html">Game</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_cgraph.png" border="0" usemap="#aclass_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_cgraph" alt=""/></div>
+<map name="aclass_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_cgraph" id="aclass_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_cgraph">
+<area shape="rect" title="Reads a move from the user and validates it." alt="" coords="5,43,116,69"/>
+<area shape="poly" title=" " alt="" coords="29,44,23,34,27,24,40,18,61,16,83,19,94,25,92,30,81,24,60,21,41,23,31,28,29,33,34,41"/>
+<area shape="rect" href="class_string_utils.html#a2ed385038160e2f2717c48ecb17c4620" title="Checks if the given row and column are valid." alt="" coords="164,5,325,48"/>
+<area shape="poly" title=" " alt="" coords="116,45,148,39,149,45,117,50"/>
+<area shape="rect" href="class_lig4.html#a362e869f0a71bd89b9ae67038c74cca7" title="Validates a move in the Lig4 game." alt="" coords="179,72,310,99"/>
+<area shape="poly" title=" " alt="" coords="117,62,165,70,164,75,116,67"/>
+<area shape="rect" href="class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="390,47,498,73"/>
+<area shape="poly" title=" " alt="" coords="309,74,374,66,375,71,310,80"/>
+<area shape="rect" href="class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="373,97,515,124"/>
+<area shape="poly" title=" " alt="" coords="310,91,358,97,357,102,309,96"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_icgraph.png" border="0" usemap="#aclass_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_icgraph" alt=""/></div>
+<map name="aclass_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_icgraph" id="aclass_lig4_ac3af3ad2d6ca0b359ea6c235179d39ec_icgraph">
+<area shape="rect" title="Reads a move from the user and validates it." alt="" coords="171,29,281,56"/>
+<area shape="poly" title=" " alt="" coords="253,16,244,10,226,8,209,10,200,15,198,20,202,28,198,30,193,21,196,11,208,5,226,3,245,5,256,12"/>
+<area shape="rect" href="class_lig4.html#ab39144d15b163916b899b383f352d15c" title="Executes a move in the Lig4 game." alt="" coords="5,29,123,56"/>
+<area shape="poly" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a362e869f0a71bd89b9ae67038c74cca7" name="a362e869f0a71bd89b9ae67038c74cca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362e869f0a71bd89b9ae67038c74cca7">&#9670;&#160;</a></span>validateMove()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void validateMove </td>
+          <td class="memname">void Lig4::validateMove </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>col</em></span></td><td>)</td>
           <td></td>
@@ -378,13 +542,26 @@ Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dynheader">
 Este é o diagrama das funções utilizadas por essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_lig4_ab324a284e0eaf173fb7a04243268953c_cgraph.png" border="0" usemap="#aclass_lig4_ab324a284e0eaf173fb7a04243268953c_cgraph" alt=""/></div>
-<map name="aclass_lig4_ab324a284e0eaf173fb7a04243268953c_cgraph" id="aclass_lig4_ab324a284e0eaf173fb7a04243268953c_cgraph">
-<area shape="rect" title="Validates a move in the Lig4 game." alt="" coords="5,31,104,57"/>
-<area shape="rect" href="class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="169,5,277,32"/>
-<area shape="poly" title=" " alt="" coords="104,34,153,26,154,32,105,39"/>
-<area shape="rect" href="class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="152,56,294,83"/>
-<area shape="poly" title=" " alt="" coords="105,49,137,54,136,59,104,54"/>
+<div class="center"><img src="class_lig4_a362e869f0a71bd89b9ae67038c74cca7_cgraph.png" border="0" usemap="#aclass_lig4_a362e869f0a71bd89b9ae67038c74cca7_cgraph" alt=""/></div>
+<map name="aclass_lig4_a362e869f0a71bd89b9ae67038c74cca7_cgraph" id="aclass_lig4_a362e869f0a71bd89b9ae67038c74cca7_cgraph">
+<area shape="rect" title="Validates a move in the Lig4 game." alt="" coords="5,31,136,57"/>
+<area shape="rect" href="class_board.html#abe6f2cdf451b87b990c352229dfca6b8" title="Get the number of columns in the board." alt="" coords="201,5,309,32"/>
+<area shape="poly" title=" " alt="" coords="136,32,185,26,186,31,136,38"/>
+<area shape="rect" href="class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="184,56,326,83"/>
+<area shape="poly" title=" " alt="" coords="136,50,168,55,168,60,136,56"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_lig4_a362e869f0a71bd89b9ae67038c74cca7_icgraph.png" border="0" usemap="#aclass_lig4_a362e869f0a71bd89b9ae67038c74cca7_icgraph" alt=""/></div>
+<map name="aclass_lig4_a362e869f0a71bd89b9ae67038c74cca7_icgraph" id="aclass_lig4_a362e869f0a71bd89b9ae67038c74cca7_icgraph">
+<area shape="rect" title="Validates a move in the Lig4 game." alt="" coords="329,29,459,56"/>
+<area shape="rect" href="class_lig4.html#ac3af3ad2d6ca0b359ea6c235179d39ec" title="Reads a move from the user and validates it." alt="" coords="171,29,281,56"/>
+<area shape="poly" title=" " alt="" coords="314,45,281,45,281,40,314,40"/>
+<area shape="poly" title=" " alt="" coords="253,16,244,10,226,8,209,10,200,15,198,20,202,28,198,30,193,21,196,11,208,5,226,3,245,5,256,12"/>
+<area shape="rect" href="class_lig4.html#ab39144d15b163916b899b383f352d15c" title="Executes a move in the Lig4 game." alt="" coords="5,29,123,56"/>
+<area shape="poly" title=" " alt="" coords="155,45,123,45,123,40,155,40"/>
 </map>
 </div>
 

@@ -115,40 +115,74 @@ $(function(){initNavTree('class_player.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Membros Públicos</a> &#124;
-<a href="#friends">Amigos</a>  </div>
+<a href="#pri-methods">Membros privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="#friends">Amigos</a> &#124;
+<a href="class_player-members.html">Lista de todos os Membros</a>  </div>
   <div class="headertitle"><div class="title">Referência da Classe Player</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Diagrama de colaboração para Player:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player__coll__graph.png" border="0" usemap="#a_player_coll__map" alt="Collaboration graph"/></div>
+<map name="a_player_coll__map" id="a_player_coll__map">
+<area shape="rect" title=" " alt="" coords="5,96,64,123"/>
+<area shape="rect" href="class_stats.html" title=" " alt="" coords="8,5,61,32"/>
+<area shape="poly" title=" " alt="" coords="37,48,37,95,32,95,32,48"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legenda</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Membros Públicos</h2></td></tr>
-<tr class="memitem:af1313c1a757af9c5fbc9463c6351b077" id="r_af1313c1a757af9c5fbc9463c6351b077"><td class="memItemLeft" align="right" valign="top"><a id="af1313c1a757af9c5fbc9463c6351b077" name="af1313c1a757af9c5fbc9463c6351b077"></a>
+<tr class="memitem:a7fcc4aba895ad9a8335a65c8e24ad547" id="r_a7fcc4aba895ad9a8335a65c8e24ad547"><td class="memItemLeft" align="right" valign="top"><a id="a7fcc4aba895ad9a8335a65c8e24ad547" name="a7fcc4aba895ad9a8335a65c8e24ad547"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Player</b> (int id, std::string name, std::string nickname, <a class="el" href="class_stats.html">Stats</a> stats)</td></tr>
-<tr class="separator:af1313c1a757af9c5fbc9463c6351b077"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3fc72095ec99785697201216d4cbdc8" id="r_ae3fc72095ec99785697201216d4cbdc8"><td class="memItemLeft" align="right" valign="top"><a id="ae3fc72095ec99785697201216d4cbdc8" name="ae3fc72095ec99785697201216d4cbdc8"></a>
+<tr class="separator:a7fcc4aba895ad9a8335a65c8e24ad547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff678364d256acf8e56aa2a6838a9bb" id="r_aeff678364d256acf8e56aa2a6838a9bb"><td class="memItemLeft" align="right" valign="top"><a id="aeff678364d256acf8e56aa2a6838a9bb" name="aeff678364d256acf8e56aa2a6838a9bb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Player</b> (int id, std::string name, std::string nickname)</td></tr>
-<tr class="separator:ae3fc72095ec99785697201216d4cbdc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4753a5331a3ccc5974088b45b2b532ab" id="r_a4753a5331a3ccc5974088b45b2b532ab"><td class="memItemLeft" align="right" valign="top"><a id="a4753a5331a3ccc5974088b45b2b532ab" name="a4753a5331a3ccc5974088b45b2b532ab"></a>
+<tr class="separator:aeff678364d256acf8e56aa2a6838a9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69ee7ea24ebba0be1ab3c7157e7c5ffa" id="r_a69ee7ea24ebba0be1ab3c7157e7c5ffa"><td class="memItemLeft" align="right" valign="top"><a id="a69ee7ea24ebba0be1ab3c7157e7c5ffa" name="a69ee7ea24ebba0be1ab3c7157e7c5ffa"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getId</b> () const</td></tr>
-<tr class="separator:a4753a5331a3ccc5974088b45b2b532ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a029e15bbf45332051cc254ef47645c1e" id="r_a029e15bbf45332051cc254ef47645c1e"><td class="memItemLeft" align="right" valign="top"><a id="a029e15bbf45332051cc254ef47645c1e" name="a029e15bbf45332051cc254ef47645c1e"></a>
+<tr class="separator:a69ee7ea24ebba0be1ab3c7157e7c5ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047f0fa1c2220bab097a9f6329e15806" id="r_a047f0fa1c2220bab097a9f6329e15806"><td class="memItemLeft" align="right" valign="top"><a id="a047f0fa1c2220bab097a9f6329e15806" name="a047f0fa1c2220bab097a9f6329e15806"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getNickname</b> () const</td></tr>
-<tr class="separator:a029e15bbf45332051cc254ef47645c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a60438a5b55d0b2ceb35c8674b9d8c5" id="r_a8a60438a5b55d0b2ceb35c8674b9d8c5"><td class="memItemLeft" align="right" valign="top"><a id="a8a60438a5b55d0b2ceb35c8674b9d8c5" name="a8a60438a5b55d0b2ceb35c8674b9d8c5"></a>
+<tr class="separator:a047f0fa1c2220bab097a9f6329e15806"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e4ff2d70e62ca7e3be1d9b4ad9de85" id="r_a73e4ff2d70e62ca7e3be1d9b4ad9de85"><td class="memItemLeft" align="right" valign="top"><a id="a73e4ff2d70e62ca7e3be1d9b4ad9de85" name="a73e4ff2d70e62ca7e3be1d9b4ad9de85"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const</td></tr>
-<tr class="separator:a8a60438a5b55d0b2ceb35c8674b9d8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68405715670331746bbf69ef05746eba" id="r_a68405715670331746bbf69ef05746eba"><td class="memItemLeft" align="right" valign="top"><a id="a68405715670331746bbf69ef05746eba" name="a68405715670331746bbf69ef05746eba"></a>
+<tr class="separator:a73e4ff2d70e62ca7e3be1d9b4ad9de85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41ddaf0908a7f416c75201bf4608eca" id="r_ad41ddaf0908a7f416c75201bf4608eca"><td class="memItemLeft" align="right" valign="top"><a id="ad41ddaf0908a7f416c75201bf4608eca" name="ad41ddaf0908a7f416c75201bf4608eca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setNickname</b> (std::string nickname)</td></tr>
-<tr class="separator:a68405715670331746bbf69ef05746eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb901a4b43e2cea8e9b55547365f5caf" id="r_adb901a4b43e2cea8e9b55547365f5caf"><td class="memItemLeft" align="right" valign="top"><a id="adb901a4b43e2cea8e9b55547365f5caf" name="adb901a4b43e2cea8e9b55547365f5caf"></a>
+<tr class="separator:ad41ddaf0908a7f416c75201bf4608eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d2b46eee230ad3e31612ff2bc681da" id="r_a95d2b46eee230ad3e31612ff2bc681da"><td class="memItemLeft" align="right" valign="top"><a id="a95d2b46eee230ad3e31612ff2bc681da" name="a95d2b46eee230ad3e31612ff2bc681da"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setName</b> (std::string name)</td></tr>
-<tr class="separator:adb901a4b43e2cea8e9b55547365f5caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45454d5c417185d1f177c7ed8dc3efaa" id="r_a45454d5c417185d1f177c7ed8dc3efaa"><td class="memItemLeft" align="right" valign="top"><a id="a45454d5c417185d1f177c7ed8dc3efaa" name="a45454d5c417185d1f177c7ed8dc3efaa"></a>
+<tr class="separator:a95d2b46eee230ad3e31612ff2bc681da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbda4728828217bb57e6ee6923f1d35d" id="r_afbda4728828217bb57e6ee6923f1d35d"><td class="memItemLeft" align="right" valign="top"><a id="afbda4728828217bb57e6ee6923f1d35d" name="afbda4728828217bb57e6ee6923f1d35d"></a>
 <a class="el" href="class_stats.html">Stats</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getStats</b> () const</td></tr>
-<tr class="separator:a45454d5c417185d1f177c7ed8dc3efaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bb620544520bba5d3b8b2275b32665c" id="r_a4bb620544520bba5d3b8b2275b32665c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bb620544520bba5d3b8b2275b32665c">updateStats</a> (char result, char game)</td></tr>
-<tr class="memdesc:a4bb620544520bba5d3b8b2275b32665c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the player's statistics based on the result of a game.  <br /></td></tr>
-<tr class="separator:a4bb620544520bba5d3b8b2275b32665c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:afbda4728828217bb57e6ee6923f1d35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafeaa6ebc0cbf677b89ec4d45adff9f7" id="r_aafeaa6ebc0cbf677b89ec4d45adff9f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafeaa6ebc0cbf677b89ec4d45adff9f7">updateStats</a> (char result, char game)</td></tr>
+<tr class="memdesc:aafeaa6ebc0cbf677b89ec4d45adff9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the player's statistics based on the result of a game.  <br /></td></tr>
+<tr class="separator:aafeaa6ebc0cbf677b89ec4d45adff9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a73e5a276bebeace20cbb5360b5044d2a" id="r_a73e5a276bebeace20cbb5360b5044d2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73e5a276bebeace20cbb5360b5044d2a">updateGameStats</a> (char game, bool isWin)</td></tr>
+<tr class="memdesc:a73e5a276bebeace20cbb5360b5044d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the game statistics for the player based on the game type and result.  <br /></td></tr>
+<tr class="separator:a73e5a276bebeace20cbb5360b5044d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a83ed80378037c3dcab66cdf74fa37946" id="r_a83ed80378037c3dcab66cdf74fa37946"><td class="memItemLeft" align="right" valign="top"><a id="a83ed80378037c3dcab66cdf74fa37946" name="a83ed80378037c3dcab66cdf74fa37946"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_id</b></td></tr>
+<tr class="separator:a83ed80378037c3dcab66cdf74fa37946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488b36bb1ea7cc574050917a584c8721" id="r_a488b36bb1ea7cc574050917a584c8721"><td class="memItemLeft" align="right" valign="top"><a id="a488b36bb1ea7cc574050917a584c8721" name="a488b36bb1ea7cc574050917a584c8721"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
+<tr class="separator:a488b36bb1ea7cc574050917a584c8721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7e957892c89b5566c5e262826c6e7b" id="r_aef7e957892c89b5566c5e262826c6e7b"><td class="memItemLeft" align="right" valign="top"><a id="aef7e957892c89b5566c5e262826c6e7b" name="aef7e957892c89b5566c5e262826c6e7b"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_nickname</b></td></tr>
+<tr class="separator:aef7e957892c89b5566c5e262826c6e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44f46d904abc3dc1cb96ccefe78744f6" id="r_a44f46d904abc3dc1cb96ccefe78744f6"><td class="memItemLeft" align="right" valign="top"><a id="a44f46d904abc3dc1cb96ccefe78744f6" name="a44f46d904abc3dc1cb96ccefe78744f6"></a>
+<a class="el" href="class_stats.html">Stats</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_stats</b></td></tr>
+<tr class="separator:a44f46d904abc3dc1cb96ccefe78744f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Amigos</h2></td></tr>
@@ -157,14 +191,66 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <tr class="separator:a24fe0eb7b3d2fe988df201c5974b6382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentação das funções</h2>
-<a id="a4bb620544520bba5d3b8b2275b32665c" name="a4bb620544520bba5d3b8b2275b32665c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bb620544520bba5d3b8b2275b32665c">&#9670;&#160;</a></span>updateStats()</h2>
+<a id="a73e5a276bebeace20cbb5360b5044d2a" name="a73e5a276bebeace20cbb5360b5044d2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e5a276bebeace20cbb5360b5044d2a">&#9670;&#160;</a></span>updateGameStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Player::updateGameStats </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>game</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isWin</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the game statistics for the player based on the game type and result. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>A character representing the game type: 'T' for Tic-Tac-Toe, 'L' for Connect Four (<a class="el" href="class_lig4.html">Lig4</a>), 'R' for <a class="el" href="class_reversi.html">Reversi</a>. </td></tr>
+    <tr><td class="paramname">isWin</td><td>A boolean indicating whether the player won the game (true) or lost the game (false). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_a73e5a276bebeace20cbb5360b5044d2a_icgraph.png" border="0" usemap="#aclass_player_a73e5a276bebeace20cbb5360b5044d2a_icgraph" alt=""/></div>
+<map name="aclass_player_a73e5a276bebeace20cbb5360b5044d2a_icgraph" id="aclass_player_a73e5a276bebeace20cbb5360b5044d2a_icgraph">
+<area shape="rect" title="Updates the game statistics for the player based on the game type and result." alt="" coords="663,13,835,40"/>
+<area shape="rect" href="class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="479,13,615,40"/>
+<area shape="poly" title=" " alt="" coords="648,29,616,29,616,24,648,24"/>
+<area shape="rect" href="class_player_manager.html#a3e23945bfc6ebf37ef894780cb067e12" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,431,48"/>
+<area shape="poly" title=" " alt="" coords="463,29,431,29,431,24,463,24"/>
+<area shape="rect" href="class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="5,13,191,40"/>
+<area shape="poly" title=" " alt="" coords="223,29,191,29,191,24,223,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aafeaa6ebc0cbf677b89ec4d45adff9f7" name="aafeaa6ebc0cbf677b89ec4d45adff9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafeaa6ebc0cbf677b89ec4d45adff9f7">&#9670;&#160;</a></span>updateStats()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void updateStats </td>
+          <td class="memname">void Player::updateStats </td>
           <td>(</td>
           <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>result</em>, </span></td>
         </tr>
@@ -191,14 +277,24 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   </dd>
 </dl>
 <div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_cgraph.png" border="0" usemap="#aclass_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_cgraph" alt=""/></div>
+<map name="aclass_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_cgraph" id="aclass_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_cgraph">
+<area shape="rect" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="5,5,142,32"/>
+<area shape="rect" href="class_player.html#a73e5a276bebeace20cbb5360b5044d2a" title="Updates the game statistics for the player based on the game type and result." alt="" coords="190,5,361,32"/>
+<area shape="poly" title=" " alt="" coords="142,16,174,16,174,21,142,21"/>
+</map>
+</div>
+<div class="dynheader">
 Esse é o diagrama das funções que utilizam essa função:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_player_a4bb620544520bba5d3b8b2275b32665c_icgraph.png" border="0" usemap="#aclass_player_a4bb620544520bba5d3b8b2275b32665c_icgraph" alt=""/></div>
-<map name="aclass_player_a4bb620544520bba5d3b8b2275b32665c_icgraph" id="aclass_player_a4bb620544520bba5d3b8b2275b32665c_icgraph">
-<area shape="rect" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="479,13,570,40"/>
-<area shape="rect" href="class_player_manager.html#ab8c7da6a790aef14dd66385633993bb6" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,431,48"/>
+<div class="center"><img src="class_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_icgraph.png" border="0" usemap="#aclass_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_icgraph" alt=""/></div>
+<map name="aclass_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_icgraph" id="aclass_player_aafeaa6ebc0cbf677b89ec4d45adff9f7_icgraph">
+<area shape="rect" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="479,13,615,40"/>
+<area shape="rect" href="class_player_manager.html#a3e23945bfc6ebf37ef894780cb067e12" title="Updates the statistics of a player based on the game result." alt="" coords="239,5,431,48"/>
 <area shape="poly" title=" " alt="" coords="463,29,431,29,431,24,463,24"/>
-<area shape="rect" href="class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf" title="Handles the process of playing a game between two players." alt="" coords="5,13,191,40"/>
+<area shape="rect" href="class_exec_utils.html#adfba272ec2c62f78d5baec678fe546bf" title="Handles the process of playing a game between two players." alt="" coords="5,13,191,40"/>
 <area shape="poly" title=" " alt="" coords="223,29,191,29,191,24,223,24"/>
 </map>
 </div>

@@ -6,7 +6,7 @@ O projeto Jogos de Tabuleiro é uma aplicação desenvolvida como trabalho final
 
 - Lig4
 - Reversi
-- Tic Tac Toe
+- Jogo da Velha (TTT)
 
 ## Equipe
 
@@ -21,7 +21,7 @@ Trabalho feito colaborativamente pelos membros:
 
 - `Linguagem:` C++
 - `Compilação:` Makefile  
-- `Documentação:` Doxygen e README  
+- `Documentação:` Doxygen e Markdown
 - `Testes:` Biblioteca doctest  
 - `Controle de Versão:` Git
   

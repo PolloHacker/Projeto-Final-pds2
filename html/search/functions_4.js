@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['handlecreateplayer_0',['handleCreatePlayer',['../class_exec_utils.html#a56179ee5fa677f24a053fce3635bef9c',1,'ExecUtils']]],
-  ['handlelistplayers_1',['handleListPlayers',['../class_exec_utils.html#a642abd754614361bdbe82fc6c961bb2b',1,'ExecUtils']]],
-  ['handleloadplayers_2',['handleLoadPlayers',['../class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030',1,'ExecUtils']]],
-  ['handleplaygame_3',['handlePlayGame',['../class_exec_utils.html#a4264653c5bfbad6b2231e84b0a2f12bf',1,'ExecUtils']]],
-  ['handleremoveplayer_4',['handleRemovePlayer',['../class_exec_utils.html#a99d7769ad77fb30ef09a287f59bc1ec4',1,'ExecUtils']]]
+  ['game_0',['Game',['../class_game.html#ab9fc5f2ec8a74c25149e8fe4a33f724c',1,'Game']]],
+  ['getcols_1',['getCols',['../class_board.html#abe6f2cdf451b87b990c352229dfca6b8',1,'Board']]],
+  ['getelementat_2',['getElementAt',['../class_board.html#a59804a2cda464da8aeac8878e297b1be',1,'Board']]],
+  ['getmaxnamelength_3',['getMaxNameLength',['../class_player_manager.html#ae3e6fea12ebc482de8cafe47281d5b26',1,'PlayerManager']]],
+  ['getmaxnicknamelength_4',['getMaxNicknameLength',['../class_player_manager.html#acee282a93070919da8e76520dbbe7b1f',1,'PlayerManager']]],
+  ['getplayer_5',['getPlayer',['../class_player_manager.html#a752160da6404b57d37bd52f3beaf6439',1,'PlayerManager']]],
+  ['getplayercount_6',['getPlayerCount',['../class_player_manager.html#ad6bac96d1d613629c95528310679adc8',1,'PlayerManager']]],
+  ['getrows_7',['getRows',['../class_board.html#aea5fab2da45ada7e6c878b5ed43d5ea1',1,'Board']]]
 ];
