@@ -1,0 +1,12 @@
+<map id="readMove" name="readMove">
+<area shape="rect" id="Node000001" title="Reads a move from the user and validates it." alt="" coords="5,43,84,69"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="16,44,10,34,14,24,26,18,45,16,65,19,76,25,73,30,63,24,44,21,27,23,18,28,16,33,20,41"/>
+<area shape="rect" id="Node000002" href="$class_string_utils.html#ae1a37d886919df7273dba405917505d1" title="Checks if the given row and column are valid." alt="" coords="132,5,293,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,47,116,41,117,46,85,52"/>
+<area shape="rect" id="Node000003" href="$class_lig4.html#ab324a284e0eaf173fb7a04243268953c" title="Validates a move in the Lig4 game." alt="" coords="163,72,262,99"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="85,60,149,72,148,77,84,65"/>
+<area shape="rect" id="Node000004" href="$class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="358,47,466,73"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="262,76,342,66,343,71,262,82"/>
+<area shape="rect" id="Node000005" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="341,97,483,124"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="262,89,326,97,325,102,262,94"/>
+</map>

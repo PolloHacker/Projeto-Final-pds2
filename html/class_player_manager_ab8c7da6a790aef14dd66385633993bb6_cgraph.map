@@ -4,4 +4,6 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,32,196,23,197,29,134,38"/>
 <area shape="rect" id="Node000003" href="$class_player.html#a4bb620544520bba5d3b8b2275b32665c" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="182,56,318,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,50,167,55,166,60,134,56"/>
+<area shape="rect" id="Node000004" href="$class_player.html#adf2dca5571a809afbed175518c243f5b" title="Updates the game statistics for the player based on the game type and result." alt="" coords="366,56,537,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="319,67,350,67,350,72,319,72"/>
 </map>

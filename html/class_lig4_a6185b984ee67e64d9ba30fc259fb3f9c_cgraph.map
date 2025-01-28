@@ -1,0 +1,9 @@
+<map id="checkDirection" name="checkDirection">
+<area shape="rect" id="Node000001" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="5,56,114,83"/>
+<area shape="rect" id="Node000002" href="$class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="179,5,287,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,53,169,34,171,39,109,58"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="162,56,304,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,67,146,67,146,72,114,72"/>
+<area shape="rect" id="Node000004" href="$class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="175,107,290,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="109,81,171,99,169,104,107,86"/>
+</map>

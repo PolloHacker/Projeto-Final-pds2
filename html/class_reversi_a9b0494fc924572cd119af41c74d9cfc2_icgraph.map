@@ -1,6 +1,0 @@
-<map id="Reversi::readMove" name="Reversi::readMove">
-<area shape="rect" id="Node000001" title="Reads a move from the user and validates it." alt="" coords="192,29,323,56"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="288,16,278,10,257,8,238,10,228,15,226,20,231,28,226,30,220,21,224,11,237,5,257,3,279,5,291,12"/>
-<area shape="rect" id="Node000002" href="$class_reversi.html#a6329650b30aedbe692d6ed2934a508fa" title="Executes a move in the Reversi game." alt="" coords="5,29,144,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,45,144,45,144,40,176,40"/>
-</map>

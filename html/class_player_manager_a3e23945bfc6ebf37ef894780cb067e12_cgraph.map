@@ -1,9 +1,0 @@
-<map id="PlayerManager::updatePlayerStats" name="PlayerManager::updatePlayerStats">
-<area shape="rect" id="Node000001" title="Updates the statistics of a player based on the game result." alt="" coords="5,23,198,65"/>
-<area shape="rect" id="Node000002" href="$class_player_manager.html#a752160da6404b57d37bd52f3beaf6439" title="Retrieves an iterator to a player with the specified nickname." alt="" coords="246,5,417,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,31,230,27,230,32,198,36"/>
-<area shape="rect" id="Node000003" href="$class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="263,56,400,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,52,248,57,247,63,198,57"/>
-<area shape="rect" id="Node000004" href="$class_player.html#a73e5a276bebeace20cbb5360b5044d2a" title="Updates the game statistics for the player based on the game type and result." alt="" coords="465,56,636,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="400,67,449,67,449,72,400,72"/>
-</map>

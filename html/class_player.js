@@ -1,5 +1,5 @@
 var class_player =
 [
-    [ "updateGameStats", "class_player.html#a73e5a276bebeace20cbb5360b5044d2a", null ],
-    [ "updateStats", "class_player.html#aafeaa6ebc0cbf677b89ec4d45adff9f7", null ]
+    [ "updateGameStats", "class_player.html#adf2dca5571a809afbed175518c243f5b", null ],
+    [ "updateStats", "class_player.html#a4bb620544520bba5d3b8b2275b32665c", null ]
 ];

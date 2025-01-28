@@ -1,11 +1,16 @@
 <map id="isGameFinished" name="isGameFinished">
-<area shape="rect" id="Node000001" title="Checks if the game is finished." alt="" coords="5,81,121,108"/>
-<area shape="rect" id="Node000002" href="$class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="186,5,294,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,78,168,42,183,35,185,40,170,46,92,83"/>
-<area shape="rect" id="Node000003" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="169,56,311,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,84,153,79,154,84,121,89"/>
-<area shape="rect" id="Node000004" href="$class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="182,107,298,133"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,100,167,107,166,112,120,106"/>
-<area shape="rect" id="Node000005" href="$class_board.html#a98badcf7748478b3d0a54a6f7b7a4719" title="Checks if the board is completely filled." alt="" coords="176,157,304,184"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="92,106,170,143,185,149,183,154,168,148,90,111"/>
+<area shape="rect" id="Node000001" title="Checks if the game is finished." alt="" coords="5,93,121,120"/>
+<area shape="rect" id="Node000002" href="$class_lig4.html#a6185b984ee67e64d9ba30fc259fb3f9c" title="Checks if there are four consecutive elements in a specified direction." alt="" coords="179,93,287,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,104,163,104,163,109,121,109"/>
+<area shape="rect" id="Node000003" href="$class_board.html#abc56ebe6387674c19d3d989203512f6a" title="Get the number of columns in the board." alt="" coords="362,5,470,32"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="89,90,126,73,168,57,260,36,346,23,347,28,262,41,169,63,128,78,91,95"/>
+<area shape="rect" id="Node000004" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="345,68,487,95"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="111,90,168,79,251,73,330,74,330,79,251,79,169,84,112,95"/>
+<area shape="rect" id="Node000005" href="$class_board.html#a1bb8ac2a73a5d9e6256505e1bf51c6a9" title="Get the number of rows in the board." alt="" coords="358,119,474,145"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="112,118,169,129,259,135,343,134,343,139,259,140,168,135,111,123"/>
+<area shape="rect" id="Node000006" href="$class_board.html#a98badcf7748478b3d0a54a6f7b7a4719" title="Checks if the board is completely filled." alt="" coords="169,195,297,221"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="85,118,170,174,190,185,187,189,167,178,82,123"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="262,90,372,37,374,42,264,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="287,97,329,91,330,96,288,102"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="288,111,344,119,343,125,287,117"/>
 </map>

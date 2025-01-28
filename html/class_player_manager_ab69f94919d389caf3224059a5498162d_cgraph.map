@@ -1,5 +1,0 @@
-<map id="PlayerManager::readStatsFields" name="PlayerManager::readStatsFields">
-<area shape="rect" id="Node000001" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="5,5,178,48"/>
-<area shape="rect" id="Node000002" href="$class_player_manager.html#a414deccebe602c856459577990e5dc64" title="Reads a field from a given input string stream." alt="" coords="226,13,395,40"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,24,210,24,210,29,178,29"/>
-</map>

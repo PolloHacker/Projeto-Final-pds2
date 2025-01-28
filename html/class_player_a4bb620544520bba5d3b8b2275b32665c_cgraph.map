@@ -1,0 +1,5 @@
+<map id="updateStats" name="updateStats">
+<area shape="rect" id="Node000001" title="Updates the player&#39;s statistics based on the result of a game." alt="" coords="5,5,97,32"/>
+<area shape="rect" id="Node000002" href="$class_player.html#adf2dca5571a809afbed175518c243f5b" title="Updates the game statistics for the player based on the game type and result." alt="" coords="145,5,271,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,16,129,16,129,21,97,21"/>
+</map>

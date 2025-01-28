@@ -1,0 +1,5 @@
+<map id="readStatsFields" name="readStatsFields">
+<area shape="rect" id="Node000001" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="5,5,118,32"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ac3b157363ae05702279aa2d38ec46dab" title="Reads a field from a given input string stream." alt="" coords="166,5,240,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,16,150,16,150,21,118,21"/>
+</map>

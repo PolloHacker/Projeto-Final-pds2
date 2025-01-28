@@ -1,5 +1,0 @@
-<map id="TTT::isGameFinished" name="TTT::isGameFinished">
-<area shape="rect" id="Node000001" title="Checks the current state of the game to determine if it has finished." alt="" coords="5,5,152,32"/>
-<area shape="rect" id="Node000002" href="$d3/dfd/class_board.html#ac9ff300b31942027e0e51a1a816175d8" title="Checks if the board is completely filled." alt="" coords="200,5,328,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,16,184,16,184,21,152,21"/>
-</map>

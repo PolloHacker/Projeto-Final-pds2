@@ -1,9 +1,0 @@
-<map id="Reversi::checkDirections" name="Reversi::checkDirections">
-<area shape="rect" id="Node000001" title="Checks all possible directions from a given position on the board." alt="" coords="5,31,174,57"/>
-<area shape="rect" id="Node000002" href="$class_reversi.html#af41573cd1953cb163d15fd9cde781142" title="Checks a specific direction from a given position on the board to find and mark opponent&#39;s pieces to ..." alt="" coords="222,31,383,57"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,41,206,41,206,47,174,47"/>
-<area shape="rect" id="Node000003" href="$class_board.html#a59804a2cda464da8aeac8878e297b1be" title="Retrieves the element at the specified row and column in the board." alt="" coords="437,5,579,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,31,421,27,422,32,384,37"/>
-<area shape="rect" id="Node000004" href="$class_board.html#a5bb4c65840612ba28d18ead4c8d3f978" title="Checks if the given row and column indices are within the bounds of the board." alt="" coords="431,56,585,83"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="384,51,416,55,415,61,383,57"/>
-</map>

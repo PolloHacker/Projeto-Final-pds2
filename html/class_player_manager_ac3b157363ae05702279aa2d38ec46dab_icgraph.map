@@ -1,0 +1,14 @@
+<map id="readField" name="readField">
+<area shape="rect" id="Node000001" title="Reads a field from a given input string stream." alt="" coords="732,31,806,57"/>
+<area shape="rect" id="Node000002" href="$class_player_manager.html#ac0cac9de2a4d936c39fc246e112d574b" title="Reads basic fields (id, name, and nickname) from a given input stream." alt="" coords="569,5,684,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="716,37,684,31,684,26,717,32"/>
+<area shape="rect" id="Node000006" href="$class_player_manager.html#ab785c9b3dbf8a84ef0030c49eed570fc" title="Reads the statistics fields from the input stream and populates the PlayerData structure." alt="" coords="570,56,683,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="717,56,683,62,682,57,716,51"/>
+<area shape="rect" id="Node000003" href="$class_player_manager.html#af91edcdd479d38efcd9ccf8f099b0468" title="Reads player data from a given input stream." alt="" coords="387,31,521,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="554,32,522,37,521,31,553,27"/>
+<area shape="rect" id="Node000004" href="$class_player_manager.html#a2e167a9e014b9cc7a5819c9516ecfa1b" title="Loads player data from a file and adds players to the manager." alt="" coords="250,31,339,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="372,47,339,47,339,41,372,41"/>
+<area shape="rect" id="Node000005" href="$class_exec_utils.html#a28e5ec1006ee78f7631d59eaf4a2d030" title="Handles the loading of players from the save file." alt="" coords="5,31,202,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="234,47,202,47,202,41,234,41"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="555,62,521,56,522,51,556,56"/>
+</map>

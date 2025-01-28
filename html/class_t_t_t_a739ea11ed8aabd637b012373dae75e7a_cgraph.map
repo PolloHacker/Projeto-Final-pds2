@@ -1,0 +1,7 @@
+<map id="checkRows" name="checkRows">
+<area shape="rect" id="Node000001" title="Checks the rows in the Tic&#45;Tac&#45;Toe game for a win condition." alt="" coords="5,5,96,32"/>
+<area shape="rect" id="Node000002" href="$class_t_t_t.html#a3e98b43ec4c9d347a6c021f4b242ec4f" title="Checks if there is a winning line (row or column) in the Tic&#45;Tac&#45;Toe board." alt="" coords="144,5,224,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,16,128,16,128,21,96,21"/>
+<area shape="rect" id="Node000003" href="$class_board.html#a4ab4871ca20473eb70f989a29ec43a99" title="Retrieves the element at the specified row and column in the board." alt="" coords="272,5,414,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="224,16,256,16,256,21,224,21"/>
+</map>
