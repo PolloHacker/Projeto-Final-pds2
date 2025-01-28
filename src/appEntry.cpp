@@ -1,3 +1,5 @@
+#include <algorithm>
+
 #include "exec_utils.hpp"
 #include "terminal_utils.hpp"
 #include "playerManager.hpp"
@@ -14,6 +16,8 @@ int main() {
         ExecUtils::PrintBanner();
         std::cout << "Digite seu comando: ";
         std::cin >> cmd;
+        std::transform(cmd.begin(), cmd.end(), cmd.begin(),
+               [](unsigned char c){ return std::toupper(c); });
 
         if(cmd == "FS") {
             break;

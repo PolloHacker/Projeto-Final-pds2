@@ -108,12 +108,28 @@ void ExecUtils::handleListPlayers(PlayerManager &pm) {
     if (type == "A") {
         std::cout << "Digite o apelido do jogador: ";
         std::cin >> player;
-        pm.printPlayerByNickname(player);
+        while (StringUtils::IsInvalidNickname(player)) {
+            std::cout << "Apelido inválido. tente novamente:" << std::endl;
+            std::cin >> player;
+        }
+        try {
+            pm.printPlayerByNickname(player);
+        } catch (const InexistentPlayerException& e) {
+            std::cout << e.what() << std::endl;
+        }
     } else if (type == "N") {
         std::cout << "Digite o nome do jogador: ";
         std::cin.ignore();
         std::getline(std::cin, player);
-        pm.printPlayerByName(player);
+        while (StringUtils::IsInvalidName(player)) {
+            std::cout << "Nome inválido. tente novamente:" << std::endl;
+            std::cin >> player;
+        }
+        try {
+            pm.printPlayerByName(player);
+        } catch (const InexistentPlayerException& e) {
+            std::cout << e.what() << std::endl;
+        }
     } else if (type == "C") {
         pm.printTable();
     } else {
