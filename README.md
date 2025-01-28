@@ -113,96 +113,96 @@ O projeto foi organizado em diferentes classes, cada uma com suas responsabilida
 - **InexistentPlayerException**: Exceção lançada quando um jogador não é encontrado no sistema.
 - **InvalidInputException**: Exceção lançada quando a entrada fornecida pelo usuário é inválida.
 - **PlayerNotInListException**: Exceção lançada quando um jogador não está na lista de jogadores.
+- **PlayerAlreadyExistException**: Exceção lançada ao tentar criar um perfil de jogador repetido.
+
+## Compilação e Execução
+
+### Pré-requisitos
+
+- Linux ou Windows
+- Compilador C++ compatível com C++11 (ex.: g++)
+- Make instalado
+
+- Clone o repositório:
+  - bash
+  - git clone <URL_DO_REPOSITORIO>
+  - cd <NOME_DO_DIRETORIO>
+
+- Compile o projeto:
+  - bash
+  - make
+
+- Execute o programa:
+  - bash
+  - ./bin/programa
+
+- Limpe os arquivos gerados (opcional):
+  - bash
+  - make clean
 
 ## Inputs
 
-Os inputs foram os estabelecidos pelo enunciado, com as entradas e as eventuais mensagens de erro:
+Os inputs foram estabelecidos pelos desenvolvedores desse projeto, seguindo esse padrão:
 
 ### Cadastro de Jogadores
 
-- **Cadastrar Jogador**:
-  - (obs. Considere que `<Apelido>` é composto por uma única palavra)
-  - Sucesso: `Jogador <Apelido> cadastrado com sucesso`
-  - Erros: `ERRO: entrada inválida`, `ERRO: jogador repetido`  
+**Carregar execuções anteriores**
+- `CA`
+   - Sucesso: `[!] - Jogadores carregados com sucesso`, `[!] - Os jogadores já foram carregados`
 
-- **Remover Jogador**: `RJ <Apelido>`
-  - Sucesso: `Jogador <Apelido> removido com sucesso`
-  - Erro: `ERRO: entrada inválida`, `ERRO: jogador não encontrado`
+**Cadastrar Jogador**: 
+- `CJ`
+-  `Insira o Nome do Jogador: <Nome>`
+-  `Insira o Apelido do Jogador: <Apelido>`
+   - Sucesso: `[!] - Jogador criado com sucesso`
+   - Erros: `ERRO: Nome inávlido, digite o nome do jogador novamente`, `ERRO: Apelido inávlido, digite o Apelido do jogador novamente`  
 
-- **Listar Jogadores**:  `LJ A|N` `<Apelido> <Nome>`
-  - Sucesso: lista de todos os jogadores ordenados por Apelido ou Nome, seguido pelo número de vitórias e derrotas em cada jogo
-  - *Exemplo:*
-    - `<Apelido>` `<Nome>`
-    - REVERSI - V: <#vitorias> D: <#derrotas>
-    - LIG4 - V: <#vitorias> D: <#derrotas>
-    - TIC TAC TOE - V: <#vitorias> D: <#derrotas>
-    - CAMPO MINADO - V: <#vitorias> D: <#derrotas>
-    - MEMORIA - V: <#vitorias> D: <#derrotas>
-  - Erro: `ERRO: entrada inválida`, `ERRO: comando inválido; escolha ordenar por (A)pelido ou (N)ome!`
+**Remover Jogador**: 
+- `RJ`
+- `Digite o Apelido do Jogador a ser removido: <Apelido>`
+   - Sucesso: `[!] - Jogador removido com sucesso`
+   - Erro: `[X] - O jogador não existe`
+
+- **Listar Jogadores**:  
+- `LJ`
+- `Digite o tipo de listagem (A - Apelido, N - Nome, C - Lista completa): <A|N|C>`
+   - Sucesso: printa a lista dos jogadores de acordo com o metodo solicitado pelo usuário.
+   - Erro: `[X] - Tipo de listagem inválido.`
 
 ### Execução de Partidas
 
-- **Executar Partida**: `EP <Jogo: (R|L|T|C|M)> <Apelido Jogador 1> <Apelido Jogador 2>`
-  - *Exemplo:* `EP R Ju Babi` (executa o jogo Reversi com jogadora Ju e jogadora Babi)
-  - Erros:  `ERRO: entrada inválida`, `ERRO: jogo não encontrado`, `ERRO: São necessários dois jogadores para jogar este jogo`, `ERRO: primeiro jogador não encontrado` , `ERRO: segundo jogador não encontrado`, `Este jogo só possui um jogador`
-  - Sucesso: `<Apelido Jogador 1> fez log in!`, `<Apelido Jogador 2> fez log in!` `<Jogo> foi escolhido!`
-  - Sucesso: `J - JOGAR` `L - Ler regras do jogo`
-    - **Jogar:** `<J>`
-    - **Regras:** `<L>` (funcionalidade extra)
-    - **Erros:** `ERRO: Regras não encontradas para o jogo selecionado.`
-  - OBS: *( R= Reversi | L=Lig4 | T=TicTacToe | C=CampoMinado | M=Memória )*
+- **Executar Partida**: 
+- `EP` 
+- `Digite o tipo de jogo (R - Reversi, L - Lig4, V - Velha): <(R|L|V)>`
+- `Digite o apelido do jogador 1: <Apelido>`
+- `Digite o apelido do jogador 2: <Apelido>`
+   - Sucesso: Inicia o jogo selecionado com os jogadores 1 e 2.
+   - Erro: `[X] - Tipo de jogo inválido`, `[X] - Jogador 1|2 não encontrado.\nDigite o apelido do jogador 1|2 novamente:`
 
 - **Finalizar Sistema**: `FS`
 
 ## Inputs durante os Jogos
 
-- **Jogada no Lig 4**: `<Coluna>`
+- **Jogada no TicTacToe**: 
+  - `Digite a linha e a coluna da jogada: <Linha> <Coluna>`
+  - Exemplo: `<0> <2>`
+  - Erros: `[X] - Digite apenas números`, `[X] - Fora dos limites`, `[X] - Posicao ocupada`
+
+- **Jogada no Lig 4**: 
+  - `Digite a coluna da jogada: <Coluna>`
   - Exemplo: `<1>`
-  - Erros: `ERRO: formato incorreto`, `Essa jogada é inválida! Passa a vez!`, `Não existem mais posições disponiveis nessa coluna! Perde a vez!`
+  - Erros: `[X] - Digite apenas números`, `[X] - Fora dos limites`, `[X] - Posicao ocupada`
 
-- **Jogada no Reversi**: `<Linha>` `<Coluna>`
-  - Exemplo: `<0>` `<2>`
-  - Erros: `ERRO: formato incorreto`, `ERRO: jogada inválida`
+- **Jogada no Reversi**: 
+  - `Digite a linha e a coluna da jogada: <Linha>` `<Coluna>`
+  - Exemplo: `<0> <2>`
+  - Erros: `[X] - Digite apenas números`, `[X] - Fora dos limites`, `[X] - Posicao ocupada`, `[X] - Jogada invalida`
 
-- **Jogada no TicTacToe**: `<Linha>` `<Coluna>`
-  - Exemplo: `<0>` `<2>`
-  - Erros: `ERRO: formato incorreto`, `Essa jogada é inválida! Passa a vez!`
-  -
-- **Jogada no Campo Minado**: `<Linha>` `<Coluna>`
-  - Exemplo: `<0>` `<2>`
-  - Erros: `ERRO: jogada inválida!`,  `ERRO: formato incorreto`
-
-- **Jogada no Jogo da Memória**: `<Linha1>` `<Coluna1>` `<Linha2>` `<Coluna2>`
-  - Exemplo: `<0>` `<1>` `<0>` `<2>`
-  - Erros: `ERRO: formato incorreto`, `ERRO: jogada inválida`
-
-(Ao final de cada partida o jogador tem a opção de ver o ranking do jogo ou voltar ao menu)
-
-- **Visualizar ranking**: `VR` (funcionalidade extra)
-- **Jogar novamente**: `JN`
-  - Erros: `ERRO: entrada inválida; escolha (J)ogar (N)ovamente ou (V)er (R)anking!`
+(Ao final de cada partida o jogador deve pressionar ENTER para retornar ao começo)
 
 ## Documentação
 
-O projeto conta com diversas formas de documentação: esse READ-ME e os arquivos gerados pelo Doxygen (html e PDF). Para acessar o html basta ir na pasta `html` dentro do repositório, clicar no arquivo `index.html` com o `<Botão Direito do Mouse>` e selecionar a opção `Open With Live Server`
-
-## Dificuldades encontradas
-
-Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios:
-
-- Uso do Git e Github:
-  A utilização dessas ferramentas apresentou-se como um desafio para a equipe. No decorrer do projeto, tivemos dificuldades ao lidar com conflitos de merge, em entender o fluxo de trabalho nas branches e na utilização das funcionalidades para manter o código organizado.
-
-- Uso de Makefile:
-  O processo de compilação dos arquivos com o Makefile apresentou-se com um desafio na reta final. Algumas das dificuldades enfrentadas foram: erro com o arquivo executável, conjutamente com um erro relacionado ao tipo binário gerado na compilação (Exemplo: Relocation against symbol _zvcampominado can not be used when making a PIE object). Para lidar com o problema utilizamos o comando `make clean` e depois realizamos o processo de compilação novamente com `make`. Além disso acrescentamos no arquivo Makefile a linha: `CFLAGS=-std=c++11 -Wall -fPIC`, caso o problema estivesse relacionado a um trecho que envolva código compartilhado ou parte de uma biblioteca.
-
-- Realização dos Testes:
-  Compreender e executar os testes também se mostrou um processo desafiador. Houve dificuldades em entender a estrutura e como conseguir integrá-los no nosso processo de desenvolvimento.
-
-- Salvar informações no arquivo Jogadores.txt:
-  No processo de manipulação do arquivo, o grupo apresentou dificuldades para tratar um erro específico ao excluir um jogagor, o que gerava uma linha em branco no final do arquivo,. A presença desta linha acarretava o não funcionamento do executável, exibindo o seguinte errro: `terminate called after throwing an instance of 'std::invalid_argument' what(): stoi Aborted.` Para o bom funcionamento do código, é necessário retirar as linhas vazias do arquivo. O grupo buscou tratar essa dificuldade por meio de uma função que posiciona o cursor no início do arquivo, para assim evitar que ele chegue ao final.
-
-Essas dificuldades, embora desafiadoras, contribuíram para um maior aprendizado por parte de toda a equipe.
+(Preencher com breve tutorial de como acessar a documentação HTML)
 
 ## Aprendizados com o projeto
 
