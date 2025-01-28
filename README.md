@@ -91,12 +91,12 @@ O projeto foi organizado em diferentes classes, cada uma com suas responsabilida
 
 - **Métodos principais:**
 
-  - PrintBanner(): Imprime o banner do trabalho com os comandos.
-  - handleLoadPlayers(): Lida com o carregamento de jogadores no PlayerManager.
-  - handleCreatePlayer(): Lida com a criação de um novo jogador.
-  - handleRemovePlayer(): Lida com a remoção de um jogador existente.
-  - handleListPlayers(): Lida com a listagem de todos os jogadores.
-  - handlePlayGame(): Lida com o processo de jogar um jogo.
+  - PrintBanner()
+  - handleLoadPlayers()
+  - handleCreatePlayer()
+  - handleRemovePlayer()
+  - handleListPlayers()
+  - handlePlayGame()
 
 ### StringUtils
 
@@ -104,10 +104,9 @@ O projeto foi organizado em diferentes classes, cada uma com suas responsabilida
 
 - **Métodos principais:**
 
-  - IsInvalidNickname(): Verifica se uma string é um apelido válido
-  - IsInvalidName(): Verifica se uma string é um nome válido
-  - IsValidMoveInput(): Verifica se o movimento que o usuário informou é valido
-
+  - IsInvalidNickname()
+  - IsInvalidName()
+  - IsValidMoveInput()
 ### Exceções
 
 - **InexistentPlayerException**: Exceção lançada quando um jogador não é encontrado no sistema.
@@ -124,21 +123,26 @@ O projeto foi organizado em diferentes classes, cada uma com suas responsabilida
 - Make instalado
 
 - Clone o repositório:
-  - bash
-  - git clone <URL_DO_REPOSITORIO>
-  - cd <NOME_DO_DIRETORIO>
+
+  ```bash
+    git clone https://github.com/PolloHacker/Projeto-Final-pds2.git
+    cd <NOME_DO_DIRETORIO>
+  ```
 
 - Compile o projeto:
-  - bash
-  - make
+  ```bash
+    make
+  ```
 
 - Execute o programa:
-  - bash
-  - ./bin/programa
+  ```bash
+    ./tp
+    ```
 
-- Limpe os arquivos gerados (opcional):
-  - bash
-  - make clean
+- Limpe os arquivos gerados (remove o executável também):
+  ```bash
+    make clean
+  ```
 
 ## Inputs
 
@@ -166,7 +170,7 @@ Os inputs foram estabelecidos pelos desenvolvedores desse projeto, seguindo esse
 - **Listar Jogadores**:  
 - `LJ`
 - `Digite o tipo de listagem (A - Apelido, N - Nome, C - Lista completa): <A|N|C>`
-   - Sucesso: printa a lista dos jogadores de acordo com o metodo solicitado pelo usuário.
+   - Sucesso: *printa a lista dos jogadores de acordo com o método solicitado pelo usuário*.
    - Erro: `[X] - Tipo de listagem inválido.`
 
 ### Execução de Partidas
@@ -200,9 +204,9 @@ Os inputs foram estabelecidos pelos desenvolvedores desse projeto, seguindo esse
 
 (Ao final de cada partida o jogador deve pressionar ENTER para retornar ao começo)
 
-## Documentação
+## Documentação (online)
 
-(Preencher com breve tutorial de como acessar a documentação HTML)
+- Acesse o link: https://pollohacker.github.io/Projeto-Final-pds2/
 
 ## Durante o desenvolvimento deste projeto, a equipe enfrentou alguns desafios:
 
@@ -222,7 +226,7 @@ Este projeto foi uma oportunidade valiosa para aprimorar nossas habilidades em p
 - Programação orientada a objetos em C++.
 - Colaboração efetiva em um projeto conjunto.
 - Comunicação.
-- Uso avançado de Git e GitHub para controle de versão.
+- Uso de Git e GitHub para controle de versão.
 - Práticas de programação defensiva e tratamento de exceções.
 - Criação e manutenção de Makefile.
 - Geração de documentação utilizando Doxygen.
